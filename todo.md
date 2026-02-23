@@ -1,2 +1,3 @@
-- Improve styling and add some embedded YT videos and images to the blog posts.
-- Change title from "Thoughts on... and AI" 
+- Review and re-write blog posts
+- Add some embedded YT videos and images to the blog posts
+- Improving stlying and colours 

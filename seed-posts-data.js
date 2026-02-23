@@ -5,11 +5,8 @@ module.exports = [
         excerpt: "China's Belt and Road Initiative draws comparisons to the British Empire. But are the parallels fair — and what does China's expansion mean for the future of English as a global language?",
         published: true,
         sources: `* **Britannica**: [Belt and Road Initiative](https://www.britannica.com/topic/Belt-and-Road-Initiative)
-* **Centre for Joint and International Defence Studies (CJIDS)**: [BRI Cooperation Web](https://www.cjids.in)
-* **ResearchGate**: [Win-Win Cooperation Analysis](https://www.researchgate.net)
-* **The Star Malaysia**: [BRI Investment in SE Asia](https://www.thestar.com.my)
-* **The Dwarkesh Podcast**: *Episodes on Economic Influence vs Territorial Control*
-* **Breakneck Newsletter**: *Dan Wang on BRI project performance*`,
+* **Council on Foreign Relations**: [China's Belt and Road](https://www.cfr.org/backgrounder/chinas-massive-belt-and-road-initiative)
+* **The Star Malaysia**: [BRI Investment Coverage](https://www.thestar.com.my)`,
         content: `## Introduction
 
 In 2013, President Xi Jinping launched the Belt and Road Initiative (BRI), one of the most ambitious infrastructure programmes in modern history. Over a decade later, it has drawn [comparisons to British colonialism](https://www.britannica.com/topic/Belt-and-Road-Initiative) — with critics calling it a new form of imperial expansion and supporters insisting it is fundamentally different.
@@ -20,15 +17,15 @@ The comparison raises uncomfortable questions. While Britain's empire was built 
 
 Both the British Empire and the BRI share a core strategy: build infrastructure to facilitate trade and extend influence. Between 1850 and 1950, Britain constructed railways, ports, and telegraph networks across Asia, Africa, and the Americas. Today, China is doing something strikingly similar — building seaports in Sri Lanka, railways in Kenya, and roads across Central Asia.
 
-Critics point to what they call ["debt-trap diplomacy."](https://www.sapub.org) Countries that cannot repay Chinese loans have been forced to hand over strategic assets. Sri Lanka's Hambantota Port, leased to China for 99 years after a debt default, is the most cited example. Zambia's power grid and several African mines have faced similar pressures. The pattern, critics argue, mirrors colonial-era resource extraction — just without the flag.
+Critics point to what they call "debt-trap diplomacy." Countries that cannot repay Chinese loans have been forced to hand over strategic assets. Sri Lanka's Hambantota Port, leased to China for 99 years after a debt default, is the most cited example. Zambia's power grid and several African mines have faced similar pressures. The pattern, critics argue, mirrors colonial-era resource extraction — just without the flag.
 
-The [Centre for Joint and International Defence Studies](https://www.cjids.in) has noted that over 140 countries have signed BRI cooperation agreements, creating a web of economic dependency that, while voluntary on paper, can be coercive in practice.
+Over 140 countries have signed BRI cooperation agreements, creating a web of economic dependency that, while voluntary on paper, can be coercive in practice.
 
 ## The Case Against
 
 But the comparison has its limits. The British Empire claimed sovereignty over its territories. It settled colonists, imposed legal systems, and extracted resources through force. China does none of this — at least not formally. There are no Chinese governors in Nairobi or Beijing-appointed magistrates in Colombo.
 
-China frames the BRI as ["win-win cooperation,"](https://www.researchgate.net) filling an infrastructure gap that Western nations have largely ignored. Many developing countries welcome the investment precisely because Western alternatives come with political conditions — demands for democratic reform, anti-corruption measures, or environmental standards — that Chinese loans do not.
+China frames the BRI as "win-win cooperation," filling an infrastructure gap that Western nations have largely ignored. Many developing countries welcome the investment precisely because Western alternatives come with political conditions — demands for democratic reform, anti-corruption measures, or environmental standards — that Chinese loans do not.
 
 As [The Star Malaysia](https://www.thestar.com.my) has reported, for many governments in Southeast Asia and Africa, the BRI offers something the West won't: large-scale, no-strings-attached financing for desperately needed roads, bridges, and power plants.
 
@@ -55,16 +52,13 @@ Meanwhile, Britain's retreat from the global stage is not just a political story
         topic: "china",
         excerpt: "Cheaper EVs, cheaper goods, green energy cooperation — the benefits of deeper UK-China trade are real. But so are the risks. What's the right balance?",
         published: true,
-        sources: `* **GOV.UK**: [UK-China Economic and Financial Dialogue](https://www.gov.uk)
-* **The Guardian**: [Chinese EV Market Penetration in the UK](https://www.theguardian.com)
-* **Morningstar**: [Trade Diversion and UK Inflation](https://www.morningstar.com)
-* **British Chambers of Commerce**: [Trade Deficit Statistics](https://www.britishchambers.org.uk)
-* **European Business Magazine**: [Impact on European Manufacturing](https://www.europeanbusinessmagazine.com)
-* **Financial Times**: *The Trade Deficit trajectory*
-* **The Rest is Politics Podcast**: *Alastair Campbell and Rory Stewart on economic pragmatism vs security*`,
+        sources: `* **GOV.UK**: [UK-China Economic and Financial Dialogue outcomes](https://www.gov.uk/government/news/uk-china-efd)
+* **The Guardian**: [BYD UK sales and Chinese EV market share](https://www.theguardian.com/business)
+* **British Chambers of Commerce**: [UK-China trade statistics](https://www.britishchambers.org.uk)
+* **European Business Magazine**: [Chinese EV impact on European manufacturing](https://www.europeanbusinessmagazine.com)`,
         content: `## Introduction
 
-In early 2025, the UK and China held their first [Economic and Financial Dialogue](https://www.gov.uk) in years, signalling a cautious thaw in relations. The talks focused on financial services, green energy, and trade barriers — and were valued at an estimated £600 million over five years for the UK economy.
+In early 2025, the UK and China held their first [Economic and Financial Dialogue](https://www.gov.uk/government/news/uk-china-efd) in years, signalling a cautious thaw in relations. The talks focused on financial services, green energy, and trade barriers — and were valued at an estimated £600 million over five years for the UK economy.
 
 The numbers tell a compelling story. But behind the headline figures lies a deeper dilemma: how does Britain engage with the world's second-largest economy without becoming dangerously dependent on it? And with cheap Chinese EVs flooding European markets and Chinese goods undercutting British manufacturers, is closer trade a lifeline or a trap?
 
@@ -74,11 +68,11 @@ The numbers tell a compelling story. But behind the headline figures lies a deep
 
 The most immediate benefit of deeper UK-China trade is simple: cheaper stuff. Chinese manufacturers produce consumer goods, electronics, and increasingly cars at prices that British and European competitors struggle to match.
 
-According to [The Guardian](https://www.theguardian.com), the influx of competitively priced Chinese imports could help reduce UK inflation — a meaningful benefit for households still feeling the squeeze from the cost-of-living crisis. [Morningstar](https://www.morningstar.com) analysts have echoed this, noting that trade diversion from US tariffs could redirect affordable Chinese goods to the UK market.
+According to [The Guardian](https://www.theguardian.com/business), the influx of competitively priced Chinese imports could help reduce UK inflation — a meaningful benefit for households still feeling the squeeze from the cost-of-living crisis.
 
 ### The EV Revolution
 
-Chinese car brands — BYD, MG (now owned by SAIC), Nio, and others — are transforming the UK automotive market. In 2025, [Chinese brands accounted for 9.7% of new car registrations](https://www.theguardian.com/business) in the UK, nearly doubling their share from the previous year. BYD alone has overtaken Tesla in UK sales.
+Chinese car brands — BYD, MG (now owned by SAIC), Nio, and others — are transforming the UK automotive market. In 2025, Chinese brands accounted for around 13% of new car registrations in the UK, with BYD alone surpassing Tesla in sales. BYD's registrations reached over 51,000 vehicles, up from under 9,000 the previous year.
 
 For consumers, this means access to high-quality electric vehicles at prices significantly below European and American rivals. A BYD Seal costs roughly £15,000 less than a comparable BMW i4. For the UK's net-zero ambitions, cheaper EVs could accelerate the transition away from petrol cars.
 
@@ -124,11 +118,9 @@ The UK cannot afford to ignore China. It is the world's largest manufacturer, it
         topic: "education",
         excerpt: "Personalised learning promises tailored education for every student. But if everyone is learning different things, what happens to the shared classroom experience — and to social cohesion?",
         published: true,
-        sources: `* **Edutopia**: [Impact of Personalised Learning on Attainment](https://www.edutopia.org)
-* **University of Edinburgh**: [Cognitive Pathways and Engagement in E-Learning](https://www.ed.ac.uk)
-* **Nancy E. Bailey**: [The Risks of Digital Bubbles in Education](https://nancyebailey.com)
-* **NextGen Learning Project**: [Collaborative Personalised Models](https://nextgenlearning.org)
-* **Daisy Christodoulou**: *The importance of a shared knowledge base*`,
+        sources: `* **Edutopia**: [Evidence-based learning strategies](https://www.edutopia.org)
+* **University of Edinburgh**: [Research on learning environments](https://www.ed.ac.uk)
+* **NextGen Learning Challenges**: [Collaborative models in K-12](https://nextgenlearning.org)`,
         content: `## Introduction
 
 Personalised learning is one of the most celebrated ideas in modern education. The logic is intuitive: every student learns differently, so why force them all through the same material at the same pace? With advances in AI and adaptive learning platforms, we now have the tools to tailor education to each individual learner.
@@ -153,7 +145,7 @@ But here is the trade-off that enthusiasts rarely acknowledge.
 
 When students spend significant portions of their day working independently on tablets or laptops — each following their own adaptive pathway — they are not talking to each other. They are not debating. They are not learning to disagree respectfully, to listen to someone else's perspective, or to build on a classmate's idea.
 
-[Nancy E. Bailey](https://nancyebailey.com), a prominent education commentator, has argued that the push for personalised digital learning risks creating classrooms full of isolated individuals, each in their own digital bubble. The social skills that come from genuine classroom interaction — empathy, persuasion, compromise — cannot be learned from a screen.
+Education commentators have argued that the push for personalised digital learning risks creating classrooms full of isolated individuals, each in their own digital bubble. The social skills that come from genuine classroom interaction — empathy, persuasion, compromise — cannot be learned from a screen.
 
 This matters beyond school. The ability to communicate across difference, to engage with people who think differently to you, and to build shared understanding is the foundation of a functioning society. If we train children to learn alone, are we preparing them for a world that demands collaboration?
 
@@ -184,13 +176,9 @@ The best education systems will find a balance: personalised practice at home, s
         topic: "politics",
         excerpt: "Capitalism thrives when individuals consume more. But does it achieve this by weakening the social bonds that would otherwise make us content with less?",
         published: true,
-        sources: `* **ONS**: [Single-Person Households in the UK](https://www.ons.gov.uk)
-* **Brookings Institution**: [Consumer Culture and Identity](https://www.brookings.edu)
-* **NIH**: [Competitive vs Prosocial Behavior in Capitalistic Structures](https://www.nih.gov)
-* **McKinsey**: [Intentional Spending Trends](https://www.mckinsey.com)
-* **Greenbook**: [Gen Z Consumer Values](https://www.greenbook.org)
-* **The Economist**: *The changing flavour of Gen Z consumerism*
-* **The Joe Rogan Experience**: *Discussions on monetisation of isolation*`,
+        sources: `* **ONS**: [People living alone in the UK](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/families/bulletins/familiesandhouseholds/2023)
+* **Brookings Institution**: [Consumer culture and identity](https://www.brookings.edu)
+* **NIH**: [Competitive behaviour in capitalistic structures](https://www.nih.gov)`,
         content: `## Introduction
 
 Here is a thought experiment. Imagine two neighbours. One lives alone, eats alone, entertains alone. The other is embedded in a close-knit community — sharing tools, meals, childcare, and social life with the people around them.
@@ -205,7 +193,7 @@ This is the quiet engine of consumer capitalism: **the more atomised we become, 
 
 Modern capitalism did not set out to destroy community. But its incentives push relentlessly in that direction.
 
-Consider housing. The shift from multi-generational households to single-person flats multiplies the number of kitchens, washing machines, and heating systems in use. The UK now has [8.3 million people living alone](https://www.ons.gov.uk), up from 3 million in 1971. Each of those households is a separate unit of consumption.
+Consider housing. The shift from multi-generational households to single-person flats multiplies the number of kitchens, washing machines, and heating systems in use. The UK now has [8.4 million people living alone](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/families/bulletins/familiesandhouseholds/2023), up from 3 million in 1971. Each of those households is a separate unit of consumption.
 
 Consider food. The decline of shared family meals — replaced by individual meal kits, microwave dinners, and food delivery apps — means that a family of four increasingly eats as four separate consumers rather than one household.
 
@@ -217,7 +205,7 @@ The pattern is consistent: **every social bond that weakens creates a new market
 
 The counterargument is worth taking seriously. Do strong social bonds actually reduce spending — or do they simply redirect it?
 
-There is a body of research suggesting that social connections can *increase* consumption through what psychologists call **competitive consumption** — keeping up with the Joneses. A [study published by the NIH](https://www.nih.gov) found that societies with more capitalistic structures tend to exhibit more competitive rather than prosocial behaviours. Your friend buys a new car; you feel the pressure to upgrade yours.
+There is a body of research suggesting that social connections can *increase* consumption through what psychologists call **competitive consumption** — keeping up with the Joneses. Research published by the [National Institutes of Health](https://www.nih.gov) has found that societies with more capitalistic structures tend to exhibit more competitive rather than prosocial behaviours. Your friend buys a new car; you feel the pressure to upgrade yours.
 
 Social media has turbocharged this dynamic. Instagram, TikTok, and YouTube create constant exposure to other people's lifestyles, possessions, and experiences. The result is not contentment but aspiration — and aspiration drives spending.
 
@@ -225,7 +213,7 @@ So the relationship between social bonds and consumption is more complex than a 
 
 ## The Intentional Shift
 
-There are signs that some consumers are pushing back. [McKinsey](https://www.mckinsey.com) and [Greenbook](https://www.greenbook.org) have both reported a trend towards "intentional spending" — particularly among Gen Z — where consumers actively resist mindless purchases and prioritise experiences, durability, and values over volume.
+There are signs that some consumers are pushing back. Reports from major consultancies have identified a trend towards "intentional spending" — particularly among Gen Z — where consumers actively resist mindless purchases and prioritise experiences, durability, and values over volume.
 
 The sharing economy — Airbnb, car-sharing, tool libraries — represents a partial reversal of atomisation. And the growing interest in community living, co-housing, and cooperative models suggests that some people are actively choosing connection over individual consumption.
 
@@ -246,10 +234,9 @@ The question is not whether capitalism divides. It is whether we will let it.
         topic: "education",
         excerpt: "What if we flipped the script on technology in schools? In-class work should build social skills with pen and paper. Homework should be AI-powered and personalised. Here's how.",
         published: true,
-        sources: `* **University of Edinburgh**: [Cognitive Benefits of Handwriting](https://www.ed.ac.uk)
+        sources: `* **University of Edinburgh**: [Research on handwriting and cognition](https://www.ed.ac.uk)
 * **Nuwa Pen**: [AI Smart Pen Technology](https://nuwapen.com)
-* **Century Tech**: [Adaptive Learning Algorithms](https://www.century.tech)
-* **The Guardian**: *The debate over screens in schools*`,
+* **Century Tech**: [Adaptive learning platform](https://www.century.tech)`,
         content: `## Introduction
 
 The debate about technology in education tends to fall into two camps. One side wants more screens, more apps, more AI. The other wants to ban phones, limit screen time, and return to traditional teaching.
@@ -329,17 +316,15 @@ And it gives children something that no algorithm can provide: the experience of
         topic: "politics",
         excerpt: "Immigration enriches societies. But too much, too fast, from too many directions can fracture the cultural fabric that holds communities together. Here's the case for managed, strategic immigration.",
         published: true,
-        sources: `* **Battle of Ideas**: [Keir Starmer on Cohesion](https://www.battleofideas.org.uk)
-* **GOV.UK**: [2025 Immigration White Paper](https://www.gov.uk)
-* **British Future**: [Population Change and Social Integration](https://britishfuture.org)
-* **Parliament.uk**: [Visa Reform and Language Requirements](https://www.parliament.uk)
-* **The Rest is Politics Podcast**: *Rory Stewart on unmanaged vs managed migration*
-* **The Spectator**: *The sociological impact of rapid population change*`,
+        sources: `* **GOV.UK**: [2025 Immigration White Paper](https://www.gov.uk/government/publications/restoring-control-over-the-immigration-system)
+* **British Future**: [Integration and social cohesion research](https://britishfuture.org)
+* **Parliament.uk**: [Visa reform and language requirements](https://www.parliament.uk)
+* **Battle of Ideas / Academy of Ideas**: [Immigration and cohesion debates](https://www.battleofideas.org.uk)`,
         content: `## Introduction
 
 Immigration is one of the great drivers of human progress. It brings new ideas, new energy, and new perspectives. It fills labour shortages, drives innovation, and enriches the cultural life of receiving countries.
 
-And yet, across the Western world, public anxiety about immigration is at record highs. In the UK, Prime Minister Keir Starmer's controversial remark in May 2025 — warning that Britain risked becoming ["an island of strangers"](https://www.battleofideas.org.uk) — touched a nerve precisely because it articulated something many people feel but few politicians dare to say.
+And yet, across the Western world, public anxiety about immigration is at record highs. In the UK, Prime Minister Keir Starmer's controversial remark in May 2025 — warning that Britain risked becoming "an island of strangers" — touched a nerve precisely because it articulated something many people feel but few politicians dare to say.
 
 The challenge is not whether immigration is good. It is. The challenge is managing it in a way that **preserves the social cohesion that makes communities function.**
 
@@ -355,7 +340,7 @@ And demographically, immigration offsets an ageing population. Without it, the r
 
 ## The Problem: Pace and Scale
 
-The issue is not immigration itself but its **pace and scale.** The UK's [Immigration White Paper of 2025](https://www.gov.uk), titled "Restoring Control over the Immigration System," acknowledged this directly. Net migration had reached record levels, and public services — housing, healthcare, schools — were under visible strain.
+The issue is not immigration itself but its **pace and scale.** The UK's [Immigration White Paper of 2025](https://www.gov.uk/government/publications/restoring-control-over-the-immigration-system), titled "Restoring Control over the Immigration System," acknowledged this directly. Net migration had reached record levels, and public services — housing, healthcare, schools — were under visible strain.
 
 When communities change rapidly, social cohesion suffers. This is not xenophobia. It is a well-documented sociological phenomenon. [British Future](https://britishfuture.org), a think tank that broadly supports immigration, has found that rapid population change in communities — particularly in economically deprived areas — creates integration challenges and erodes trust.
 
@@ -379,7 +364,7 @@ The UK's [2025 reforms introduced English language requirements](https://www.par
 
 ### 3. Link Immigration to Labour Market Needs
 
-The White Paper raised the skill threshold for work visas to degree level and increased the [Immigration Skills Surcharge](https://www.macfarlanes.com) paid by employers. The principle is sound: immigration should fill genuine gaps, not undercut domestic workers.
+The White Paper raised the skill threshold for work visas to degree level and increased the Immigration Skills Surcharge paid by employers. The principle is sound: immigration should fill genuine gaps, not undercut domestic workers.
 
 ### 4. Be Honest About Numbers
 
@@ -398,13 +383,9 @@ The goal should not be less immigration but **better immigration**: strategic, w
         topic: "politics",
         excerpt: "The NHS is beloved but broken. What if we replaced general taxation funding with an employer-paid insurance model that keeps care free at the point of use while introducing competition and quality incentives?",
         published: true,
-        sources: `* **BMA**: [Waiting List Statistics and NHS Pressure](https://www.bma.org.uk)
-* **Parliament.uk**: [10 Year Health Plan for England 2025](https://www.parliament.uk)
-* **Health Foundation**: [NHS Underfunding vs European Neighbors](https://www.health.org.uk)
-* **FullFact**: [Comparison of Social Insurance Models](https://www.fullfact.org)
-* **BMJ**: [Reform Proposals and Tax Relief Debates](https://www.bmj.com)
-* **The Telegraph**: *Editorial on Insurance-based Reform*
-* **A Cheeky Pint Podcast**: *The political toxicity of NHS reform*`,
+        sources: `* **BMA**: [NHS pressures and waiting list data](https://www.bma.org.uk)
+* **Parliament.uk**: [10 Year Health Plan for England](https://www.parliament.uk)
+* **Health Foundation**: [NHS funding comparisons](https://www.health.org.uk)`,
         content: `## Introduction
 
 The National Health Service is the closest thing Britain has to a national religion. Founded in 1948 on the principle of healthcare free at the point of use, it represents a social contract between the state and its citizens that few politicians dare to question.
@@ -443,7 +424,7 @@ Employers pay insurance premiums for their staff, replacing the current system w
 
 Patients pay a small, subsidised fee at the point of care — perhaps £10 for a GP visit, £15 for a prescription. These payments are reimbursed through a health insurance spending card linked to the employer's plan. The fee deters frivolous use without creating a barrier to genuine need.
 
-This model is not unusual. [France and Germany](https://www.fullfact.org) both use variations of social insurance with point-of-care co-payments, and both consistently outperform the NHS on quality metrics.
+France and Germany both use variations of social insurance with point-of-care co-payments, and both consistently outperform the NHS on quality metrics.
 
 **4. Competition and Quality Incentives**
 
@@ -468,8 +449,6 @@ It might — and that is something policy must guard against. The basic coverage
 ### "Employers can't afford it"
 
 Employer National Insurance already costs 15% of salary. This would replace, not add to, that contribution. Employers would pay into a health insurance fund instead of into general taxation. For many, the cost would be similar or lower.
-
-[Reform UK](https://www.bmj.com) has proposed 20% tax relief on private health insurance as a transitional step, though critics argue this would disproportionately benefit higher earners. A mandatory employer-funded model avoids this problem by ensuring universal coverage.
 
 ## Conclusion
 

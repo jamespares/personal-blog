@@ -20,7 +20,7 @@ db.exec(`
     slug TEXT UNIQUE NOT NULL,
     content TEXT NOT NULL,
     excerpt TEXT,
-    topic TEXT NOT NULL CHECK(topic IN ('china', 'education', 'politics')),
+    topic TEXT NOT NULL CHECK(topic IN ('china', 'education', 'politics', 'ai')),
     sources TEXT,
     published INTEGER DEFAULT 0,
     created_at TEXT DEFAULT (datetime('now')),

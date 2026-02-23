@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="<%= typeof metaDescription !== 'undefined' ? metaDescription : 'A personal blog about China, Education, and Politics' %>">
+        content="<%= typeof metaDescription !== 'undefined' ? metaDescription : 'A personal blog about China, Education, Politics, and AI' %>">
     <title>
         <%= typeof pageTitle !=='undefined' && pageTitle ? pageTitle + ' — ' : '' %>James Pares Blog
     </title>
@@ -30,6 +30,7 @@
                 <a href="/topic/education"
                     class="<%= currentPath === '/topic/education' ? 'active' : '' %>">Education</a>
                 <a href="/topic/politics" class="<%= currentPath === '/topic/politics' ? 'active' : '' %>">Politics</a>
+                <a href="/topic/ai" class="<%= currentPath === '/topic/ai' ? 'active' : '' %>">AI</a>
                 <form action="/search" method="GET" class="nav-search">
                     <input type="text" name="q" placeholder="Search…" aria-label="Search"
                         value="<%= typeof query !== 'undefined' ? query : '' %>">

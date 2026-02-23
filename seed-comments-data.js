@@ -124,5 +124,23 @@ module.exports = {
             author: 'Nina Vasquez',
             content: "A Cheeky Pint podcast did a whole episode on NHS reform recently and made the point that the political toxicity of this issue means no party will seriously propose changes until its literally too late. By then the system will have deteriorated to the point where radical reform becomes inevitable anyway. Depressing but probably true."
         }
+    ],
+    'the-ai-bottleneck-why-more-code-doesn-t-always-mean-more-velocity': [
+        {
+            author: 'Leo Grant',
+            content: "The coordination bottleneck is so real. I'm currently using Cursor and Claude to build features in hours that used to take days, but my senior dev is drowning in my PRs. We've started doing exactly what you suggest: detailed handovers in a shared scratchpad. It's the only way he can keep track of what the 'AI and I' have been up to."
+        },
+        {
+            author: 'Samantha J.',
+            content: "Interesting point about the CHANGELOG.md. Most people think git history is enough, but git messages are often too granular. We need the 'why' and the high-level plan. I've found that writing the changelog entry BEFORE I start the AI-assisted coding actually helps me prompt better too."
+        },
+        {
+            author: 'DevOps Dave',
+            content: "You mention 'follow-the-sun' development. I've worked in teams like that for years, and the biggest failure point is always the human handover. If AI can help automate the creation of that CHANGELOG.md by summarizing the diffs, that would be a game changer. But we're not quite there yet in terms of reliability."
+        },
+        {
+            author: 'Arjun M.',
+            content: "Just listened to the Dwarkesh episode with the Anthropic guys you mentioned. They talked about 'super-alignment' not just for AGI but for the code itself. If the code is moving faster than the humans can align on it, we're in trouble. Great to see these themes being discussed in a blog like this."
+        }
     ]
 };

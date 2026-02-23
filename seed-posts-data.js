@@ -1,13 +1,13 @@
 module.exports = [
-    {
-        title: "Belt and Road: How Is It Different from British Colonialism?",
-        topic: "china",
-        excerpt: "China's Belt and Road Initiative draws comparisons to the British Empire. But are the parallels fair — and what does China's expansion mean for the future of English as a global language?",
-        published: true,
-        sources: `* **Britannica**: [Belt and Road Initiative](https://www.britannica.com/topic/Belt-and-Road-Initiative)
+        {
+                title: "Belt and Road: How Is It Different from British Colonialism?",
+                topic: "china",
+                excerpt: "China's Belt and Road Initiative draws comparisons to the British Empire. But are the parallels fair — and what does China's expansion mean for the future of English as a global language?",
+                published: true,
+                sources: `* **Britannica**: [Belt and Road Initiative](https://www.britannica.com/topic/Belt-and-Road-Initiative)
 * **Council on Foreign Relations**: [China's Belt and Road](https://www.cfr.org/backgrounder/chinas-massive-belt-and-road-initiative)
 * **The Star Malaysia**: [BRI Investment Coverage](https://www.thestar.com.my)`,
-        content: `## Introduction
+                content: `## Introduction
 
 In 2013, President Xi Jinping launched the Belt and Road Initiative (BRI), one of the most ambitious infrastructure programmes in modern history. Over a decade later, it has drawn [comparisons to British colonialism](https://www.britannica.com/topic/Belt-and-Road-Initiative) — with critics calling it a new form of imperial expansion and supporters insisting it is fundamentally different.
 
@@ -46,17 +46,17 @@ The Belt and Road Initiative is not colonialism in the traditional sense. China 
 Meanwhile, Britain's retreat from the global stage is not just a political story. It is a cultural and linguistic one. The question is not whether China's rise will diminish English — it is whether the UK, having lost its empire, will find a new way to remain relevant in the world that empire helped shape.
 
 **What do you think? Is the BRI a new form of colonialism, or a genuine development partnership? And should Britain be worried about its declining global influence? Share your thoughts in the comments below.**`
-    },
-    {
-        title: "UK and China: The Trade Relationship Britain Can't Afford to Ignore",
-        topic: "china",
-        excerpt: "Cheaper EVs, cheaper goods, green energy cooperation — the benefits of deeper UK-China trade are real. But so are the risks. What's the right balance?",
-        published: true,
-        sources: `* **GOV.UK**: [UK-China Economic and Financial Dialogue outcomes](https://www.gov.uk/government/news/uk-china-efd)
+        },
+        {
+                title: "UK and China: The Trade Relationship Britain Can't Afford to Ignore",
+                topic: "china",
+                excerpt: "Cheaper EVs, cheaper goods, green energy cooperation — the benefits of deeper UK-China trade are real. But so are the risks. What's the right balance?",
+                published: true,
+                sources: `* **GOV.UK**: [UK-China Economic and Financial Dialogue outcomes](https://www.gov.uk/government/news/uk-china-efd)
 * **The Guardian**: [BYD UK sales and Chinese EV market share](https://www.theguardian.com/business)
 * **British Chambers of Commerce**: [UK-China trade statistics](https://www.britishchambers.org.uk)
 * **European Business Magazine**: [Chinese EV impact on European manufacturing](https://www.europeanbusinessmagazine.com)`,
-        content: `## Introduction
+                content: `## Introduction
 
 In early 2025, the UK and China held their first [Economic and Financial Dialogue](https://www.gov.uk/government/news/uk-china-efd) in years, signalling a cautious thaw in relations. The talks focused on financial services, green energy, and trade barriers — and were valued at an estimated £600 million over five years for the UK economy.
 
@@ -112,16 +112,16 @@ The answer is not to disengage from China — that ship has sailed, and the econ
 The UK cannot afford to ignore China. It is the world's largest manufacturer, its biggest exporter, and an essential partner in the fight against climate change. But engagement must be clear-eyed. Cheaper EVs and consumer goods are welcome. Supply chain dependency and strategic vulnerability are not.
 
 **Do you think the UK should embrace cheaper Chinese goods, or protect its domestic industries? Where should the line be drawn? Share your thoughts below.**`
-    },
-    {
-        title: "Is Personalised Learning Always a Good Thing?",
-        topic: "education",
-        excerpt: "Personalised learning promises tailored education for every student. But if everyone is learning different things, what happens to the shared classroom experience — and to social cohesion?",
-        published: true,
-        sources: `* **Edutopia**: [Evidence-based learning strategies](https://www.edutopia.org)
+        },
+        {
+                title: "Is Personalised Learning Always a Good Thing?",
+                topic: "education",
+                excerpt: "Personalised learning promises tailored education for every student. But if everyone is learning different things, what happens to the shared classroom experience — and to social cohesion?",
+                published: true,
+                sources: `* **Edutopia**: [Evidence-based learning strategies](https://www.edutopia.org)
 * **University of Edinburgh**: [Research on learning environments](https://www.ed.ac.uk)
 * **NextGen Learning Challenges**: [Collaborative models in K-12](https://nextgenlearning.org)`,
-        content: `## Introduction
+                content: `## Introduction
 
 Personalised learning is one of the most celebrated ideas in modern education. The logic is intuitive: every student learns differently, so why force them all through the same material at the same pace? With advances in AI and adaptive learning platforms, we now have the tools to tailor education to each individual learner.
 
@@ -170,16 +170,16 @@ But **personalisation should complement shared learning, not replace it.** The c
 The best education systems will find a balance: personalised practice at home, shared learning and human connection in the classroom. The worst will hand every child a tablet and call it progress.
 
 **Is your child's school getting the balance right? Do you think personalised learning risks fragmenting the classroom? Share your experience in the comments.**`
-    },
-    {
-        title: "Divide and Multiply: How Capitalism Fragments Us to Sell Us More",
-        topic: "politics",
-        excerpt: "Capitalism thrives when individuals consume more. But does it achieve this by weakening the social bonds that would otherwise make us content with less?",
-        published: true,
-        sources: `* **ONS**: [People living alone in the UK](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/families/bulletins/familiesandhouseholds/2023)
+        },
+        {
+                title: "Divide and Multiply: How Capitalism Fragments Us to Sell Us More",
+                topic: "politics",
+                excerpt: "Capitalism thrives when individuals consume more. But does it achieve this by weakening the social bonds that would otherwise make us content with less?",
+                published: true,
+                sources: `* **ONS**: [People living alone in the UK](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/families/bulletins/familiesandhouseholds/2023)
 * **Brookings Institution**: [Consumer culture and identity](https://www.brookings.edu)
 * **NIH**: [Competitive behaviour in capitalistic structures](https://www.nih.gov)`,
-        content: `## Introduction
+                content: `## Introduction
 
 Here is a thought experiment. Imagine two neighbours. One lives alone, eats alone, entertains alone. The other is embedded in a close-knit community — sharing tools, meals, childcare, and social life with the people around them.
 
@@ -228,16 +228,16 @@ This is not an argument against capitalism itself. It is an argument for **being
 The question is not whether capitalism divides. It is whether we will let it.
 
 **Do you think stronger communities would mean less consumer spending — or just different spending? Is the sharing economy a real alternative, or a fad? I'd love to hear your thoughts in the comments.**`
-    },
-    {
-        title: "A New Model for Learning: Pen and Paper In Class, AI at Home",
-        topic: "education",
-        excerpt: "What if we flipped the script on technology in schools? In-class work should build social skills with pen and paper. Homework should be AI-powered and personalised. Here's how.",
-        published: true,
-        sources: `* **University of Edinburgh**: [Research on handwriting and cognition](https://www.ed.ac.uk)
+        },
+        {
+                title: "A New Model for Learning: Pen and Paper In Class, AI at Home",
+                topic: "education",
+                excerpt: "What if we flipped the script on technology in schools? In-class work should build social skills with pen and paper. Homework should be AI-powered and personalised. Here's how.",
+                published: true,
+                sources: `* **University of Edinburgh**: [Research on handwriting and cognition](https://www.ed.ac.uk)
 * **Nuwa Pen**: [AI Smart Pen Technology](https://nuwapen.com)
 * **Century Tech**: [Adaptive learning platform](https://www.century.tech)`,
-        content: `## Introduction
+                content: `## Introduction
 
 The debate about technology in education tends to fall into two camps. One side wants more screens, more apps, more AI. The other wants to ban phones, limit screen time, and return to traditional teaching.
 
@@ -310,17 +310,17 @@ This model gives students the best of both worlds: the warmth of human teaching 
 And it gives children something that no algorithm can provide: the experience of learning *together*.
 
 **Would this model work in your school? Is there a better way to balance technology and traditional teaching? Let me know in the comments.**`
-    },
-    {
-        title: "Immigration Is Great — But It Needs Boundaries",
-        topic: "politics",
-        excerpt: "Immigration enriches societies. But too much, too fast, from too many directions can fracture the cultural fabric that holds communities together. Here's the case for managed, strategic immigration.",
-        published: true,
-        sources: `* **GOV.UK**: [2025 Immigration White Paper](https://www.gov.uk/government/publications/restoring-control-over-the-immigration-system)
+        },
+        {
+                title: "Immigration Is Great — But It Needs Boundaries",
+                topic: "politics",
+                excerpt: "Immigration enriches societies. But too much, too fast, from too many directions can fracture the cultural fabric that holds communities together. Here's the case for managed, strategic immigration.",
+                published: true,
+                sources: `* **GOV.UK**: [2025 Immigration White Paper](https://www.gov.uk/government/publications/restoring-control-over-the-immigration-system)
 * **British Future**: [Integration and social cohesion research](https://britishfuture.org)
 * **Parliament.uk**: [Visa reform and language requirements](https://www.parliament.uk)
 * **Battle of Ideas / Academy of Ideas**: [Immigration and cohesion debates](https://www.battleofideas.org.uk)`,
-        content: `## Introduction
+                content: `## Introduction
 
 Immigration is one of the great drivers of human progress. It brings new ideas, new energy, and new perspectives. It fills labour shortages, drives innovation, and enriches the cultural life of receiving countries.
 
@@ -377,16 +377,16 @@ Immigration is one of Britain's greatest strengths. But strength requires struct
 The goal should not be less immigration but **better immigration**: strategic, well-supported, and paced to allow communities to adapt and integrate. That is not a hostile message. It is a responsible one.
 
 **Do you think the UK has the balance right on immigration? What would better integration look like in your community? Share your thoughts below.**`
-    },
-    {
-        title: "The NHS Needs a New Model: Time for Insurance-Based Care",
-        topic: "politics",
-        excerpt: "The NHS is beloved but broken. What if we replaced general taxation funding with an employer-paid insurance model that keeps care free at the point of use while introducing competition and quality incentives?",
-        published: true,
-        sources: `* **BMA**: [NHS pressures and waiting list data](https://www.bma.org.uk)
+        },
+        {
+                title: "The NHS Needs a New Model: Time for Insurance-Based Care",
+                topic: "politics",
+                excerpt: "The NHS is beloved but broken. What if we replaced general taxation funding with an employer-paid insurance model that keeps care free at the point of use while introducing competition and quality incentives?",
+                published: true,
+                sources: `* **BMA**: [NHS pressures and waiting list data](https://www.bma.org.uk)
 * **Parliament.uk**: [10 Year Health Plan for England](https://www.parliament.uk)
 * **Health Foundation**: [NHS funding comparisons](https://www.health.org.uk)`,
-        content: `## Introduction
+                content: `## Introduction
 
 The National Health Service is the closest thing Britain has to a national religion. Founded in 1948 on the principle of healthcare free at the point of use, it represents a social contract between the state and its citizens that few politicians dare to question.
 
@@ -457,5 +457,62 @@ The NHS needs more than incremental reform. It needs a new funding and incentive
 An insurance-based model, funded by employers, with outcome-based incentives and managed competition, offers exactly this. It is not American-style privatisation. It is European-style modernisation. And it is a conversation Britain can no longer afford to avoid.
 
 **What do you think? Would an insurance-based model improve the NHS, or would it undermine its founding principles? Should patients pay a small fee at the point of care? I'd love to hear your views in the comments.**`
-    }
+        },
+        {
+                title: "The AI Bottleneck: Why More Code Doesn't Always Mean More Velocity",
+                topic: "ai",
+                excerpt: "As AI tools allow individual developers to generate unprecedented amounts of code, the real challenge is shifting from production to coordination. Is asynchronous, multi-timezone development with rigorous changelogs the only way to keep up?",
+                published: true,
+                sources: `* **Index.dev**: [AI coding tools and developer productivity](https://index.dev)
+* **Anthropic**: [The "AI Paradox" in software development](https://anthropic.com)
+* **Microsoft**: [The future of agentic AI workflows](https://microsoft.com)
+* **Dwarkesh Podcast**: [AI agents and the future of software](https://www.dwarkeshpatel.com)`,
+                content: `## Introduction
+
+The speed of AI development is fundamentally rewriting the rules of software engineering. In 2024, the "10x developer" was an aspirational archetype; by 2026, it is increasingly the baseline. Tools that once merely suggested code are now evolving into "agentic" systems that can plan, write, test, and deploy entire features with minimal human intervention.
+
+But as the cost of *writing* code drops toward zero, a new bottleneck is emerging: **coordination**. 
+
+The dilemma is simple: if an individual developer can now produce the output that previously required a team of five, how do we prevent the system from collapsing under its own weight? When everyone is moving at "AI speed," the friction of human collaboration becomes the primary limit on velocity. To solve this, we may need to reconsider not just how we code, but how we work together.
+
+## The 10x Developer Paradox
+
+The promise of AI is productivity. And [Index.dev](https://index.dev) has reported productivity gains of up to 55% for certain development tasks. However, this speed comes with a hidden cost. [Anthropic](https://anthropic.com) has identified what they call the "AI Paradox": while AI makes writing code faster, it can actually increase the time required for review and validation.
+
+AI-generated code is often "hallucinatory" or subtly flawed. A developer who generates 1,000 lines of code in a morning creates a massive cognitive burden for their teammates who must review it. The result is a productivity plateau: the more we generate, the slower we integrate.
+
+As we move toward [agentic AI workflows](https://microsoft.com), the role of the developer is shifting from writing every line to orchestrating AI agents. In this model, the challenge isn't the code itself — it's maintaining a high-level system understanding while the codebase expands at a rate no human can fully track.
+
+## The Distributed Advantage: 24/7 Development
+
+One of the most effective ways to manage this explosion of code is to lean into asynchronous, distributed development. 
+
+The traditional model of a team working in the same office (or same time zone) relies on high-bandwidth, synchronous communication — meetings, taps on the shoulder, Slack threads. At AI speed, this becomes a distraction. 
+
+Instead, the "follow-the-sun" model — where developers work across different time zones — offers a solution. When one developer in London goes to sleep, they hand off a "live" codebase to a developer in San Francisco or Sydney. This allows for almost 24/7 development and rapid progress. But it only works if the handover is crystalline.
+
+## The Rigour of the CHANGELOG.md
+
+In a high-velocity, asynchronous environment, "git log" is no longer enough. We need something more human: a rigorous, detailed **CHANGELOG.md**.
+
+The CHANGELOG.md provides a clear summary of what has been done, what is outstanding, and the *rationale* behind key architectural decisions. It serves as the "shared brain" of the team. As [Dwarkesh Patel](https://www.dwarkeshpatel.com) has explored in his discussions on AI agents, the quality of documentation is the primary factor in how effectively AI (and other developers) can build upon existing work.
+
+A good async handover should include:
+1. **What was finished:** Clear, checkbox-style confirmation of completed tasks.
+2. **Context:** Why certain trade-offs were made (especially if the AI suggested them).
+3. **Known issues:** Any "temporary" hacks or technical debt introduced to maintain speed.
+4. **Next steps:** A clear bridge for the next developer waking up across the world.
+
+This discipline prevents the "broken window" effect, where rapid AI-driven development leads to a codebase that looks functional but is internally chaotic.
+
+## Conclusion
+
+The AI revolution is not just about tools; it's about systems. We are entering an era where more code does not automatically mean more velocity. The bottleneck has shifted from production to coordination.
+
+The teams that thrive will be those that embrace extreme documentation and asynchronous workflows. By working across time zones and maintaining a rigorous CHANGELOG.md, developers can harness the 24/7 power of AI speed without losing their way in a sea of generated code.
+
+AI allows us to write faster than ever before. But to build better, we must first learn to communicate better.
+
+**How is your team handling the surge in AI-generated code? Do you use asynchronous handovers, or are you feeling the coordination bottleneck? Share your thoughts in the comments below.**`
+        }
 ];

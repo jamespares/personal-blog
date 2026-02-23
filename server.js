@@ -57,6 +57,16 @@ app.use((req, res, next) => {
     res.locals.isAdmin = !!req.session.isAdmin;
     res.locals.currentPath = req.path;
     res.locals.baseUrl = process.env.BASE_URL || `http://localhost:${PORT}`;
+    res.locals.formatTopic = (topic) => {
+        if (!topic) return '';
+        const labels = {
+            china: 'China',
+            education: 'Education',
+            politics: 'Politics',
+            ai: 'AI'
+        };
+        return labels[topic.toLowerCase()] || (topic.charAt(0).toUpperCase() + topic.slice(1));
+    };
     next();
 });
 

@@ -1,3 +1,4 @@
 - Improve styling and add some embedded YT videos and images to the blog posts.
 - Ensure sources are accurate
 - Change title from "Thoughts on... and AI" 
+- Add AI as a topic

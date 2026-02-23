@@ -9,10 +9,11 @@
             <p>You'll receive emails about <strong>all topics</strong>.</p>
             <% } else { %>
                 <p>You'll receive emails about: <strong>
-                        <%= topics.split(',').join(', ') %></strong>.</p>
-        <% } %>
-        <p>Every email includes a one-click unsubscribe link.</p>
-        <a href="/" class="btn">← Back to blog</a>
+                        <%= topics.split(',').map(t=> formatTopic(t.trim())).join(', ') %>
+                    </strong>.</p>
+                <% } %>
+                    <p>Every email includes a one-click unsubscribe link.</p>
+                    <a href="/" class="btn">← Back to blog</a>
     </section>
 
-<%- include('partials/footer') %>
+    <%- include('partials/footer') %>

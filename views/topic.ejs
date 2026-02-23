@@ -1,10 +1,10 @@
-<%- include('partials/header', { pageTitle: topic.charAt(0).toUpperCase() + topic.slice(1) }) %>
+<%- include('partials/header', { pageTitle: formatTopic(topic) }) %>
 
     <section class="page-header">
         <h1>
-            <%= topic.charAt(0).toUpperCase() + topic.slice(1) %>
+            <%= formatTopic(topic) %>
         </h1>
-        <p class="page-sub">All posts about <%= topic %>
+        <p class="page-sub">All posts about <%= formatTopic(topic) %>
         </p>
     </section>
 

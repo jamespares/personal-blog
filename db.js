@@ -21,6 +21,7 @@ db.exec(`
     content TEXT NOT NULL,
     excerpt TEXT,
     topic TEXT NOT NULL CHECK(topic IN ('china', 'education', 'politics')),
+    sources TEXT,
     published INTEGER DEFAULT 0,
     created_at TEXT DEFAULT (datetime('now')),
     updated_at TEXT DEFAULT (datetime('now'))
@@ -42,6 +43,13 @@ db.exec(`
     created_at TEXT DEFAULT (datetime('now'))
   );
 `);
+
+// Simple migration: add sources column if it doesn't exist
+try {
+    db.exec(`ALTER TABLE posts ADD COLUMN sources TEXT;`);
+} catch (e) {
+    // Column likely already exists
+}
 
 // Helper: generate a URL-friendly slug
 function generateSlug(title) {
@@ -89,19 +97,19 @@ const posts = {
             'SELECT * FROM posts WHERE published = 1 AND (title LIKE ? OR content LIKE ?) ORDER BY created_at DESC'
         ).all(q, q);
     },
-    create({ title, content, excerpt, topic, published }) {
+    create({ title, content, excerpt, topic, sources, published }) {
         const slug = uniqueSlug(title);
         const stmt = db.prepare(
-            'INSERT INTO posts (title, slug, content, excerpt, topic, published) VALUES (?, ?, ?, ?, ?, ?)'
+            'INSERT INTO posts (title, slug, content, excerpt, topic, sources, published) VALUES (?, ?, ?, ?, ?, ?, ?)'
         );
-        const result = stmt.run(title, slug, content, excerpt || '', topic, published ? 1 : 0);
+        const result = stmt.run(title, slug, content, excerpt || '', topic, sources || '', published ? 1 : 0);
         return { id: result.lastInsertRowid, slug };
     },
-    update(id, { title, content, excerpt, topic, published }) {
+    update(id, { title, content, excerpt, topic, sources, published }) {
         const slug = uniqueSlug(title, id);
         db.prepare(
-            "UPDATE posts SET title=?, slug=?, content=?, excerpt=?, topic=?, published=?, updated_at=datetime('now') WHERE id=?"
-        ).run(title, slug, content, excerpt || '', topic, published ? 1 : 0, id);
+            "UPDATE posts SET title=?, slug=?, content=?, excerpt=?, topic=?, sources=?, published=?, updated_at=datetime('now') WHERE id=?"
+        ).run(title, slug, content, excerpt || '', topic, sources || '', published ? 1 : 0, id);
         return slug;
     },
     delete(id) {

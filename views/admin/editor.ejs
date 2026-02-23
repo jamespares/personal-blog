@@ -48,6 +48,12 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="sources">Sources <span class="label-hint">(Markdown supported)</span></label>
+                        <textarea id="sources" name="sources" rows="3"
+                            placeholder="List your sources here…"><%= post ? post.sources : '' %></textarea>
+                    </div>
+
+                    <div class="form-group">
                         <label for="content">Content <span class="label-hint">(Markdown supported)</span></label>
                         <textarea id="content" name="content" rows="16" required
                             placeholder="Write your post… (Markdown supported)"><%= post ? post.content : '' %></textarea>

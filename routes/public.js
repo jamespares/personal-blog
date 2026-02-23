@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { marked } = require('marked');
 const { posts, comments, subscribers } = require('../db');
+const { sendWelcomeEmail } = require('../email');
 
 // Home page
 router.get('/', (req, res) => {
@@ -65,6 +66,12 @@ router.post('/subscribe', (req, res) => {
     }
     const result = subscribers.add(email.trim().toLowerCase());
     if (result.success) {
+        // Find token for welcome email
+        const allSubs = subscribers.getAll();
+        const newSub = allSubs.find(s => s.email === email.trim().toLowerCase());
+        if (newSub) {
+            sendWelcomeEmail(newSub.email, newSub.unsubscribe_token).catch(err => console.error('Welcome email error:', err));
+        }
         res.render('subscribe-success', { email });
     } else {
         res.redirect('/?subscribe=exists');

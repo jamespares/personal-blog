@@ -49,7 +49,7 @@ router.get('/new', requireAdmin, (req, res) => {
 
 // Create post
 router.post('/new', requireAdmin, async (req, res) => {
-    const { title, content, excerpt, topic, published } = req.body;
+    const { title, content, excerpt, topic, sources, published } = req.body;
     if (!title || !content || !topic) {
         return res.render('admin/editor', {
             post: req.body,
@@ -61,6 +61,7 @@ router.post('/new', requireAdmin, async (req, res) => {
         content,
         excerpt: excerpt ? excerpt.trim() : '',
         topic,
+        sources: sources ? sources.trim() : '',
         published: published === 'on'
     });
 
@@ -83,7 +84,7 @@ router.get('/edit/:id', requireAdmin, (req, res) => {
 // Update post
 router.post('/edit/:id', requireAdmin, async (req, res) => {
     const id = parseInt(req.params.id);
-    const { title, content, excerpt, topic, published } = req.body;
+    const { title, content, excerpt, topic, sources, published } = req.body;
     if (!title || !content || !topic) {
         return res.render('admin/editor', {
             post: { ...req.body, id },
@@ -99,6 +100,7 @@ router.post('/edit/:id', requireAdmin, async (req, res) => {
         content,
         excerpt: excerpt ? excerpt.trim() : '',
         topic,
+        sources: sources ? sources.trim() : '',
         published: published === 'on'
     });
 

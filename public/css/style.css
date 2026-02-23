@@ -479,6 +479,35 @@ main.container {
   color: var(--color-text-secondary);
 }
 
+/* Post Sources */
+.post-sources {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.post-sources h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.sources-content {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.sources-content ul {
+  margin-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+.sources-content li {
+  margin-bottom: 0.25rem;
+}
+
 /* ── Comments ─────────────────────────────────── */
 .comments-section {
   margin-top: 3rem;

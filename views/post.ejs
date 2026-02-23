@@ -20,15 +20,24 @@
             <%- marked.parse(post.content) %>
         </div>
 
-        <div class="post-share">
-            <span>Share:</span>
-            <a href="https://twitter.com/intent/tweet?url=<%= baseUrl %>/post/<%= post.slug %>&text=<%= encodeURIComponent(post.title) %>"
-                target="_blank" rel="noopener">Twitter</a>
-            <a href="https://www.linkedin.com/sharing/share-offsite/?url=<%= baseUrl %>/post/<%= post.slug %>"
-                target="_blank" rel="noopener">LinkedIn</a>
-            <a href="mailto:?subject=<%= encodeURIComponent(post.title) %>&body=<%= baseUrl %>/post/<%= post.slug %>"
-                rel="noopener">Email</a>
-        </div>
+        <% if (post.sources) { %>
+            <div class="post-sources">
+                <h3>Sources</h3>
+                <div class="sources-content">
+                    <%- marked.parse(post.sources) %>
+                </div>
+            </div>
+            <% } %>
+
+                <div class="post-share">
+                    <span>Share:</span>
+                    <a href="https://twitter.com/intent/tweet?url=<%= baseUrl %>/post/<%= post.slug %>&text=<%= encodeURIComponent(post.title) %>"
+                        target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=<%= baseUrl %>/post/<%= post.slug %>"
+                        target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="mailto:?subject=<%= encodeURIComponent(post.title) %>&body=<%= baseUrl %>/post/<%= post.slug %>"
+                        rel="noopener">Email</a>
+                </div>
     </article>
 
     <section class="comments-section" id="comments">

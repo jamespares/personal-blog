@@ -4,6 +4,12 @@ module.exports = [
         topic: "china",
         excerpt: "China's Belt and Road Initiative draws comparisons to the British Empire. But are the parallels fair — and what does China's expansion mean for the future of English as a global language?",
         published: true,
+        sources: `* **Britannica**: [Belt and Road Initiative](https://www.britannica.com/topic/Belt-and-Road-Initiative)
+* **Centre for Joint and International Defence Studies (CJIDS)**: [BRI Cooperation Web](https://www.cjids.in)
+* **ResearchGate**: [Win-Win Cooperation Analysis](https://www.researchgate.net)
+* **The Star Malaysia**: [BRI Investment in SE Asia](https://www.thestar.com.my)
+* **The Dwarkesh Podcast**: *Episodes on Economic Influence vs Territorial Control*
+* **Breakneck Newsletter**: *Dan Wang on BRI project performance*`,
         content: `## Introduction
 
 In 2013, President Xi Jinping launched the Belt and Road Initiative (BRI), one of the most ambitious infrastructure programmes in modern history. Over a decade later, it has drawn [comparisons to British colonialism](https://www.britannica.com/topic/Belt-and-Road-Initiative) — with critics calling it a new form of imperial expansion and supporters insisting it is fundamentally different.
@@ -49,6 +55,13 @@ Meanwhile, Britain's retreat from the global stage is not just a political story
         topic: "china",
         excerpt: "Cheaper EVs, cheaper goods, green energy cooperation — the benefits of deeper UK-China trade are real. But so are the risks. What's the right balance?",
         published: true,
+        sources: `* **GOV.UK**: [UK-China Economic and Financial Dialogue](https://www.gov.uk)
+* **The Guardian**: [Chinese EV Market Penetration in the UK](https://www.theguardian.com)
+* **Morningstar**: [Trade Diversion and UK Inflation](https://www.morningstar.com)
+* **British Chambers of Commerce**: [Trade Deficit Statistics](https://www.britishchambers.org.uk)
+* **European Business Magazine**: [Impact on European Manufacturing](https://www.europeanbusinessmagazine.com)
+* **Financial Times**: *The Trade Deficit trajectory*
+* **The Rest is Politics Podcast**: *Alastair Campbell and Rory Stewart on economic pragmatism vs security*`,
         content: `## Introduction
 
 In early 2025, the UK and China held their first [Economic and Financial Dialogue](https://www.gov.uk) in years, signalling a cautious thaw in relations. The talks focused on financial services, green energy, and trade barriers — and were valued at an estimated £600 million over five years for the UK economy.
@@ -111,6 +124,11 @@ The UK cannot afford to ignore China. It is the world's largest manufacturer, it
         topic: "education",
         excerpt: "Personalised learning promises tailored education for every student. But if everyone is learning different things, what happens to the shared classroom experience — and to social cohesion?",
         published: true,
+        sources: `* **Edutopia**: [Impact of Personalised Learning on Attainment](https://www.edutopia.org)
+* **University of Edinburgh**: [Cognitive Pathways and Engagement in E-Learning](https://www.ed.ac.uk)
+* **Nancy E. Bailey**: [The Risks of Digital Bubbles in Education](https://nancyebailey.com)
+* **NextGen Learning Project**: [Collaborative Personalised Models](https://nextgenlearning.org)
+* **Daisy Christodoulou**: *The importance of a shared knowledge base*`,
         content: `## Introduction
 
 Personalised learning is one of the most celebrated ideas in modern education. The logic is intuitive: every student learns differently, so why force them all through the same material at the same pace? With advances in AI and adaptive learning platforms, we now have the tools to tailor education to each individual learner.
@@ -166,6 +184,13 @@ The best education systems will find a balance: personalised practice at home, s
         topic: "politics",
         excerpt: "Capitalism thrives when individuals consume more. But does it achieve this by weakening the social bonds that would otherwise make us content with less?",
         published: true,
+        sources: `* **ONS**: [Single-Person Households in the UK](https://www.ons.gov.uk)
+* **Brookings Institution**: [Consumer Culture and Identity](https://www.brookings.edu)
+* **NIH**: [Competitive vs Prosocial Behavior in Capitalistic Structures](https://www.nih.gov)
+* **McKinsey**: [Intentional Spending Trends](https://www.mckinsey.com)
+* **Greenbook**: [Gen Z Consumer Values](https://www.greenbook.org)
+* **The Economist**: *The changing flavour of Gen Z consumerism*
+* **The Joe Rogan Experience**: *Discussions on monetisation of isolation*`,
         content: `## Introduction
 
 Here is a thought experiment. Imagine two neighbours. One lives alone, eats alone, entertains alone. The other is embedded in a close-knit community — sharing tools, meals, childcare, and social life with the people around them.
@@ -221,6 +246,10 @@ The question is not whether capitalism divides. It is whether we will let it.
         topic: "education",
         excerpt: "What if we flipped the script on technology in schools? In-class work should build social skills with pen and paper. Homework should be AI-powered and personalised. Here's how.",
         published: true,
+        sources: `* **University of Edinburgh**: [Cognitive Benefits of Handwriting](https://www.ed.ac.uk)
+* **Nuwa Pen**: [AI Smart Pen Technology](https://nuwapen.com)
+* **Century Tech**: [Adaptive Learning Algorithms](https://www.century.tech)
+* **The Guardian**: *The debate over screens in schools*`,
         content: `## Introduction
 
 The debate about technology in education tends to fall into two camps. One side wants more screens, more apps, more AI. The other wants to ban phones, limit screen time, and return to traditional teaching.
@@ -300,6 +329,12 @@ And it gives children something that no algorithm can provide: the experience of
         topic: "politics",
         excerpt: "Immigration enriches societies. But too much, too fast, from too many directions can fracture the cultural fabric that holds communities together. Here's the case for managed, strategic immigration.",
         published: true,
+        sources: `* **Battle of Ideas**: [Keir Starmer on Cohesion](https://www.battleofideas.org.uk)
+* **GOV.UK**: [2025 Immigration White Paper](https://www.gov.uk)
+* **British Future**: [Population Change and Social Integration](https://britishfuture.org)
+* **Parliament.uk**: [Visa Reform and Language Requirements](https://www.parliament.uk)
+* **The Rest is Politics Podcast**: *Rory Stewart on unmanaged vs managed migration*
+* **The Spectator**: *The sociological impact of rapid population change*`,
         content: `## Introduction
 
 Immigration is one of the great drivers of human progress. It brings new ideas, new energy, and new perspectives. It fills labour shortages, drives innovation, and enriches the cultural life of receiving countries.
@@ -363,6 +398,13 @@ The goal should not be less immigration but **better immigration**: strategic, w
         topic: "politics",
         excerpt: "The NHS is beloved but broken. What if we replaced general taxation funding with an employer-paid insurance model that keeps care free at the point of use while introducing competition and quality incentives?",
         published: true,
+        sources: `* **BMA**: [Waiting List Statistics and NHS Pressure](https://www.bma.org.uk)
+* **Parliament.uk**: [10 Year Health Plan for England 2025](https://www.parliament.uk)
+* **Health Foundation**: [NHS Underfunding vs European Neighbors](https://www.health.org.uk)
+* **FullFact**: [Comparison of Social Insurance Models](https://www.fullfact.org)
+* **BMJ**: [Reform Proposals and Tax Relief Debates](https://www.bmj.com)
+* **The Telegraph**: *Editorial on Insurance-based Reform*
+* **A Cheeky Pint Podcast**: *The political toxicity of NHS reform*`,
         content: `## Introduction
 
 The National Health Service is the closest thing Britain has to a national religion. Founded in 1948 on the principle of healthcare free at the point of use, it represents a social contract between the state and its citizens that few politicians dare to question.

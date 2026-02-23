@@ -76,7 +76,7 @@ router.post('/subscribe', (req, res) => {
 });
 
 // Step 2: Confirm subscription with topic preferences
-router.post('/subscribe/confirm', (req, res) => {
+router.post('/subscribe/confirm', async (req, res) => {
     const { email, topics } = req.body;
     if (!email || !email.includes('@')) {
         return res.redirect('/?subscribe=invalid');
@@ -89,8 +89,11 @@ router.post('/subscribe/confirm', (req, res) => {
     }
     const result = subscribers.add(email.trim().toLowerCase(), topicStr);
     if (result.success) {
-        sendWelcomeEmail(email.trim().toLowerCase(), result.token, topicStr)
-            .catch(err => console.error('Welcome email error:', err));
+        try {
+            await sendWelcomeEmail(email.trim().toLowerCase(), result.token, topicStr);
+        } catch (err) {
+            console.error('Welcome email error:', err);
+        }
         res.render('subscribe-success', { email, topics: topicStr });
     } else {
         res.redirect('/?subscribe=exists');

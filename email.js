@@ -32,7 +32,7 @@ async function notifySubscribers(post) {
     for (const sub of matchedSubscribers) {
         try {
             await transport.sendMail({
-                from: process.env.FROM_EMAIL,
+                from: `"James Pares" <${process.env.FROM_EMAIL || process.env.SMTP_USER}>`,
                 to: sub.email,
                 subject: `New Post: ${post.title}`,
                 html: `
@@ -66,7 +66,7 @@ async function sendWelcomeEmail(email, unsubscribeToken, topics = 'all') {
 
     try {
         await transport.sendMail({
-            from: process.env.FROM_EMAIL,
+            from: `"James Pares" <${process.env.FROM_EMAIL || process.env.SMTP_USER}>`,
             to: email,
             subject: 'Congratulations, you signed up.',
             html: `

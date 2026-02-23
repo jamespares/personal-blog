@@ -229,6 +229,7 @@ main.container {
   letter-spacing: -0.03em;
   line-height: 1.2;
   margin-bottom: 0.5rem;
+  color: var(--color-accent-red);
 }
 
 .hero-sub {
@@ -983,6 +984,7 @@ main.container {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
+  color: var(--color-accent-red);
 }
 
 .message-page p {

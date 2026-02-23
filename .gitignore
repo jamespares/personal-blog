@@ -4,3 +4,4 @@ database.db
 *.db-journal
 *.db-shm
 *.db-wal
+seed-posts.js

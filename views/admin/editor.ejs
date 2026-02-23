@@ -24,12 +24,13 @@
                             <label for="topic">Topic</label>
                             <select id="topic" name="topic" required>
                                 <option value="">Select topic…</option>
+                                <option value="education" <%=post && post.topic==='education' ? 'selected' : '' %>>
+                                    Education</option>
+                                <option value="ai" <%=post && post.topic==='ai' ? 'selected' : '' %>>AI</option>
                                 <option value="china" <%=post && post.topic==='china' ? 'selected' : '' %>>China
                                 </option>
-                                <option value="education" <%=post && post.topic==='education' ? 'selected' : '' %>
-                                    >Education</option>
-                                <option value="politics" <%=post && post.topic==='politics' ? 'selected' : '' %>
-                                    >Politics</option>
+                                <option value="politics" <%=post && post.topic==='politics' ? 'selected' : '' %>>
+                                    Politics</option>
                             </select>
                         </div>
                         <div class="form-group form-check">

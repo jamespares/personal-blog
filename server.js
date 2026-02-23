@@ -2,9 +2,9 @@ require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
 const path = require('path');
-const { posts } = require('./db');
+const { posts, comments } = require('./db');
 
-// Auto-seed posts on first run if database is empty
+// Auto-seed posts and comments on first run if database is empty
 const existingPosts = posts.getRecent(1);
 if (existingPosts.length === 0) {
     try {
@@ -13,6 +13,24 @@ if (existingPosts.length === 0) {
             posts.create(post);
         }
         console.log('Seeded ' + seedPosts.length + ' blog posts.');
+        // Seed comments
+        try {
+            const seedComments = require('./seed-comments-data');
+            const allPosts = posts.getAll();
+            let commentCount = 0;
+            for (const post of allPosts) {
+                const postComments = seedComments[post.slug];
+                if (postComments) {
+                    for (const c of postComments) {
+                        comments.create({ post_id: post.id, author: c.author, content: c.content });
+                        commentCount++;
+                    }
+                }
+            }
+            console.log('Seeded ' + commentCount + ' comments.');
+        } catch (ce) {
+            console.log('Comment seeding skipped:', ce.message);
+        }
     } catch (e) {
         console.log('No seed data found or seeding failed:', e.message);
     }

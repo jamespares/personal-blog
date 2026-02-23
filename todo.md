@@ -1,0 +1,2 @@
+- Please be sure to find relevant sources to include to situate the arguments in discussions happening todayRefer to articles from reliable sources like the FT, Economist, The Times, The Telegraph - not just the Guardian which is not a serious paper and extremely left-wing. Also refer to unconventional sources like podcasts - the Rest is Politics, Joe Rogan, A Cheeky Pint, Dwarkesh Podcast. . Dragonomics. Oxford China Policy Lab. Dan Wang's Breakneck. 
+- Improve styling and add some embedded YT videos and images to the blog posts.

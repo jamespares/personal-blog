@@ -1,0 +1,12 @@
+<%- include('partials/header', { pageTitle: 'Subscribed!' }) %>
+
+    <section class="message-page">
+        <h1>You're subscribed! ✉️</h1>
+        <p>We'll send new posts to <strong>
+                <%= email %>
+            </strong>.</p>
+        <p>Every email includes a one-click unsubscribe link.</p>
+        <a href="/" class="btn">← Back to blog</a>
+    </section>
+
+    <%- include('partials/footer') %>

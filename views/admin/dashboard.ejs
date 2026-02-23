@@ -1,0 +1,61 @@
+<%- include('../partials/header', { pageTitle: 'Admin Dashboard' }) %>
+
+    <section class="admin-dashboard">
+        <div class="admin-header">
+            <h1>Posts</h1>
+            <div class="admin-actions">
+                <a href="/admin/new" class="btn">+ New Post</a>
+                <form action="/admin/logout" method="POST" style="display:inline">
+                    <button type="submit" class="btn btn-ghost">Log Out</button>
+                </form>
+            </div>
+        </div>
+
+        <% if (posts.length===0) { %>
+            <div class="empty-state">
+                <p>No posts yet. Create your first one!</p>
+            </div>
+            <% } else { %>
+                <div class="admin-table-wrapper">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Topic</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% posts.forEach(function(post) { %>
+                                <tr>
+                                    <td><a href="/post/<%= post.slug %>">
+                                            <%= post.title %>
+                                        </a></td>
+                                    <td><span class="post-topic">
+                                            <%= post.topic %>
+                                        </span></td>
+                                    <td><span class="status-badge <%= post.published ? 'published' : 'draft' %>">
+                                            <%= post.published ? 'Published' : 'Draft' %>
+                                        </span></td>
+                                    <td>
+                                        <%= new Date(post.created_at).toLocaleDateString('en-GB', { day: 'numeric' ,
+                                            month: 'short' , year: 'numeric' }) %>
+                                    </td>
+                                    <td class="actions-cell">
+                                        <a href="/admin/edit/<%= post.id %>" class="btn btn-sm">Edit</a>
+                                        <form action="/admin/delete/<%= post.id %>" method="POST" style="display:inline"
+                                            onsubmit="return confirm('Delete this post?')">
+                                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <% }); %>
+                        </tbody>
+                    </table>
+                </div>
+                <% } %>
+    </section>
+
+    <%- include('../partials/footer') %>

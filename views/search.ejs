@@ -1,0 +1,46 @@
+<%- include('partials/header', { pageTitle: 'Search' }) %>
+
+    <section class="page-header">
+        <h1>Search</h1>
+    </section>
+
+    <form action="/search" method="GET" class="search-page-form">
+        <input type="text" name="q" value="<%= query %>" placeholder="Search posts…" autofocus>
+        <button type="submit" class="btn">Search</button>
+    </form>
+
+    <% if (query) { %>
+        <p class="search-meta">
+            <%= results.length %> result<%= results.length !==1 ? 's' : '' %> for "<%= query %>"
+        </p>
+        <% } %>
+
+            <% if (results.length> 0) { %>
+                <div class="post-list">
+                    <% results.forEach(function(post) { %>
+                        <article class="post-card post-card-horizontal">
+                            <div class="post-card-body">
+                                <span class="post-topic">
+                                    <%= post.topic %>
+                                </span>
+                                <h3><a href="/post/<%= post.slug %>">
+                                        <%= post.title %>
+                                    </a></h3>
+                                <p class="post-excerpt">
+                                    <%= post.excerpt || post.content.substring(0, 200) + '...' %>
+                                </p>
+                                <time class="post-date">
+                                    <%= new Date(post.created_at).toLocaleDateString('en-GB', { day: 'numeric' ,
+                                        month: 'long' , year: 'numeric' }) %>
+                                </time>
+                            </div>
+                        </article>
+                        <% }); %>
+                </div>
+                <% } else if (query) { %>
+                    <div class="empty-state">
+                        <p>No posts match your search. Try different keywords.</p>
+                    </div>
+                    <% } %>
+
+                        <%- include('partials/footer') %>

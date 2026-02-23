@@ -1,0 +1,14 @@
+<%- include('partials/header', { pageTitle: 'Unsubscribe' }) %>
+
+    <section class="message-page">
+        <% if (success) { %>
+            <h1>Unsubscribed</h1>
+            <p>You've been removed from the mailing list. You won't receive any more emails.</p>
+            <% } else { %>
+                <h1>Oops</h1>
+                <p>That unsubscribe link doesn't seem to be valid. It may have already been used.</p>
+                <% } %>
+                    <a href="/" class="btn">← Back to blog</a>
+    </section>
+
+    <%- include('partials/footer') %>

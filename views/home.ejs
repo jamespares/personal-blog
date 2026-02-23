@@ -1,0 +1,49 @@
+<%- include('partials/header', { pageTitle: 'Home' }) %>
+
+    <section class="hero">
+        <h1>Thoughts on China, Education &amp; Politics</h1>
+        <p class="hero-sub">A personal blog by James Pares</p>
+    </section>
+
+    <% const topics=['china', 'education' , 'politics' ]; %>
+        <% const topicLabels={ china: 'China' , education: 'Education' , politics: 'Politics' }; %>
+
+            <% topics.forEach(function(t) { %>
+                <% if (topicPreviews[t].length> 0) { %>
+                    <section class="topic-section">
+                        <div class="section-header">
+                            <h2>
+                                <%= topicLabels[t] %>
+                            </h2>
+                            <a href="/topic/<%= t %>" class="view-all">View all →</a>
+                        </div>
+                        <div class="post-grid">
+                            <% topicPreviews[t].forEach(function(post) { %>
+                                <article class="post-card">
+                                    <span class="post-topic">
+                                        <%= t %>
+                                    </span>
+                                    <h3><a href="/post/<%= post.slug %>">
+                                            <%= post.title %>
+                                        </a></h3>
+                                    <p class="post-excerpt">
+                                        <%= post.excerpt || post.content.substring(0, 150) + '...' %>
+                                    </p>
+                                    <time class="post-date">
+                                        <%= new Date(post.created_at).toLocaleDateString('en-GB', { day: 'numeric' ,
+                                            month: 'long' , year: 'numeric' }) %>
+                                    </time>
+                                </article>
+                                <% }); %>
+                        </div>
+                    </section>
+                    <% } %>
+                        <% }); %>
+
+                            <% if (recentPosts.length===0) { %>
+                                <section class="empty-state">
+                                    <p>No posts yet. Check back soon!</p>
+                                </section>
+                                <% } %>
+
+                                    <%- include('partials/footer') %>

@@ -1,0 +1,72 @@
+<%- include('partials/header', { pageTitle: post.title, metaDescription: post.excerpt || post.content.substring(0, 160)
+    }) %>
+
+    <article class="single-post">
+        <header class="post-header">
+            <span class="post-topic">
+                <%= post.topic %>
+            </span>
+            <h1>
+                <%= post.title %>
+            </h1>
+            <time class="post-date">
+                <%= new Date(post.created_at).toLocaleDateString('en-GB', { day: 'numeric' , month: 'long' ,
+                    year: 'numeric' }) %>
+            </time>
+        </header>
+
+        <div class="post-content">
+            <%- marked.parse(post.content) %>
+        </div>
+
+        <div class="post-share">
+            <span>Share:</span>
+            <a href="https://twitter.com/intent/tweet?url=<%= baseUrl %>/post/<%= post.slug %>&text=<%= encodeURIComponent(post.title) %>"
+                target="_blank" rel="noopener">Twitter</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=<%= baseUrl %>/post/<%= post.slug %>"
+                target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:?subject=<%= encodeURIComponent(post.title) %>&body=<%= baseUrl %>/post/<%= post.slug %>"
+                rel="noopener">Email</a>
+        </div>
+    </article>
+
+    <section class="comments-section" id="comments">
+        <h2>Comments (<%= comments.length %>)</h2>
+
+        <% if (comments.length===0) { %>
+            <p class="comments-empty">No comments yet. Be the first to share your thoughts!</p>
+            <% } %>
+
+                <% comments.forEach(function(comment) { %>
+                    <div class="comment">
+                        <div class="comment-header">
+                            <strong class="comment-author">
+                                <%= comment.author %>
+                            </strong>
+                            <time class="comment-date">
+                                <%= new Date(comment.created_at).toLocaleDateString('en-GB', { day: 'numeric' ,
+                                    month: 'long' , year: 'numeric' }) %>
+                            </time>
+                        </div>
+                        <p class="comment-body">
+                            <%= comment.content %>
+                        </p>
+                    </div>
+                    <% }); %>
+
+                        <form action="/post/<%= post.slug %>/comment" method="POST" class="comment-form">
+                            <h3>Leave a comment</h3>
+                            <div class="form-group">
+                                <label for="author">Name</label>
+                                <input type="text" id="author" name="author" required placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="commentContent">Comment</label>
+                                <textarea id="commentContent" name="content" rows="4" required
+                                    placeholder="Your thoughts…"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Post Comment</button>
+                        </form>
+    </section>
+
+    <%- include('partials/footer') %>

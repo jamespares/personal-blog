@@ -1,0 +1,63 @@
+<%- include('../partials/header', { pageTitle: post ? 'Edit Post' : 'New Post' }) %>
+
+    <section class="admin-editor">
+        <h1>
+            <%= post && post.id ? 'Edit Post' : 'New Post' %>
+        </h1>
+
+        <% if (error) { %>
+            <div class="alert alert-error">
+                <%= error %>
+            </div>
+            <% } %>
+
+                <form action="<%= post && post.id ? '/admin/edit/' + post.id : '/admin/new' %>" method="POST"
+                    class="editor-form">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" value="<%= post ? post.title : '' %>" required
+                            placeholder="Post title">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="topic">Topic</label>
+                            <select id="topic" name="topic" required>
+                                <option value="">Select topic…</option>
+                                <option value="china" <%=post && post.topic==='china' ? 'selected' : '' %>>China
+                                </option>
+                                <option value="education" <%=post && post.topic==='education' ? 'selected' : '' %>
+                                    >Education</option>
+                                <option value="politics" <%=post && post.topic==='politics' ? 'selected' : '' %>
+                                    >Politics</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-check">
+                            <label>
+                                <input type="checkbox" name="published" <%=post && post.published ? 'checked' : '' %>>
+                                Published
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="excerpt">Excerpt <span class="label-hint">(optional — shown in
+                                previews)</span></label>
+                        <textarea id="excerpt" name="excerpt" rows="2"
+                            placeholder="A short summary…"><%= post ? post.excerpt : '' %></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="content">Content <span class="label-hint">(Markdown supported)</span></label>
+                        <textarea id="content" name="content" rows="16" required
+                            placeholder="Write your post… (Markdown supported)"><%= post ? post.content : '' %></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Save</button>
+                        <a href="/admin" class="btn btn-ghost">Cancel</a>
+                    </div>
+                </form>
+    </section>
+
+    <%- include('../partials/footer') %>

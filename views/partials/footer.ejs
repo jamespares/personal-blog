@@ -1,0 +1,21 @@
+</main>
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-subscribe">
+            <p>Get new posts delivered to your inbox.</p>
+            <form action="/subscribe" method="POST" class="subscribe-form">
+                <input type="email" name="email" placeholder="Your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <p class="footer-copy">&copy; <%= new Date().getFullYear() %> James Pares</p>
+    </div>
+</footer>
+<script>
+    document.getElementById('menuToggle').addEventListener('click', function () {
+        document.getElementById('navLinks').classList.toggle('open');
+    });
+</script>
+</body>
+
+</html>

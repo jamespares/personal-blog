@@ -60,10 +60,10 @@ app.use((req, res, next) => {
     res.locals.formatTopic = (topic) => {
         if (!topic) return '';
         const labels = {
-            china: 'China',
             education: 'Education',
-            politics: 'Politics',
-            ai: 'AI'
+            ai: 'AI',
+            china: 'China',
+            politics: 'Politics'
         };
         return labels[topic.toLowerCase()] || (topic.charAt(0).toUpperCase() + topic.slice(1));
     };

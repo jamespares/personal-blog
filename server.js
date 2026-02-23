@@ -2,7 +2,21 @@ require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
 const path = require('path');
+const { posts } = require('./db');
 
+// Auto-seed posts on first run if database is empty
+const existingPosts = posts.getRecent(1);
+if (existingPosts.length === 0) {
+    try {
+        const seedPosts = require('./seed-posts-data');
+        for (const post of seedPosts) {
+            posts.create(post);
+        }
+        console.log('Seeded ' + seedPosts.length + ' blog posts.');
+    } catch (e) {
+        console.log('No seed data found or seeding failed:', e.message);
+    }
+}
 const app = express();
 const PORT = process.env.PORT || 3000;
 

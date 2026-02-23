@@ -1,0 +1,56 @@
+<%- include('partials/header', { pageTitle: 'Choose Your Topics' }) %>
+
+    <section class="message-page">
+        <h1>What would you like to hear about?</h1>
+        <p>Select the topics you're interested in, or subscribe to all.</p>
+
+        <form action="/subscribe/confirm" method="POST" class="topic-picker-form">
+            <input type="hidden" name="email" value="<%= email %>">
+
+            <div class="topic-options">
+                <label class="topic-option">
+                    <input type="radio" name="topics" value="all" checked>
+                    <span class="topic-label">All topics</span>
+                </label>
+
+                <label class="topic-option">
+                    <input type="checkbox" name="topics" value="china" class="topic-checkbox">
+                    <span class="topic-label">China</span>
+                </label>
+
+                <label class="topic-option">
+                    <input type="checkbox" name="topics" value="education" class="topic-checkbox">
+                    <span class="topic-label">Education</span>
+                </label>
+
+                <label class="topic-option">
+                    <input type="checkbox" name="topics" value="politics" class="topic-checkbox">
+                    <span class="topic-label">Politics</span>
+                </label>
+            </div>
+
+            <button type="submit" class="btn">Subscribe</button>
+        </form>
+    </section>
+
+    <script>
+        // When "All topics" is selected, uncheck individual topics
+        // When individual topics are checked, uncheck "All topics"
+        const allRadio = document.querySelector('input[value="all"]');
+        const checkboxes = document.querySelectorAll('.topic-checkbox');
+
+        allRadio.addEventListener('change', () => {
+            if (allRadio.checked) {
+                checkboxes.forEach(cb => cb.checked = false);
+            }
+        });
+
+        checkboxes.forEach(cb => {
+            cb.addEventListener('change', () => {
+                const anyChecked = Array.from(checkboxes).some(c => c.checked);
+                allRadio.checked = !anyChecked;
+            });
+        });
+    </script>
+
+    <%- include('partials/footer') %>

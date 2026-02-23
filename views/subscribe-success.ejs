@@ -5,8 +5,14 @@
         <p>We'll send new posts to <strong>
                 <%= email %>
             </strong>.</p>
+        <% if (topics==='all' ) { %>
+            <p>You'll receive emails about <strong>all topics</strong>.</p>
+            <% } else { %>
+                <p>You'll receive emails about: <strong>
+                        <%= topics.split(',').join(', ') %></strong>.</p>
+        <% } %>
         <p>Every email includes a one-click unsubscribe link.</p>
         <a href="/" class="btn">← Back to blog</a>
     </section>
 
-    <%- include('partials/footer') %>
+<%- include('partials/footer') %>

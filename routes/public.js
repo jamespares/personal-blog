@@ -59,20 +59,37 @@ router.post('/post/:slug/comment', (req, res) => {
 });
 
 // Subscribe
+// Step 1: Show topic picker after email entry
 router.post('/subscribe', (req, res) => {
     const { email } = req.body;
     if (!email || !email.includes('@')) {
         return res.redirect('/?subscribe=invalid');
     }
-    const result = subscribers.add(email.trim().toLowerCase());
+    // Check if already subscribed before showing picker
+    const existing = subscribers.getAll().find(s => s.email === email.trim().toLowerCase());
+    if (existing) {
+        return res.redirect('/?subscribe=exists');
+    }
+    res.render('subscribe-topics', { email: email.trim().toLowerCase() });
+});
+
+// Step 2: Confirm subscription with topic preferences
+router.post('/subscribe/confirm', (req, res) => {
+    const { email, topics } = req.body;
+    if (!email || !email.includes('@')) {
+        return res.redirect('/?subscribe=invalid');
+    }
+    // Build topics string: if 'all' is selected or nothing selected, default to 'all'
+    let topicStr = 'all';
+    if (topics && topics !== 'all') {
+        const selected = Array.isArray(topics) ? topics : [topics];
+        topicStr = selected.join(',');
+    }
+    const result = subscribers.add(email.trim().toLowerCase(), topicStr);
     if (result.success) {
-        // Find token for welcome email
-        const allSubs = subscribers.getAll();
-        const newSub = allSubs.find(s => s.email === email.trim().toLowerCase());
-        if (newSub) {
-            sendWelcomeEmail(newSub.email, newSub.unsubscribe_token).catch(err => console.error('Welcome email error:', err));
-        }
-        res.render('subscribe-success', { email });
+        sendWelcomeEmail(email.trim().toLowerCase(), result.token, topicStr)
+            .catch(err => console.error('Welcome email error:', err));
+        res.render('subscribe-success', { email, topics: topicStr });
     } else {
         res.redirect('/?subscribe=exists');
     }

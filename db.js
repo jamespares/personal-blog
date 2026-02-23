@@ -39,6 +39,7 @@ db.exec(`
   CREATE TABLE IF NOT EXISTS subscribers (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     email TEXT UNIQUE NOT NULL,
+    topics TEXT NOT NULL DEFAULT 'all',
     unsubscribe_token TEXT UNIQUE NOT NULL,
     created_at TEXT DEFAULT (datetime('now'))
   );
@@ -47,6 +48,13 @@ db.exec(`
 // Simple migration: add sources column if it doesn't exist
 try {
     db.exec(`ALTER TABLE posts ADD COLUMN sources TEXT;`);
+} catch (e) {
+    // Column likely already exists
+}
+
+// Migration: add topics column to subscribers if it doesn't exist
+try {
+    db.exec(`ALTER TABLE subscribers ADD COLUMN topics TEXT NOT NULL DEFAULT 'all';`);
 } catch (e) {
     // Column likely already exists
 }
@@ -135,15 +143,21 @@ const subscribers = {
     getAll() {
         return db.prepare('SELECT * FROM subscribers').all();
     },
-    add(email) {
+    add(email, topics = 'all') {
         const token = uuidv4();
         try {
-            db.prepare('INSERT INTO subscribers (email, unsubscribe_token) VALUES (?, ?)').run(email, token);
-            return { success: true };
+            db.prepare('INSERT INTO subscribers (email, topics, unsubscribe_token) VALUES (?, ?, ?)').run(email, topics, token);
+            return { success: true, token };
         } catch (e) {
             if (e.message.includes('UNIQUE')) return { success: false, reason: 'already_subscribed' };
             throw e;
         }
+    },
+    getByTopics(topic) {
+        // Returns subscribers who want 'all' topics OR whose topics list includes the given topic
+        return db.prepare(
+            "SELECT * FROM subscribers WHERE topics = 'all' OR (',' || topics || ',') LIKE '%,' || ? || ',%'"
+        ).all(topic);
     },
     removeByToken(token) {
         const result = db.prepare('DELETE FROM subscribers WHERE unsubscribe_token = ?').run(token);

@@ -25,10 +25,11 @@ async function notifySubscribers(post) {
         return;
     }
 
-    const allSubscribers = subscribers.getAll();
+    // Only notify subscribers interested in this post's topic
+    const matchedSubscribers = subscribers.getByTopics(post.topic);
     const baseUrl = process.env.BASE_URL || 'http://localhost:3000';
 
-    for (const sub of allSubscribers) {
+    for (const sub of matchedSubscribers) {
         try {
             await transport.sendMail({
                 from: process.env.FROM_EMAIL,
@@ -53,7 +54,7 @@ async function notifySubscribers(post) {
     }
 }
 
-async function sendWelcomeEmail(email, unsubscribeToken) {
+async function sendWelcomeEmail(email, unsubscribeToken, topics = 'all') {
     const transport = getTransporter();
     if (!transport) {
         console.log('SMTP not configured — skipping welcome email');
@@ -61,6 +62,7 @@ async function sendWelcomeEmail(email, unsubscribeToken) {
     }
 
     const baseUrl = process.env.BASE_URL || 'http://localhost:3000';
+    const topicLabel = topics === 'all' ? 'everything I write' : topics.split(',').join(', ');
 
     try {
         await transport.sendMail({
@@ -70,7 +72,8 @@ async function sendWelcomeEmail(email, unsubscribeToken) {
             html: `
         <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; padding: 20px; line-height: 1.6;">
           <p>Hello,</p>
-          <p>Thanks for signing up. I'll try to say something interesting from time to time, though no promises.</p>
+          <p>Thanks for signing up. You'll hear from me when I post about <strong>${topicLabel}</strong>.</p>
+          <p>I'll try to say something interesting from time to time, though no promises.</p>
           <p>If you find yourself regretting this decision, you can always click below to make it stop.</p>
           <p><a href="${baseUrl}/unsubscribe?token=${unsubscribeToken}" style="color: #999; font-size: 12px;">Unsubscribe</a></p>
           <p style="margin-top: 30px; font-style: italic;">— James Pares</p>
@@ -83,3 +86,4 @@ async function sendWelcomeEmail(email, unsubscribeToken) {
 }
 
 module.exports = { notifySubscribers, sendWelcomeEmail };
+

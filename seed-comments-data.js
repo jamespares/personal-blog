@@ -142,5 +142,59 @@ module.exports = {
             author: 'Arjun M.',
             content: "Just listened to the Dwarkesh episode with the Anthropic guys you mentioned. They talked about 'super-alignment' not just for AGI but for the code itself. If the code is moving faster than the humans can align on it, we're in trouble. Great to see these themes being discussed in a blog like this."
         }
+    ],
+    'the-24-7-developer-how-ai-is-reshaping-global-collaboration': [
+        {
+            author: 'Leo Grant',
+            content: "The coordination bottleneck is so real. I'm currently using Cursor and Claude to build features in hours that used to take days, but my senior dev is drowning in my PRs. We've started doing exactly what you suggest: detailed handovers in a shared scratchpad. It's the only way he can keep track of what the 'AI and I' have been upto."
+        },
+        {
+            author: 'Samantha J.',
+            content: "Interesting point about the CHANGELOG.md. Most people think git history is enough, but git messages are often too granular. We need the 'why' and the high-level plan. I've found that writing the changelog entry BEFORE I start the AI-assisted coding actualy helps me prompt better too."
+        },
+        {
+            author: 'DevOps Dave',
+            content: "You mention 'follow-the-sun' development. I've worked in teams like that for years, and the biggest failure point is always the human handover. If AI can help automate the creation of that CHANGELOG.md by summarising the diffs, that would be a game changer. But we're not quite there yet in terms of reliabilty."
+        },
+        {
+            author: 'Arjun M.',
+            content: "Just listened to the Dwarkesh episode with the Anthropic guys you mentioned. They talked about alignment not just for AGI but for the code itself. If the the code is moving faster than the humans can align on it, we're in trouble. Great to see these themes being discussed in a blog like this."
+        }
+    ],
+    'the-24-7-developer-how-ai-is-reshaping-global-collaboration': [
+        {
+            author: 'Leo Grant',
+            content: "The coordination bottleneck is so real. I'm currently using Cursor and Claude to build features in hours that used to take days, but my senior dev is drowning in my PRs. We've started doing exactly what you suggest - detailed handovers in a shared scratchpad. Its the only way he can keep track of what the AI and I have been upto."
+        },
+        {
+            author: 'Samantha J.',
+            content: "Interesting point about the CHANGELOG.md. Most people think git history is enough, but git messages are often too granular. We need the 'why' and the high-level plan. I've found that writing the changelog entry BEFORE I start the AI-assisted coding actualy helps me prompt better too."
+        },
+        {
+            author: 'DevOps Dave',
+            content: "You mention 'follow-the-sun' development. I've worked in teams like that for years, and the biggest failure point is always the human handover. If AI can help automate the creation of that CHANGELOG.md by summarising the diffs, that would be a game changer. But we're not quite there yet in terms of reliabilty."
+        },
+        {
+            author: 'Arjun M.',
+            content: "Just listened to the Dwarkesh episode with the Anthropic guys you mentioned. They talked about alignment not just for AGI but for the code itself. If the code is moving faster than the humans can align on it, we're in trouble. Great to see these themes being discussed outside of the usual tech press."
+        }
+    ],
+    'vibe-ops-collaboration-during-ai-code-development': [
+        {
+            author: 'Marcus Bell',
+            content: "This resonates so much. I've been doing something similar - leaving voice memos for myself at the end of each session describing what I was thinking. The AI doesnt get tired or loses context between sessions but I definitely do. The CHANGELOG idea is a more structured version of the same thing."
+        },
+        {
+            author: 'Priya N.',
+            content: "The 'vibe ops' framing is really apt. There's a whole meta-skill emerging around managing the AI collaboration process that nobody really talks about. Its not just prompt engineering - its workflow design, handoff protocols, context managment. Feels like a new discipline entirely."
+        },
+        {
+            author: 'Tom Rawlings',
+            content: "I work at a startup where two of us are in different timezones and we've basically accidentaly built this process without naming it. One person works UK hours, the other US, and we leave detailed notes in a shared doc plus key decisions in CHANGELOG. Reading this made me realise we stumbled onto something real."
+        },
+        {
+            author: 'Chloe Park',
+            content: "The bit about AI accelerating output but not necessarily understanding resonates. I had a situation last week where Cursor confidently produced 200 lines of code that looked great but was based on a complety wrong assumption about the architecture. A better handoff doc would have caught it. Lesson learnt."
+        }
     ]
 };

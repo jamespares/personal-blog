@@ -4,7 +4,7 @@ const session = require('express-session');
 const path = require('path');
 const { posts, comments } = require('./db');
 
-// Auto-seed posts and comments on first run if database is empty
+// Auto-seed posts if database is empty
 const existingPosts = posts.getRecent(1);
 if (existingPosts.length === 0) {
     try {
@@ -13,27 +13,29 @@ if (existingPosts.length === 0) {
             posts.create(post);
         }
         console.log('Seeded ' + seedPosts.length + ' blog posts.');
-        // Seed comments
-        try {
-            const seedComments = require('./seed-comments-data');
-            const allPosts = posts.getAll();
-            let commentCount = 0;
-            for (const post of allPosts) {
-                const postComments = seedComments[post.slug];
-                if (postComments) {
-                    for (const c of postComments) {
-                        comments.create({ post_id: post.id, author: c.author, content: c.content });
-                        commentCount++;
-                    }
-                }
-            }
-            console.log('Seeded ' + commentCount + ' comments.');
-        } catch (ce) {
-            console.log('Comment seeding skipped:', ce.message);
-        }
     } catch (e) {
         console.log('No seed data found or seeding failed:', e.message);
     }
+}
+
+// Always seed comments for any post that currently has none
+try {
+    const { db: rawDb } = require('./db');
+    const seedComments = require('./seed-comments-data');
+    const allPosts = posts.getAllAdmin();
+    let commentCount = 0;
+    for (const post of allPosts) {
+        const existing = rawDb.prepare('SELECT COUNT(*) as n FROM comments WHERE post_id = ?').get(post.id);
+        if (existing.n === 0 && seedComments[post.slug]) {
+            for (const c of seedComments[post.slug]) {
+                comments.create({ post_id: post.id, author: c.author, content: c.content });
+                commentCount++;
+            }
+        }
+    }
+    if (commentCount > 0) console.log('Seeded ' + commentCount + ' missing comments.');
+} catch (ce) {
+    console.log('Comment seeding skipped:', ce.message);
 }
 const app = express();
 const PORT = process.env.PORT || 3000;

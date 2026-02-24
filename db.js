@@ -59,6 +59,35 @@ try {
     // Column likely already exists
 }
 
+// Migration: update CHECK constraint to include 'ai' topic if missing
+try {
+    const tableInfo = db.prepare("SELECT sql FROM sqlite_master WHERE type='table' AND name='posts'").get();
+    if (tableInfo && tableInfo.sql && !tableInfo.sql.includes("'ai'")) {
+        db.exec(`
+            BEGIN;
+            ALTER TABLE posts RENAME TO posts_old;
+            CREATE TABLE posts (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                title TEXT NOT NULL,
+                slug TEXT UNIQUE NOT NULL,
+                content TEXT NOT NULL,
+                excerpt TEXT,
+                topic TEXT NOT NULL CHECK(topic IN ('china', 'education', 'politics', 'ai')),
+                sources TEXT,
+                published INTEGER DEFAULT 0,
+                created_at TEXT DEFAULT (datetime('now')),
+                updated_at TEXT DEFAULT (datetime('now'))
+            );
+            INSERT INTO posts (id, title, slug, content, excerpt, topic, sources, published, created_at, updated_at)
+                SELECT id, title, slug, content, excerpt, topic, sources, published, created_at, updated_at FROM posts_old;
+            DROP TABLE posts_old;
+            COMMIT;
+        `);
+    }
+} catch (e) {
+    console.error('Migration (add ai topic) failed:', e.message);
+}
+
 // Helper: generate a URL-friendly slug
 function generateSlug(title) {
     return title

@@ -514,5 +514,442 @@ The teams that thrive will be those that embrace extreme documentation and async
 AI allows us to write faster than ever before. But to build better, we must first learn to communicate better.
 
 **How is your team handling the surge in AI-generated code? Do you use asynchronous handovers, or are you feeling the coordination bottleneck? Share your thoughts in the comments below.**`
+        },
+        {
+                title: "From Project Management to Classroom Management: Corporate Wisdom the Classroom Desperately Needs",
+                topic: "education",
+                excerpt: "Teaching is project management. Gantt charts, kanban boards, agile sprints, risk registers — the tools that run billion-dollar programmes could transform how teachers plan, deliver, and quality-assure their lessons.",
+                published: true,
+                sources: `* **Agile Classrooms**: [Agile sprints and retrospectives adapted for education](https://agileclassrooms.com)
+* **Edutopia**: [Project-based learning and teacher productivity](https://www.edutopia.org)
+* **TeamGantt**: [Gantt chart tools applied to education](https://teamgantt.com)
+* **CSTA**: [Agile methodology for classrooms](https://csteachers.org)
+* **Klaxoon**: [Project management skills in education](https://klaxoon.com)`,
+                content: `## Introduction
+
+Teaching is one of the most complex management roles in any profession. A teacher juggles curriculum planning, resource creation, differentiation, assessment, safeguarding, pastoral care, parent communication, and departmental collaboration — often simultaneously, often alone, and almost always under time pressure.
+
+And yet, teachers receive virtually no formal training in the discipline that deals with exactly this kind of complexity: **project management.**
+
+Meanwhile, the corporate world has spent decades refining frameworks for planning complex work, executing under constraints, and assuring quality at scale. [Gantt charts](https://teamgantt.com), kanban boards, agile sprints, risk registers — these are not exotic concepts. They are the bread and butter of any well-run programme. And every single one of them has a direct, practical application in the classroom.
+
+## Gantt Charts and Long-Term Planning
+
+Teachers plan terms and units much like project managers plan delivery phases. There are dependencies (you cannot teach essay writing before paragraph structure), milestones (mock exams, coursework deadlines), and hard deadlines (final examinations).
+
+A Gantt chart for a 12-week teaching unit maps all of this visually. It plots curriculum coverage across weeks, shows where assessments fall, highlights revision windows, and — critically — makes bottlenecks visible before they become crises.
+
+If Week 8 has three assessment deadlines landing simultaneously, a Gantt chart shows you in Week 1. You can redistribute. You can plan. You can breathe.
+
+This is not a new idea in education. IB and Cambridge schools already use curriculum mapping — plotting units, objectives, and assessments across a term or year. A Gantt chart is simply a more precise, more visual version of the same principle. Tools like [TeamGantt](https://teamgantt.com) and even free alternatives like Google Sheets can make this accessible to any teacher.
+
+## Kanban and Workflow Visibility
+
+A kanban board is beautifully simple: three columns — **To Do**, **In Progress**, **Done** — with tasks moving left to right as they are completed.
+
+For an individual teacher, this transforms the chaos of weekly preparation into something manageable. Lesson plans, worksheets, marking batches, reports, emails — each becomes a card on the board. You can see at a glance what is done, what is in flight, and what is still waiting.
+
+But the real power of kanban emerges when teacher teams use it. A shared board — on Trello, Notion, or even a physical whiteboard in the staffroom — makes invisible work visible. When three teachers share a year group, a kanban board shows who has prepared what, where duplication is happening, and where gaps remain.
+
+As [Klaxoon](https://klaxoon.com) has documented, bringing project management visibility tools into education helps teams coordinate without the need for endless meetings. The board speaks for itself.
+
+## Agile Sprints: Plan, Teach, Mark, Repeat
+
+The teaching cycle already resembles an agile sprint. Teachers plan a unit (sprint planning), deliver lessons (execution), assess student work (review), and reflect on what worked (retrospective). Then the cycle begins again.
+
+The problem is that most teachers do this implicitly. By making the sprint cycle explicit, teachers gain a structured framework for reflection and improvement.
+
+A sprint retrospective at the end of each unit — even a brief one — asks three questions: **What went well? What didn't? What will I change next time?** This is how [Agile Classrooms](https://agileclassrooms.com) has adapted the agile framework for education, and the results are powerful. Teachers who run retrospectives consistently report improved lesson quality and reduced stress over time.
+
+Sprint reviews can map directly to department meetings. Instead of vague agendas, the meeting reviews what was delivered in the last sprint, surfaces blockers, and plans the next cycle. It is focused, time-bound, and productive — everything most department meetings are not.
+
+The [CSTA (Computer Science Teachers Association)](https://csteachers.org) has also explored agile methods in the classroom, finding that the iterative, feedback-driven approach improves not just teacher planning but student engagement and self-direction.
+
+## Risk Management and Quality Assurance
+
+Every experienced teacher knows what can go wrong. Students are absent for key lessons. The projector fails. A worksheet has an error that derails the activity. Half the class has a misconception that the planned lesson does not address.
+
+In project management, these are called **risks** — and professionals manage them systematically. A simple risk register identifies potential problems, assesses their likelihood and impact, and documents a contingency plan.
+
+Teachers could do the same. A two-column table — "What could go wrong?" and "What's the backup plan?" — takes five minutes to complete and could save entire lessons from collapsing.
+
+Quality assurance is equally important. In software engineering, no code ships without review. In teaching, resources are routinely deployed without a second pair of eyes. A teacher creates a worksheet at 11pm, prints it at 7am, and discovers the error at 9am — in front of 30 students.
+
+Peer review of resources — treated with the same seriousness as code review — would catch errors, improve quality, and build a culture of professional accountability. [Edutopia](https://www.edutopia.org) has long advocated for collaborative resource development, and the case is only getting stronger as curriculum demands increase.
+
+## Conclusion
+
+Teachers are already project managers. They plan complex work across long timescales. They manage risks. They deliver under pressure. They iterate and improve.
+
+They just do all of this without the language, the frameworks, or the tools that every other complex profession takes for granted.
+
+Adopting project management frameworks would not add bureaucracy to teaching. It would **reduce chaos.** Gantt charts give visibility. Kanban boards give clarity. Sprints give rhythm. Risk management gives confidence. And quality assurance gives students the resources they deserve.
+
+**Have you used any project management techniques in your teaching? Did they help, or did they just add more admin? I'd love to hear your experience in the comments.**`
+        },
+        {
+                title: "Teacher Collaboration: Why It Causes Conflict and How to Fix It",
+                topic: "education",
+                excerpt: "Teachers are told to collaborate. But when different styles, egos, and backgrounds collide, shared planning can become a battleground. Here are practical strategies that actually work.",
+                published: true,
+                sources: `* **ASCD**: [Professional learning communities and collaborative planning](https://www.ascd.org)
+* **Edutopia**: [Evidence-based teacher collaboration strategies](https://www.edutopia.org)
+* **AMLE**: [Shared vision and structured collaboration models](https://www.amle.org)
+* **Discovery Education**: [The 4 Cs of collaboration in education](https://www.discoveryeducation.com)
+* **Teacher Magazine / ACER**: [Andria Zafirakou on inter-school collaboration](https://www.teachermagazine.com)
+* **Cornell University**: [Conflict resolution strategies in education](https://cornell.edu)`,
+                content: `## Introduction
+
+Collaboration is the buzzword of modern education. Schools expect teachers to share resources, co-plan units, and align delivery — especially when teaching the same subject across parallel classes in the same year group.
+
+In theory, this is efficient. Two teachers planning together produce better resources than one. Shared assessments ensure fairness. Aligned delivery means students get a consistent experience regardless of which class they are in.
+
+In practice, it often creates tension. Different teaching styles clash. Unspoken hierarchies emerge. One teacher feels railroaded; the other feels undermined. What was supposed to be collaboration becomes a low-level battle for control of the classroom.
+
+The problem is not that teachers are difficult. The problem is that **schools rarely provide the structures that make collaboration work.**
+
+## Why Collaboration Goes Wrong
+
+### Style Clashes
+
+Every teacher has a pedagogical identity. One prefers inquiry-based learning — open questions, discovery, student-led exploration. The other prefers direct instruction — clear explanations, worked examples, structured practice. When these two teachers are expected to share resources, neither set of materials fits the other's approach.
+
+The result is frustration. One teacher feels the shared resources are too rigid; the other feels they are too vague. Neither is wrong — they simply teach differently.
+
+### Ego and Ownership
+
+Teachers invest deeply in their materials. A carefully crafted lesson plan is personal work. When a colleague rewrites it, or dismisses it in favour of their own version, it feels like a professional judgment — and sometimes a personal one.
+
+This is compounded when there is no clear process for whose materials take precedence. Without structure, the most assertive personality wins — and the quieter colleague disengages.
+
+### Background Mismatch
+
+Teachers come from different training backgrounds. A UK-trained teacher and a locally-trained teacher may have fundamentally different assumptions about assessment, differentiation, and classroom management. A teacher with a primary background moving into secondary — or vice versa — brings different instincts about scaffolding, pacing, and student independence.
+
+These differences are rarely discussed. They simmer below the surface, emerging as disagreements about resources that are really disagreements about pedagogy.
+
+### Power Dynamics
+
+Experience creates hierarchy, even when the school does not intend it. A teacher with fifteen years' experience can dominate planning meetings without realising it. A newly qualified teacher may have excellent ideas but lack the confidence — or the standing — to voice them.
+
+As [ASCD](https://www.ascd.org) has documented, effective collaboration requires deliberate structures that equalise participation. Without them, collaboration becomes a one-way relationship.
+
+## Structural Fixes: Let the Work Speak for Itself
+
+The best solutions to collaboration conflict are **structural, not interpersonal.** You do not need to change people's personalities. You need to change the systems they work within.
+
+### Shared Drives Over Meetings
+
+The simplest, most effective collaboration tool is a shared Google Drive or SharePoint folder. Teachers upload their planned resources asynchronously. Others can view, use, adapt, or ignore them. The work speaks for itself.
+
+This removes the need for long, contentious meetings where every resource is debated line by line. Teachers contribute when they have something to share. There is no pressure to justify every decision in real time.
+
+### Meetings with Clear Agendas
+
+When meetings are necessary — and sometimes they are — a tight agenda is essential. Every meeting should have a written agenda circulated in advance, with specific items and time allocations. No agenda, no meeting.
+
+This prevents the two failure modes of collaborative planning meetings: (1) personality-driven tangents that consume the whole session, and (2) vague discussions that end without clear actions.
+
+[Discovery Education](https://www.discoveryeducation.com) has outlined the "4 Cs of collaboration" — Communication, Cooperation, Coordination, and Contribution — and stressed that structured meeting protocols are essential for all four.
+
+### Shared Objectives, Flexible Delivery
+
+The most sustainable model is to agree on **outcomes**, not methods. Teachers align on learning objectives, key assessments, and success criteria. But each teacher retains the freedom to deliver the content in whatever way suits their style and their students.
+
+This respects professional autonomy while ensuring consistency where it matters most: in what students are expected to know and do.
+
+### Group Chats, Not Private DMs
+
+Separate private conversations between individual team members are one of the fastest ways to create misalignment. Teacher A and Teacher B agree on something in a private chat. Teacher C, unaware of the conversation, plans something different. Tension follows.
+
+A single team group chat — whether on WhatsApp, Teams, or Slack — keeps everyone in the loop. Decisions are visible. Context is shared. No one is left in the dark.
+
+## Cultural Strategies: Keep It Moving
+
+### Don't Escalate Unnecessarily
+
+When collaboration hits a friction point, the instinct is to involve a senior leader — a Head of Department, a coordinator, a deputy head. Sometimes this is necessary. Often, it makes things worse.
+
+More people means more opinions, more meetings, more cooks in the kitchen. A disagreement between two teachers becomes a departmental issue. Positions harden. Resolution takes longer.
+
+Where possible, resolve disagreements at team level. Two teachers who disagree about a resource can usually find a compromise faster than a committee can.
+
+### Plan Ahead
+
+Many collaboration problems stem from **time pressure.** When teachers are planning week by week, there is no room for discussion, negotiation, or adaptation. Everything feels urgent. Tensions escalate because there is no margin for error.
+
+Front-loading collaborative planning — agreeing on the unit plan before the semester starts — reduces ongoing friction. The big decisions are made early, when there is time to discuss them properly. Weekly planning becomes execution, not negotiation.
+
+### Better to Ask for Forgiveness Than Permission
+
+This is perhaps the most practical advice for teachers stuck in slow-moving collaborative teams: **just get on with the work.**
+
+Waiting for consensus on every detail kills momentum. If you have a good idea, build it. Share it. If colleagues want to use it, great. If they prefer their own approach, that is fine too. Progress is more important than perfect agreement.
+
+### Assume Good Intent
+
+Most collaboration problems stem from misunderstanding, not malice. The colleague who rewrote your worksheet was probably trying to help. The teacher who went ahead without checking was probably trying to save time.
+
+As [Cornell University](https://cornell.edu) research on conflict resolution in education has found, assuming positive intent — and addressing concerns directly rather than letting resentment build — is the single most effective strategy for maintaining productive working relationships.
+
+## Conclusion
+
+Teacher collaboration does not fail because teachers are difficult. It fails because schools rarely invest in the **structures and processes** that make it work.
+
+Shared drives, clear agendas, aligned objectives with flexible delivery, transparent communication channels, and a culture of professional trust — these are not complex interventions. They are simple, practical systems that turn collaboration from a source of conflict into a genuine strength.
+
+**What has your experience of teacher collaboration been? What has worked well, and what has been a disaster? Share your thoughts in the comments below.**`
+        },
+        {
+                title: "Should Teachers Plan Week by Week or Get It All Done Before Term Starts?",
+                topic: "education",
+                excerpt: "The IB says be flexible. IGCSE says follow the textbook. The truth is somewhere in the middle — and the stakes change depending on whether you teach primary or secondary.",
+                published: true,
+                sources: `* **Cambridge International Education**: [Schemes of work and IGCSE planning guidance](https://www.cambridgeinternational.org)
+* **ManageBac**: [IB curriculum management and flexible planning](https://managebac.com)
+* **Toddle**: [IGCSE classroom planning tools](https://toddleapp.com)
+* **Education Advanced**: [Weekly vs long-term planning frameworks](https://educationadvanced.com)
+* **Education and Training Academy UK**: [Flexible planning and adaptability](https://educationandtrainingacademy.co.uk)`,
+                content: `## Introduction
+
+Every teacher faces the same planning dilemma at the start of each term: do you plan everything in advance — every lesson, every resource, every assessment — or do you take it week by week, responding to how the students are progressing?
+
+Both approaches have passionate advocates. And both have significant drawbacks.
+
+The answer, I believe, is neither extreme. **The best approach is a 70/30 model**: approximately 70% of the unit forward-planned before the semester begins, with a 30% buffer left deliberately for adaptation, fresh ideas, and responding to student needs.
+
+But the right ratio depends on the curriculum you are teaching — and the age group sitting in front of you.
+
+## The Case for Week-by-Week Planning
+
+The International Baccalaureate (IB) programme is built on the philosophy of inquiry-based, flexible planning. IB unit planners are designed to be **living documents** — updated and adapted throughout delivery as teachers observe how students respond to the material.
+
+The IB's emphasis on student-led inquiry means that teachers are encouraged to follow the learners' interests, pivot when a line of questioning proves productive, and adapt activities based on formative assessment. Planning too rigidly goes against the programme's philosophy.
+
+The benefits of this approach are real. Lessons stay fresh. Teachers can incorporate current events, respond to "teachable moments," and tailor activities to the specific needs of the class in front of them. There is a genuine creative energy to planning responsively.
+
+But the risks are equally real. Week-by-week planning creates enormous time pressure. Teachers spend evenings and weekends preparing for a Monday lesson they had not even conceptualised on Friday. Resource quality suffers because there is no time for refinement. Consistency across parallel classes breaks down because each teacher is improvising independently.
+
+And the burnout is significant. The relentless cycle of plan-deliver-mark-plan, with no buffer and no predictability, is one of the primary drivers of teacher exhaustion.
+
+## The Case for Forward Planning
+
+[Cambridge International Education](https://www.cambridgeinternational.org) offers a different model. IGCSE syllabi are structured, content-heavy, and examination-focused. The content is largely fixed — every student in the world sitting the same exam needs to cover the same material.
+
+This makes forward planning not just possible but natural. Cambridge's [schemes of work](https://www.cambridgeinternational.org) provide semester-level pacing guides that map topics across weeks and terms. Textbooks align closely with the syllabus. Assessments are standardised.
+
+The benefits are substantial. Resources can be polished and quality-assured in advance. Teachers arrive on Monday morning knowing exactly what they are teaching and having materials ready. Collaboration with colleagues is easier because everyone is working from the same plan. And lesson delivery is calmer because the cognitive load of planning has already been handled.
+
+The risks? Rigidity. Lessons that feel stale because they were planned months ago. An inability to respond to emerging student needs or current events. And the danger of teaching to the plan rather than teaching to the students.
+
+## The 70/30 Model: Plan Most, Adapt Some
+
+The sweet spot, in my experience, is to **build a forward plan that is roughly 70% complete** — and to leave the remaining 30% deliberately open.
+
+The 70% includes: the unit's key lessons, core resources, assessments, and the overall pacing. These are planned, prepared, and ready before the term begins. Teachers know the arc of the unit, the key learning moments, and the assessment milestones.
+
+The 30% buffer is for: fresh ideas that emerge mid-semester — a brilliant article, a relevant current event, a colleague's suggestion. It is for responding to student performance data — if the class bombed the formative quiz on Topic 3, you need an extra lesson to reteach it. And it is for reworking resources that, in practice, did not land as expected.
+
+This model gives structure without rigidity. Teachers have the security of knowing what is coming — and the flexibility to make it better as they go. [ManageBac](https://managebac.com), the leading IB planning platform, actually supports this approach with unit planners that allow teachers to set a framework while leaving space for ongoing adaptation.
+
+## Primary vs Secondary: Different Stakes, Different Needs
+
+The right balance also depends on the age group.
+
+**In primary education**, more flexibility is appropriate. Assessments are lower-stakes. The curriculum is broader and more thematic. Teachers have more freedom to follow student interests, extend a topic that captures the class's imagination, or pivot when something is not working. The 70/30 model might shift to 60/40 — or even further toward flexibility in early years settings.
+
+**In secondary education**, the stakes are higher. External examinations — GCSEs, IGCSEs, IB Diploma, A Levels — have fixed content and immovable deadlines. Syllabus coverage is non-negotiable. A teacher who runs out of time because they spent three weeks on a single topic is not being flexible — they are putting students at risk.
+
+In exam-heavy secondary contexts, the ratio might tighten to **80/20**. The forward plan needs to be comprehensive, with clear checkpoints to ensure coverage is on track. The 20% buffer remains important — students still need responsive teaching — but risk management of syllabus coverage becomes critical.
+
+[Education Advanced](https://educationadvanced.com) has documented how the most effective school leaders help teachers balance these competing demands by providing clear planning frameworks without micromanaging delivery.
+
+## Conclusion
+
+There is no single right answer to the planning question. But the two extremes — winging it week by week and planning every minute in advance — are both suboptimal.
+
+**The best teachers are disciplined planners who leave room for spontaneity.** They arrive each term with a clear forward plan and a deliberate buffer for adaptation. They know their curriculum well enough to be flexible without losing coverage. And they treat planning as a craft — not a chore to be done at the last minute or a box to be ticked months in advance.
+
+**What is your planning style? Do you plan everything before the term starts, or do you prefer to take it week by week? Does your school give you enough time to plan ahead? Share your experience in the comments below.**`
+        },
+        {
+                title: "How I Use AI Coding Tools to Build Teaching Resources — And Why Every Teacher Should",
+                topic: "education",
+                excerpt: "Forget ChatGPT prompts. I use AI coding agents to generate entire exercise booklets, curriculum-aligned worksheets, and data-driven lesson materials — from markdown files and CSV data. Here's how.",
+                published: true,
+                sources: `* **Andrej Karpathy**: [Coined "vibe coding" — AI-first development](https://karpathy.ai)
+* **Anthropic**: [Claude Code and learning modes for AI-assisted development](https://anthropic.com)
+* **Edutopia**: [AI tools for teacher productivity](https://www.edutopia.org)
+* **Code.org**: [AI coding education resources](https://code.org)
+* **Edcafe AI**: [AI platform for generating teaching materials](https://edcafe.ai)
+* **CSforAll**: [Vibe coding in educational contexts](https://csforall.org)`,
+                content: `## Introduction
+
+Most teachers using AI are doing the same thing: opening ChatGPT, typing "write me a worksheet on fractions," and copying the output into a Word document. That is useful. It saves thirty minutes. But it barely scratches the surface of what is now possible.
+
+In early 2025, AI researcher [Andrej Karpathy](https://karpathy.ai) coined the term **"vibe coding"** — a new approach to software development where you describe what you want in natural language, and AI agents write the code for you. You do not need to be a programmer. You need to be clear about what you want.
+
+I have been using this approach — with AI coding tools like Antigravity, Cursor, and Claude Code — to build professional-quality teaching resources at scale. Not generic worksheets. Not rough drafts that need heavy editing. **Complete, formatted, curriculum-aligned exercise booklets** generated programmatically from structured data.
+
+The results have been transformative. And the barrier to entry is far lower than most teachers assume.
+
+## What Is Vibe Coding for Teachers?
+
+The difference between traditional AI use and vibe coding is this:
+
+**Traditional approach**: "Write me a worksheet on persuasive writing for Year 9." The AI generates a generic worksheet. You format it manually. You tweak the questions. You print it. It is fine. It took you fifteen minutes instead of forty-five.
+
+**Vibe coding approach**: you provide the AI with structured context — your semester plan, your curriculum objectives, your student performance data — and ask it to **write code** that generates resources programmatically. The output is not a single worksheet. It is a system that produces worksheets, exercise booklets, vocabulary lists, comprehension tasks, and answer keys — all formatted, all aligned to your curriculum, all ready to print.
+
+The key difference is that you are not asking for *content*. You are asking for **systems that produce content.**
+
+This is a fundamental shift. Instead of generating one worksheet at a time, you build a pipeline that can generate an entire term's resources from a single set of inputs.
+
+## How It Works in Practice
+
+Here is the workflow I use:
+
+**Step 1: Create a markdown file with your semester plan.** This includes units, learning objectives, key vocabulary, assessment criteria, and pacing. Markdown is just a simple text format — no special software needed. It looks like a structured list.
+
+**Step 2: Add CSV files with student performance data.** Scores from recent assessments, identified gaps, areas for improvement. A simple spreadsheet exported as CSV.
+
+**Step 3: Feed these files as context to an AI coding agent.** Tools like Antigravity (built by Google DeepMind), Cursor, or [Anthropic's Claude Code](https://anthropic.com) can read these files and use them as context for code generation.
+
+**Step 4: The agent writes scripts that generate resources.** The AI creates Python or Node.js scripts that programmatically generate Word documents, PDF exercise booklets, images, or slide decks — all aligned to the curriculum objectives and tailored to student needs.
+
+This is not theoretical. I have used this workflow to create **30-page weekly exercise booklets in English**, aligned to specific IGCSE units, with auto-generated answer keys, differentiated tasks, and consistent formatting. What would have taken an entire weekend of manual work was completed in an afternoon.
+
+## Why Code-Generated Resources Are Better
+
+### Consistency
+
+Every worksheet, every exercise booklet, every assessment follows the same design template. Fonts, spacing, branding, header formatting — all standardised across the entire set of resources. The result looks professional, not cobbled together.
+
+### Scalability
+
+Regenerating resources for a new cohort, a new unit, or a different curriculum takes minutes, not hours. You change the input files — the semester plan, the vocabulary list, the student data — and rerun the scripts. A new, customised set of materials appears.
+
+### Data-Driven Differentiation
+
+This is where the approach becomes genuinely powerful. Student performance data feeds directly into resource generation. A student struggling with subject-verb agreement gets targeted grammar practice. A student excelling at comprehension gets extension reading tasks. The differentiation is not teacher-estimated — it is data-driven and specific.
+
+### Version Control
+
+Resources are generated from source files — the markdown plan, the CSV data. This means every version is tracked and reproducible. When you update the plan for next year, you can see exactly what changed. When you share resources with a colleague, they can regenerate them from the same source files with their own adaptations.
+
+This is how software teams work. And there is no reason teaching teams should not work the same way.
+
+## Getting Started: You Don't Need to Know How to Code
+
+The entire point of vibe coding is that **you do not need to code.** You describe what you want — "generate a 20-page exercise booklet on persuasive writing, with a vocabulary section, three comprehension tasks per chapter, and an answer key at the back" — and the AI writes the code to make it happen.
+
+You review the output. You refine your instructions. You iterate. The AI handles the technical implementation.
+
+Tools like [Edcafe AI](https://edcafe.ai) and [Code.org](https://code.org) are making AI-powered resource creation more accessible to educators. But the vibe coding approach goes further — because you are not limited to pre-built templates. You can build *anything* you can describe.
+
+The learning curve is real but manageable. Start small — a single worksheet generator. Then build up to full booklets. Then add student data pipelines. Each step builds on the last, and the productivity gains compound rapidly.
+
+## Conclusion
+
+AI in education is stuck in "ChatGPT prompt" mode. Teachers type a request, get a generic response, and spend almost as long editing the output as they would have spent creating the resource from scratch.
+
+Vibe coding unlocks the next level: **automated, scalable, curriculum-aligned resource generation.** It treats teaching resources not as one-off documents but as outputs of a systematic, repeatable process.
+
+Teachers who learn to work with AI coding agents will save hundreds of hours per year. They will produce higher-quality, more consistent, more differentiated materials than they ever could manually. And they will have more time for the work that actually matters — planning brilliant lessons and building relationships with students.
+
+**Have you tried using AI to generate teaching resources? Are you using code-based tools, or sticking to ChatGPT prompts? What has worked and what hasn't? Share your experience in the comments below.**`
+        },
+        {
+                title: "Homework Is the Easiest Thing to Automate — So Why Aren't We Doing It?",
+                topic: "education",
+                excerpt: "AI can generate, distribute, mark, and analyse homework — freeing up hours every week for the thing that actually matters: planning and delivering excellent lessons.",
+                published: true,
+                sources: `* **Guidelight**: [Personalised homework, instant grading, and student insights](https://guidelight.live)
+* **Marking.ai**: [AI grading and feedback tools](https://marking.ai)
+* **Gradescope**: [AI-assisted grading with rubrics](https://www.gradescope.com)
+* **Century Tech**: [Adaptive learning and homework platform](https://www.century.tech)
+* **Edutopia**: [AI tools for teacher productivity](https://www.edutopia.org)`,
+                content: `## Introduction
+
+Ask any teacher what consumes most of their working hours outside the classroom, and the answer is almost always the same: **marking homework.**
+
+Setting it, collecting it, chasing the students who did not submit it, marking it, recording the grades, writing feedback, returning it — the homework cycle is a relentless administrative treadmill that eats into evenings, weekends, and holidays.
+
+And yet, of all the tasks a teacher performs, homework is arguably the **easiest to automate.** AI tools can now generate homework, distribute it to students, mark it instantly, provide personalised feedback, and deliver detailed performance insights to teachers — all without a single red pen.
+
+The time saved is not trivial. Research suggests AI can reduce grading time by 70-80%, saving teachers between 5 and 15 hours per week. That is not just a convenience. It is a fundamental reallocation of professional energy — from the most mechanical part of the job to the most valuable.
+
+## The Homework Time Sink
+
+Consider what the homework cycle actually involves:
+
+1. **Setting it**: deciding what to assign, writing or formatting the task, differentiating for different ability levels.
+2. **Distributing it**: uploading to a platform, printing worksheets, or communicating it to students.
+3. **Collecting it**: chasing submissions, dealing with late work, handling excuses.
+4. **Marking it**: reading through every response, applying marking criteria, correcting errors, writing individual feedback.
+5. **Recording it**: entering grades into a spreadsheet or system, tracking completion rates.
+6. **Returning it**: handing work back, going through common errors, ensuring students actually read the feedback.
+
+Each step takes time. Multiplied across 5 classes, 30 students per class, several times per week — the total is staggering. Many teachers report spending more time on homework administration than on lesson planning. That is a catastrophic misallocation of energy.
+
+The hours spent marking could be spent designing better lessons, creating more engaging resources, and providing in-class support to the students who need it most.
+
+## What Automation Looks Like
+
+AI homework platforms can now handle the entire cycle. Here is what the technology enables:
+
+**Generation**: AI generates homework tasks aligned to the lesson content, differentiated by ability level. A student working below grade level gets scaffolded questions. A student working above gets extension challenges. The differentiation is automatic and data-informed.
+
+**Distribution**: homework is assigned digitally through a student portal. No printing. No lost worksheets. No "I left it at home."
+
+**Marking**: objective questions — multiple choice, short answer, fill-in-the-blank — are marked instantly. AI can also score written responses against rubrics, providing consistent and detailed feedback. Platforms like [Gradescope](https://www.gradescope.com) and [Marking.ai](https://marking.ai) have made significant advances in this area.
+
+**Plagiarism and AI detection**: automated tools flag copied work and AI-generated submissions — an increasingly important capability.
+
+**Feedback**: students receive instant, personalised feedback the moment they submit. They do not wait days or weeks for a teacher to return their work. The feedback loop tightens from slow to instantaneous.
+
+[Guidelight](https://guidelight.live) brings many of these capabilities together in a single platform — personalised homework generation, intelligent marking, and an interactive student portal with detailed progress tracking. It is designed to be the teacher's co-pilot for homework, handling the mechanical work so that teachers can focus on the professional work. Let Guidelight be your guiding light that leads your students to excellence.
+
+[Century Tech](https://www.century.tech) takes a similar approach with its adaptive learning platform, using AI to identify knowledge gaps and automatically generate targeted practice for each student.
+
+## The Real Value: Data-Driven Insights
+
+Saving time on marking is significant. But the most transformative benefit of automated homework is not the time saved — it is the **data generated.**
+
+When homework is marked by AI, the data is captured instantly and systematically. A teacher can open a dashboard on Monday morning and see:
+
+- Which students struggled with last night's assignment
+- Which specific questions were most commonly answered incorrectly
+- Which topics need reteaching
+- How individual student performance is trending over time
+- Which students did not complete the work at all
+
+This transforms lesson planning from guesswork into precision. Instead of planning Monday's lesson based on a general sense of how the class is doing, teachers can target their instruction at the specific gaps the data reveals.
+
+The homework data becomes a **guiding light** for lesson planning — illuminating exactly where students are and what they need next. This is the promise of data-driven teaching, and automated homework makes it practically achievable rather than aspirationally theoretical.
+
+## Reinvesting the Time
+
+The question is not whether to automate homework. It is what to do with the hours you save.
+
+The answer should be clear: **reinvest the time in what AI cannot do.**
+
+AI cannot build a relationship with a student who is struggling with confidence. AI cannot read the room during a lesson and pivot when the energy drops. AI cannot design a creative, engaging lesson that makes a difficult concept come alive. AI cannot sit with a small group of students and work through their misconceptions in real time.
+
+These are the activities that define excellent teaching. And they are the activities that homework marking currently crowds out.
+
+Teachers who automate homework do not do less. They do **better.** More time for lesson planning. More time for resource quality. More time for formative assessment in class. More time for one-to-one student support.
+
+The goal is not efficiency for its own sake. The goal is to **spend professional time on professional work** — and to let machines handle the mechanical tasks that consume too much of both.
+
+## Conclusion
+
+Homework is the lowest-hanging fruit for AI automation in education. The technology exists. The platforms are available. The time savings are enormous. And the data insights that automated homework generates are genuinely transformative for teaching practice.
+
+Teachers who embrace homework automation will gain hours each week — hours that can be redirected to the work that matters most: planning brilliant lessons, building strong relationships with students, and delivering the kind of teaching that no algorithm can replicate.
+
+The question is not whether this will happen. It is whether you will be early or late.
+
+**Are you already using AI to automate homework? What tools have you tried? What has worked and what hasn't? Share your experience in the comments below.**`
         }
 ];

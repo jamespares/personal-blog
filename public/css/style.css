@@ -237,6 +237,11 @@ main.container {
   font-size: 1.05rem;
 }
 
+.hero-project {
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+
 .author-link {
   color: var(--color-text-secondary);
   text-decoration: underline;

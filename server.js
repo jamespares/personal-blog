@@ -4,18 +4,22 @@ const session = require('express-session');
 const path = require('path');
 const { posts, comments } = require('./db');
 
-// Auto-seed posts if database is empty
-const existingPosts = posts.getRecent(1);
-if (existingPosts.length === 0) {
-    try {
-        const seedPosts = require('./seed-posts-data');
-        for (const post of seedPosts) {
+// Auto-seed: insert any posts from seed data that don't already exist
+try {
+    const seedPosts = require('./seed-posts-data');
+    const { db: rawDb } = require('./db');
+    let seeded = 0;
+    for (const post of seedPosts) {
+        const exists = rawDb.prepare('SELECT id FROM posts WHERE title = ?').get(post.title);
+        if (!exists) {
             posts.create(post);
+            seeded++;
+            console.log('✓ Seeded: ' + post.title);
         }
-        console.log('Seeded ' + seedPosts.length + ' blog posts.');
-    } catch (e) {
-        console.log('No seed data found or seeding failed:', e.message);
     }
+    if (seeded > 0) console.log('Seeded ' + seeded + ' new blog posts.');
+} catch (e) {
+    console.log('No seed data found or seeding failed:', e.message);
 }
 
 // Always seed comments for any post that currently has none

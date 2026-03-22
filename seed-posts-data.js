@@ -458,63 +458,7 @@ An insurance-based model, funded by employers, with outcome-based incentives and
 
 **What do you think? Would an insurance-based model improve the NHS, or would it undermine its founding principles? Should patients pay a small fee at the point of care? I'd love to hear your views in the comments.**`
         },
-        {
-                title: "The AI Bottleneck: Why More Code Doesn't Always Mean More Velocity",
-                topic: "ai",
-                excerpt: "As AI tools allow individual developers to generate unprecedented amounts of code, the real challenge is shifting from production to coordination. Is asynchronous, multi-timezone development with rigorous changelogs the only way to keep up?",
-                published: true,
-                sources: `* **Index.dev**: [AI coding tools and developer productivity](https://index.dev)
-* **Anthropic**: [The "AI Paradox" in software development](https://anthropic.com)
-* **Microsoft**: [The future of agentic AI workflows](https://microsoft.com)
-* **Dwarkesh Podcast**: [AI agents and the future of software](https://www.dwarkeshpatel.com)`,
-                content: `## Introduction
 
-The speed of AI development is fundamentally rewriting the rules of software engineering. In 2024, the "10x developer" was an aspirational archetype; by 2026, it is increasingly the baseline. Tools that once merely suggested code are now evolving into "agentic" systems that can plan, write, test, and deploy entire features with minimal human intervention.
-
-But as the cost of *writing* code drops toward zero, a new bottleneck is emerging: **coordination**. 
-
-The dilemma is simple: if an individual developer can now produce the output that previously required a team of five, how do we prevent the system from collapsing under its own weight? When everyone is moving at "AI speed," the friction of human collaboration becomes the primary limit on velocity. To solve this, we may need to reconsider not just how we code, but how we work together.
-
-## The 10x Developer Paradox
-
-The promise of AI is productivity. And [Index.dev](https://index.dev) has reported productivity gains of up to 55% for certain development tasks. However, this speed comes with a hidden cost. [Anthropic](https://anthropic.com) has identified what they call the "AI Paradox": while AI makes writing code faster, it can actually increase the time required for review and validation.
-
-AI-generated code is often "hallucinatory" or subtly flawed. A developer who generates 1,000 lines of code in a morning creates a massive cognitive burden for their teammates who must review it. The result is a productivity plateau: the more we generate, the slower we integrate.
-
-As we move toward [agentic AI workflows](https://microsoft.com), the role of the developer is shifting from writing every line to orchestrating AI agents. In this model, the challenge isn't the code itself — it's maintaining a high-level system understanding while the codebase expands at a rate no human can fully track.
-
-## The Distributed Advantage: 24/7 Development
-
-One of the most effective ways to manage this explosion of code is to lean into asynchronous, distributed development. 
-
-The traditional model of a team working in the same office (or same time zone) relies on high-bandwidth, synchronous communication — meetings, taps on the shoulder, Slack threads. At AI speed, this becomes a distraction. 
-
-Instead, the "follow-the-sun" model — where developers work across different time zones — offers a solution. When one developer in London goes to sleep, they hand off a "live" codebase to a developer in San Francisco or Sydney. This allows for almost 24/7 development and rapid progress. But it only works if the handover is crystalline.
-
-## The Rigour of the CHANGELOG.md
-
-In a high-velocity, asynchronous environment, "git log" is no longer enough. We need something more human: a rigorous, detailed **CHANGELOG.md**.
-
-The CHANGELOG.md provides a clear summary of what has been done, what is outstanding, and the *rationale* behind key architectural decisions. It serves as the "shared brain" of the team. As [Dwarkesh Patel](https://www.dwarkeshpatel.com) has explored in his discussions on AI agents, the quality of documentation is the primary factor in how effectively AI (and other developers) can build upon existing work.
-
-A good async handover should include:
-1. **What was finished:** Clear, checkbox-style confirmation of completed tasks.
-2. **Context:** Why certain trade-offs were made (especially if the AI suggested them).
-3. **Known issues:** Any "temporary" hacks or technical debt introduced to maintain speed.
-4. **Next steps:** A clear bridge for the next developer waking up across the world.
-
-This discipline prevents the "broken window" effect, where rapid AI-driven development leads to a codebase that looks functional but is internally chaotic.
-
-## Conclusion
-
-The AI revolution is not just about tools; it's about systems. We are entering an era where more code does not automatically mean more velocity. The bottleneck has shifted from production to coordination.
-
-The teams that thrive will be those that embrace extreme documentation and asynchronous workflows. By working across time zones and maintaining a rigorous CHANGELOG.md, developers can harness the 24/7 power of AI speed without losing their way in a sea of generated code.
-
-AI allows us to write faster than ever before. But to build better, we must first learn to communicate better.
-
-**How is your team handling the surge in AI-generated code? Do you use asynchronous handovers, or are you feeling the coordination bottleneck? Share your thoughts in the comments below.**`
-        },
         {
                 title: "From Project Management to Classroom Management: Corporate Wisdom the Classroom Desperately Needs",
                 topic: "education",

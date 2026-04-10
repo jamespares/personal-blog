@@ -8,7 +8,7 @@ const { sendWelcomeEmail } = require('../email');
 router.get('/', (req, res) => {
     const recentPosts = posts.getRecent(10);
     const chinaPostsPreview = posts.getByTopic('china').slice(0, 3);
-    const educationPostsPreview = posts.getByTopic('education').slice(0, 3);
+    const educationPostsPreview = posts.getByTopic('education');
     const politicsPostsPreview = posts.getByTopic('politics').slice(0, 3);
     const aiPostsPreview = posts.getByTopic('ai').slice(0, 3);
     res.render('home', {

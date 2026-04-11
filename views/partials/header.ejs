@@ -32,6 +32,7 @@
                 <a href="/topic/ai" class="<%= currentPath === '/topic/ai' ? 'active' : '' %>">AI</a>
                 <a href="/topic/china" class="<%= currentPath === '/topic/china' ? 'active' : '' %>">China</a>
                 <a href="/topic/politics" class="<%= currentPath === '/topic/politics' ? 'active' : '' %>">Politics</a>
+                <a href="/topic/books" class="<%= currentPath === '/topic/books' ? 'active' : '' %>">Book Reviews</a>
                 <form action="/search" method="GET" class="nav-search">
                     <input type="text" name="q" placeholder="Search…" aria-label="Search"
                         value="<%= typeof query !== 'undefined' ? query : '' %>">

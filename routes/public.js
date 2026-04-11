@@ -11,13 +11,15 @@ router.get('/', (req, res) => {
     const educationPostsPreview = posts.getByTopic('education');
     const politicsPostsPreview = posts.getByTopic('politics').slice(0, 3);
     const aiPostsPreview = posts.getByTopic('ai').slice(0, 3);
+    const booksPostsPreview = posts.getByTopic('books').slice(0, 3);
     res.render('home', {
         recentPosts,
         topicPreviews: {
             china: chinaPostsPreview,
             education: educationPostsPreview,
             politics: politicsPostsPreview,
-            ai: aiPostsPreview
+            ai: aiPostsPreview,
+            books: booksPostsPreview
         }
     });
 });
@@ -25,7 +27,7 @@ router.get('/', (req, res) => {
 // Topic page
 router.get('/topic/:topic', (req, res) => {
     const topic = req.params.topic.toLowerCase();
-    if (!['china', 'education', 'politics', 'ai'].includes(topic)) {
+    if (!['china', 'education', 'politics', 'ai', 'books'].includes(topic)) {
         return res.status(404).render('404');
     }
     const topicPosts = posts.getByTopic(topic);

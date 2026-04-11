@@ -69,7 +69,8 @@ app.use((req, res, next) => {
             education: 'Education',
             ai: 'AI',
             china: 'China',
-            politics: 'Politics'
+            politics: 'Politics',
+            books: 'Book Reviews'
         };
         return labels[topic.toLowerCase()] || (topic.charAt(0).toUpperCase() + topic.slice(1));
     };

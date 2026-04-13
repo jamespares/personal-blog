@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const { posts, products } = require('../db');
-const { notifySubscribers } = require('../email');
+
 
 // Auth middleware
 function requireAdmin(req, res, next) {
@@ -65,16 +65,6 @@ router.post('/new', requireAdmin, async (req, res) => {
         published: published === 'on'
     });
 
-    // Send email notifications if published
-    if (published === 'on') {
-        const newPost = posts.getById(result.id);
-        try {
-            await notifySubscribers(newPost);
-        } catch (err) {
-            console.error('Email error:', err);
-        }
-    }
-
     res.redirect('/admin');
 });
 
@@ -107,16 +97,6 @@ router.post('/edit/:id', requireAdmin, async (req, res) => {
         sources: sources ? sources.trim() : '',
         published: published === 'on'
     });
-
-    // Notify subscribers if the post is being published for the first time
-    if (published === 'on' && !wasPublished) {
-        const updatedPost = posts.getById(id);
-        try {
-            await notifySubscribers(updatedPost);
-        } catch (err) {
-            console.error('Email error:', err);
-        }
-    }
 
     res.redirect('/admin');
 });

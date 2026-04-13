@@ -754,50 +754,9 @@ main.container {
   text-align: center;
 }
 
-.footer-subscribe p {
-  font-family: var(--font-heading);
-  font-size: 0.95rem;
-  font-weight: 500;
-  margin-bottom: 0.75rem;
-}
 
-.subscribe-form {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  max-width: 380px;
-  margin: 0 auto 1.5rem;
-}
 
-.subscribe-form input {
-  flex: 1;
-  font-family: var(--font-heading);
-  font-size: 0.85rem;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-}
 
-.subscribe-form input:focus {
-  outline: none;
-  border-color: var(--color-accent);
-}
-
-.subscribe-form button {
-  font-family: var(--font-heading);
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  background: var(--color-text);
-  color: #fff;
-  border: none;
-  border-radius: var(--radius);
-  cursor: pointer;
-  transition: background var(--transition);
-}
-
-.subscribe-form button:hover {
-  background: #333;
 }
 
 /* Topic Picker */
@@ -1592,4 +1551,28 @@ main.container {
 .back-home:hover {
   color: var(--color-text);
   text-decoration: underline;
+}
+
+/* Dark red heading titles */
+.section-title {
+  color: #7f1d1d !important;
+  border-bottom: 2px solid #7f1d1d;
+}
+
+/* Landing Page Icons Styling */
+.social-links-row a {
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-links-row a:hover {
+  transform: translateY(-2px);
+  color: #7f1d1d;
+}
+
+.social-links-row a svg {
+  width: 28px;
+  height: 28px;
 }

@@ -2,7 +2,7 @@ const Database = require('better-sqlite3');
 const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
-const { v4: uuidv4 } = require('uuid');
+
 
 const dataDir = process.env.DATA_DIR || __dirname;
 if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
@@ -36,13 +36,7 @@ db.exec(`
     FOREIGN KEY (post_id) REFERENCES posts(id) ON DELETE CASCADE
   );
 
-  CREATE TABLE IF NOT EXISTS subscribers (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    email TEXT UNIQUE NOT NULL,
-    topics TEXT NOT NULL DEFAULT 'all',
-    unsubscribe_token TEXT UNIQUE NOT NULL,
-    created_at TEXT DEFAULT (datetime('now'))
-  );
+
 
   CREATE TABLE IF NOT EXISTS products (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -69,12 +63,7 @@ try {
     // Column likely already exists
 }
 
-// Migration: add topics column to subscribers if it doesn't exist
-try {
-    db.exec(`ALTER TABLE subscribers ADD COLUMN topics TEXT NOT NULL DEFAULT 'all';`);
-} catch (e) {
-    // Column likely already exists
-}
+
 
 // Migration: update CHECK constraint to include 'ai' topic if missing
 try {
@@ -213,32 +202,7 @@ const comments = {
     }
 };
 
-// ── Subscribers ─────────────────────────────────────────────────
-const subscribers = {
-    getAll() {
-        return db.prepare('SELECT * FROM subscribers').all();
-    },
-    add(email, topics = 'all') {
-        const token = uuidv4();
-        try {
-            db.prepare('INSERT INTO subscribers (email, topics, unsubscribe_token) VALUES (?, ?, ?)').run(email, topics, token);
-            return { success: true, token };
-        } catch (e) {
-            if (e.message.includes('UNIQUE')) return { success: false, reason: 'already_subscribed' };
-            throw e;
-        }
-    },
-    getByTopics(topic) {
-        // Returns subscribers who want 'all' topics OR whose topics list includes the given topic
-        return db.prepare(
-            "SELECT * FROM subscribers WHERE topics = 'all' OR (',' || topics || ',') LIKE '%,' || ? || ',%'"
-        ).all(topic);
-    },
-    removeByToken(token) {
-        const result = db.prepare('DELETE FROM subscribers WHERE unsubscribe_token = ?').run(token);
-        return result.changes > 0;
-    }
-};
+
 
 // ── Products ────────────────────────────────────────────────────
 const products = {
@@ -280,4 +244,4 @@ const products = {
     }
 };
 
-module.exports = { db, posts, comments, subscribers, products };
+module.exports = { db, posts, comments, products };

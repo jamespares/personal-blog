@@ -1,33 +1,49 @@
-<%- include('partials/header', { pageTitle: 'Home' }) %>
+<%- include('partials/header') %>
 
-<div class="landing-container">
-    <section class="bio-section">
-        <p class="bio-text">
-            I left my graduate job in London to travel and teach in China. Now I'm building AI tools for teachers and language learners:
-        </p>
-        <ul class="bio-products-list">
-            <li><strong>teachanythingnow.com</strong> — generate package of lesson materials</li>
-            <li><strong>hw-made-simple.com</strong> — create personalised HW tasks</li>
-            <li><strong>Test Master Series</strong> — AI specialized test prep (DALF, IELTS, TOEFL)</li>
-        </ul>
-    </section>
-
-    <nav class="landing-nav">
-        <ul class="hierarchy-select">
-            <li><a href="/blog" class="nav-large-link">Blog</a></li>
-            <li><a href="/products" class="nav-large-link">Products</a></li>
-        </ul>
-    </nav>
-
-    <div class="landing-footer">
-        <div class="social-links-minimal">
+<div class="simple-landing">
+    <!-- Social Links at the Top -->
+    <section class="top-social">
+        <div class="social-links-row">
             <a href="https://www.linkedin.com/in/james-p-ba7653207/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <span class="sep">/</span>
             <a href="https://x.com/jamespareslfg" target="_blank" rel="noopener noreferrer">X</a>
             <span class="sep">/</span>
             <a href="https://github.com/jamespares" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-    </div>
+    </section>
+
+    <!-- Products Section -->
+    <% if (activeProducts.length > 0) { %>
+        <section class="simple-section">
+            <h2 class="section-title">Products</h2>
+            <div class="product-list-minimal">
+                <% activeProducts.forEach(function(product) { %>
+                    <article class="product-item">
+                        <div class="product-header">
+                            <h3><a href="<%= product.live_url || '#' %>" target="_blank"><%= product.name %></a></h3>
+                            <span class="product-tagline-inline">— <%= product.tagline %></span>
+                        </div>
+                    </article>
+                <% }); %>
+            </div>
+        </section>
+    <% } %>
+
+    <!-- Blog Section -->
+    <% if (recentPosts.length > 0) { %>
+        <section class="simple-section">
+            <h2 class="section-title">Blog</h2>
+            <div class="post-list-minimal">
+                <% recentPosts.forEach(function(post) { %>
+                    <article class="post-item">
+                        <time class="post-date-minimal"><%= new Date(post.created_at).toLocaleDateString('en-GB', { month: 'short', year: 'numeric' }) %></time>
+                        <a href="/post/<%= post.slug %>" class="post-link-minimal"><%= post.title %></a>
+                        <span class="post-topic-minimal">in <%= formatTopic(post.topic) %></span>
+                    </article>
+                <% }); %>
+            </div>
+        </section>
+    <% } %>
 </div>
 
 <%- include('partials/footer') %>

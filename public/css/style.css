@@ -1472,3 +1472,124 @@ main.container {
   color: var(--color-text);
   font-weight: 500;
 }
+
+/* ── Simple Landing (Single Page) ──────────────── */
+.simple-landing {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.top-social {
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.social-links-row {
+  display: flex;
+  gap: 1.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+}
+
+.social-links-row a {
+  color: var(--color-text);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.social-links-row a:hover {
+  color: var(--color-accent);
+}
+
+.simple-section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-item {
+  margin-bottom: 1rem;
+}
+
+.product-header h3 {
+  display: inline;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.product-header h3 a {
+  color: var(--color-text);
+}
+
+.product-header h3 a:hover {
+  text-decoration: underline;
+}
+
+.product-tagline-inline {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.post-item {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.post-date-minimal {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  min-width: 80px;
+}
+
+.post-link-minimal {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.post-link-minimal:hover {
+  text-decoration: underline;
+}
+
+.post-topic-minimal {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .post-item {
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.back-home {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.back-home:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}

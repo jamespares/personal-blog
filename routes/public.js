@@ -4,9 +4,11 @@ const { marked } = require('marked');
 const { posts, comments, subscribers, products } = require('../db');
 const { sendWelcomeEmail } = require('../email');
 
-// Landing page
+// Landing page (Single page scroll)
 router.get('/', (req, res) => {
-    res.render('landing');
+    const activeProducts = products.getActive();
+    const recentPosts = posts.getRecent(15);
+    res.render('landing', { activeProducts, recentPosts });
 });
 
 // Blog home page

@@ -1453,3 +1453,22 @@ main.container {
   color: var(--color-text-secondary);
   margin-bottom: 0.5rem;
 }
+
+.bio-products-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2.5rem;
+  text-align: left;
+  display: inline-block;
+}
+
+.bio-products-list li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-secondary);
+}
+
+.bio-products-list li strong {
+  color: var(--color-text);
+  font-weight: 500;
+}

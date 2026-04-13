@@ -1,0 +1,88 @@
+<%- include('../partials/header', { pageTitle: product ? 'Edit Product' : 'New Product' }) %>
+
+<section class="admin-editor">
+    <h1>
+        <%= product && product.id ? 'Edit Product' : 'New Product' %>
+    </h1>
+
+    <% if (error) { %>
+        <div class="alert alert-error">
+            <%= error %>
+        </div>
+    <% } %>
+
+    <form action="<%= product && product.id ? '/admin/products/edit/' + product.id : '/admin/products/new' %>" method="POST"
+        class="editor-form">
+        <div class="form-group">
+            <label for="name">Product Name</label>
+            <input type="text" id="name" name="name" value="<%= product ? product.name : '' %>" required
+                placeholder="My awesome product">
+        </div>
+
+        <div class="form-group">
+            <label for="tagline">Tagline <span class="label-hint">(optional — short one-liner)</span></label>
+            <input type="text" id="tagline" name="tagline" value="<%= product ? product.tagline : '' %>"
+                placeholder="A short catchy description">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="status">Status</label>
+                <select id="status" name="status">
+                    <option value="active" <%= product && product.status === 'active' ? 'selected' : '' %>>Active</option>
+                    <option value="coming_soon" <%= product && product.status === 'coming_soon' ? 'selected' : '' %>>Coming Soon</option>
+                    <option value="archived" <%= product && product.status === 'archived' ? 'selected' : '' %>>Archived</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="text" id="price" name="price" value="<%= product ? product.price : 'Free' %>"
+                    placeholder="Free, $9/mo, etc.">
+            </div>
+            <div class="form-group form-check">
+                <label>
+                    <input type="checkbox" name="published" <%= product && product.published ? 'checked' : '' %>>
+                    Published
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="image_url">Image URL <span class="label-hint">(optional — product screenshot)</span></label>
+            <input type="url" id="image_url" name="image_url" value="<%= product ? product.image_url : '' %>"
+                placeholder="https://example.com/screenshot.png">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="live_url">Live URL <span class="label-hint">(optional)</span></label>
+                <input type="url" id="live_url" name="live_url" value="<%= product ? product.live_url : '' %>"
+                    placeholder="https://myproduct.com">
+            </div>
+            <div class="form-group">
+                <label for="github_url">GitHub URL <span class="label-hint">(optional)</span></label>
+                <input type="url" id="github_url" name="github_url" value="<%= product ? product.github_url : '' %>"
+                    placeholder="https://github.com/...">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description <span class="label-hint">(Markdown supported)</span></label>
+            <textarea id="description" name="description" rows="10" required
+                placeholder="Describe your product in detail… (Markdown supported)"><%= product ? product.description : '' %></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="features">Features <span class="label-hint">(Markdown list, optional)</span></label>
+            <textarea id="features" name="features" rows="6"
+                placeholder="- Feature 1&#10;- Feature 2&#10;- Feature 3"><%= product ? product.features : '' %></textarea>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn">Save</button>
+            <a href="/admin/products" class="btn btn-ghost">Cancel</a>
+        </div>
+    </form>
+</section>
+
+<%- include('../partials/footer') %>

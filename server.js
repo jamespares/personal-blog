@@ -19,7 +19,25 @@ try {
     }
     if (seeded > 0) console.log('Seeded ' + seeded + ' new blog posts.');
 } catch (e) {
-    console.log('No seed data found or seeding failed:', e.message);
+    console.log('No post seed data found or seeding failed:', e.message);
+}
+
+// Auto-seed products
+try {
+    const seedProducts = require('./seed-products-data');
+    const { products, db: rawDb } = require('./db');
+    let seededProducts = 0;
+    for (const product of seedProducts) {
+        const exists = rawDb.prepare('SELECT id FROM products WHERE name = ?').get(product.name);
+        if (!exists) {
+            products.create(product);
+            seededProducts++;
+            console.log('✓ Seeded Product: ' + product.name);
+        }
+    }
+    if (seededProducts > 0) console.log('Seeded ' + seededProducts + ' new products.');
+} catch (e) {
+    console.log('No product seed data found or seeding failed:', e.message);
 }
 
 // Always seed comments for any post that currently has none

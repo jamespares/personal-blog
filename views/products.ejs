@@ -1,0 +1,77 @@
+<%- include('partials/header', { pageTitle: 'Products' }) %>
+
+<section class="page-header">
+    <h1>Products</h1>
+    <p class="page-sub">Mini-SaaS products and AI tools for teachers and learners.</p>
+</section>
+
+<% if (activeProducts.length > 0) { %>
+    <section class="products-section">
+        <div class="section-header">
+            <h2>Live Products</h2>
+        </div>
+        <div class="products-grid">
+            <% activeProducts.forEach(function(product) { %>
+                <article class="product-card">
+                    <% if (product.image_url) { %>
+                        <div class="product-image">
+                            <img src="<%= product.image_url %>" alt="<%= product.name %>">
+                        </div>
+                    <% } %>
+                    <div class="product-body">
+                        <h3><a href="/products/<%= product.slug %>"><%= product.name %></a></h3>
+                        <% if (product.tagline) { %>
+                            <p class="product-tagline"><%= product.tagline %></p>
+                        <% } %>
+                        <p class="product-excerpt">
+                            <%= product.description.substring(0, 120) %>...
+                        </p>
+                        <div class="product-meta">
+                            <span class="product-price"><%= product.price %></span>
+                            <a href="/products/<%= product.slug %>" class="product-link">Learn more →</a>
+                        </div>
+                    </div>
+                </article>
+            <% }); %>
+        </div>
+    </section>
+<% } %>
+
+<% if (comingSoonProducts.length > 0) { %>
+    <section class="products-section">
+        <div class="section-header">
+            <h2>Coming Soon</h2>
+        </div>
+        <div class="products-grid">
+            <% comingSoonProducts.forEach(function(product) { %>
+                <article class="product-card coming-soon">
+                    <% if (product.image_url) { %>
+                        <div class="product-image">
+                            <img src="<%= product.image_url %>" alt="<%= product.name %>">
+                        </div>
+                    <% } %>
+                    <div class="product-body">
+                        <h3><%= product.name %></h3>
+                        <% if (product.tagline) { %>
+                            <p class="product-tagline"><%= product.tagline %></p>
+                        <% } %>
+                        <p class="product-excerpt">
+                            <%= product.description.substring(0, 120) %>...
+                        </p>
+                        <div class="product-meta">
+                            <span class="product-badge">Coming Soon</span>
+                        </div>
+                    </div>
+                </article>
+            <% }); %>
+        </div>
+    </section>
+<% } %>
+
+<% if (activeProducts.length === 0 && comingSoonProducts.length === 0) { %>
+    <section class="empty-state">
+        <p>No products yet. Check back soon!</p>
+    </section>
+<% } %>
+
+<%- include('partials/footer') %>

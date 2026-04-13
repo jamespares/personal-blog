@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
-const { posts } = require('../db');
+const { posts, products } = require('../db');
 const { notifySubscribers } = require('../email');
 
 // Auth middleware
@@ -125,6 +125,81 @@ router.post('/edit/:id', requireAdmin, async (req, res) => {
 router.post('/delete/:id', requireAdmin, (req, res) => {
     posts.delete(parseInt(req.params.id));
     res.redirect('/admin');
+});
+
+// ── Products ────────────────────────────────────────────────────
+
+// Products dashboard
+router.get('/products', requireAdmin, (req, res) => {
+    const allProducts = products.getAllAdmin();
+    res.render('admin/products-dashboard', { products: allProducts });
+});
+
+// New product form
+router.get('/products/new', requireAdmin, (req, res) => {
+    res.render('admin/product-editor', { product: null, error: null });
+});
+
+// Create product
+router.post('/products/new', requireAdmin, (req, res) => {
+    const { name, tagline, description, features, image_url, live_url, github_url, price, status, published } = req.body;
+    if (!name || !description) {
+        return res.render('admin/product-editor', {
+            product: req.body,
+            error: 'Name and description are required.'
+        });
+    }
+    products.create({
+        name: name.trim(),
+        tagline: tagline ? tagline.trim() : '',
+        description,
+        features: features ? features.trim() : '',
+        image_url: image_url ? image_url.trim() : '',
+        live_url: live_url ? live_url.trim() : '',
+        github_url: github_url ? github_url.trim() : '',
+        price: price ? price.trim() : 'Free',
+        status: status || 'active',
+        published: published === 'on'
+    });
+    res.redirect('/admin/products');
+});
+
+// Edit product form
+router.get('/products/edit/:id', requireAdmin, (req, res) => {
+    const product = products.getById(parseInt(req.params.id));
+    if (!product) return res.status(404).render('404');
+    res.render('admin/product-editor', { product, error: null });
+});
+
+// Update product
+router.post('/products/edit/:id', requireAdmin, (req, res) => {
+    const id = parseInt(req.params.id);
+    const { name, tagline, description, features, image_url, live_url, github_url, price, status, published } = req.body;
+    if (!name || !description) {
+        return res.render('admin/product-editor', {
+            product: { ...req.body, id },
+            error: 'Name and description are required.'
+        });
+    }
+    products.update(id, {
+        name: name.trim(),
+        tagline: tagline ? tagline.trim() : '',
+        description,
+        features: features ? features.trim() : '',
+        image_url: image_url ? image_url.trim() : '',
+        live_url: live_url ? live_url.trim() : '',
+        github_url: github_url ? github_url.trim() : '',
+        price: price ? price.trim() : 'Free',
+        status: status || 'active',
+        published: published === 'on'
+    });
+    res.redirect('/admin/products');
+});
+
+// Delete product
+router.post('/products/delete/:id', requireAdmin, (req, res) => {
+    products.delete(parseInt(req.params.id));
+    res.redirect('/admin/products');
 });
 
 module.exports = router;

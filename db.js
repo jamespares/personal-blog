@@ -43,6 +43,23 @@ db.exec(`
     unsubscribe_token TEXT UNIQUE NOT NULL,
     created_at TEXT DEFAULT (datetime('now'))
   );
+
+  CREATE TABLE IF NOT EXISTS products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    slug TEXT UNIQUE NOT NULL,
+    tagline TEXT,
+    description TEXT NOT NULL,
+    features TEXT,
+    image_url TEXT,
+    live_url TEXT,
+    github_url TEXT,
+    price TEXT DEFAULT 'Free',
+    status TEXT DEFAULT 'active' CHECK(status IN ('active', 'archived', 'coming_soon')),
+    published INTEGER DEFAULT 0,
+    created_at TEXT DEFAULT (datetime('now')),
+    updated_at TEXT DEFAULT (datetime('now'))
+  );
 `);
 
 // Simple migration: add sources column if it doesn't exist
@@ -223,4 +240,44 @@ const subscribers = {
     }
 };
 
-module.exports = { db, posts, comments, subscribers };
+// ── Products ────────────────────────────────────────────────────
+const products = {
+    getAll() {
+        return db.prepare('SELECT * FROM products WHERE published = 1 ORDER BY created_at DESC').all();
+    },
+    getAllAdmin() {
+        return db.prepare('SELECT * FROM products ORDER BY created_at DESC').all();
+    },
+    getBySlug(slug) {
+        return db.prepare('SELECT * FROM products WHERE slug = ?').get(slug);
+    },
+    getById(id) {
+        return db.prepare('SELECT * FROM products WHERE id = ?').get(id);
+    },
+    getActive() {
+        return db.prepare("SELECT * FROM products WHERE published = 1 AND status = 'active' ORDER BY created_at DESC").all();
+    },
+    getComingSoon() {
+        return db.prepare("SELECT * FROM products WHERE published = 1 AND status = 'coming_soon' ORDER BY created_at DESC").all();
+    },
+    create({ name, tagline, description, features, image_url, live_url, github_url, price, status, published }) {
+        const slug = generateSlug(name);
+        const stmt = db.prepare(
+            'INSERT INTO products (name, slug, tagline, description, features, image_url, live_url, github_url, price, status, published) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+        );
+        const result = stmt.run(name, slug, tagline || '', description, features || '', image_url || '', live_url || '', github_url || '', price || 'Free', status || 'active', published ? 1 : 0);
+        return { id: result.lastInsertRowid, slug };
+    },
+    update(id, { name, tagline, description, features, image_url, live_url, github_url, price, status, published }) {
+        const slug = generateSlug(name);
+        db.prepare(
+            "UPDATE products SET name=?, slug=?, tagline=?, description=?, features=?, image_url=?, live_url=?, github_url=?, price=?, status=?, published=?, updated_at=datetime('now') WHERE id=?"
+        ).run(name, slug, tagline || '', description, features || '', image_url || '', live_url || '', github_url || '', price || 'Free', status || 'active', published ? 1 : 0, id);
+        return slug;
+    },
+    delete(id) {
+        db.prepare('DELETE FROM products WHERE id = ?').run(id);
+    }
+};
+
+module.exports = { db, posts, comments, subscribers, products };

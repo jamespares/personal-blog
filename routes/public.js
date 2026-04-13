@@ -1,11 +1,16 @@
 const express = require('express');
 const router = express.Router();
 const { marked } = require('marked');
-const { posts, comments, subscribers } = require('../db');
+const { posts, comments, subscribers, products } = require('../db');
 const { sendWelcomeEmail } = require('../email');
 
-// Home page
+// Landing page
 router.get('/', (req, res) => {
+    res.render('landing');
+});
+
+// Blog home page
+router.get('/blog', (req, res) => {
     const recentPosts = posts.getRecent(10);
     const chinaPostsPreview = posts.getByTopic('china').slice(0, 3);
     const educationPostsPreview = posts.getByTopic('education');
@@ -108,6 +113,22 @@ router.get('/unsubscribe', (req, res) => {
     if (!token) return res.status(400).render('error', { message: 'Invalid unsubscribe link.' });
     const removed = subscribers.removeByToken(token);
     res.render('unsubscribe', { success: removed });
+});
+
+// Products listing
+router.get('/products', (req, res) => {
+    const activeProducts = products.getActive();
+    const comingSoonProducts = products.getComingSoon();
+    res.render('products', { activeProducts, comingSoonProducts });
+});
+
+// Single product
+router.get('/products/:slug', (req, res) => {
+    const product = products.getBySlug(req.params.slug);
+    if (!product) return res.status(404).render('404');
+    // Only show unpublished products to admin
+    if (!product.published && !req.session.isAdmin) return res.status(404).render('404');
+    res.render('product', { product, marked });
 });
 
 module.exports = router;

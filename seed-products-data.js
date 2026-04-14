@@ -28,7 +28,7 @@ module.exports = [
     },
     {
         name: 'The Language Dojo',
-        tagline: 'A central hub ofAI tools to mastering standardised language tests',
+        tagline: 'A central hub of AI tools to mastering standardised language tests',
         description: 'The Language Dojo is your central hub for language mastery and test preparation.',
         live_url: 'https://thelanguagedojo.com',
         price: 'Free / Premium',
@@ -64,5 +64,32 @@ module.exports = [
         status: 'active',
         published: 1,
         is_subproduct: true
+    },
+    {
+        name: 'A vs De?',
+        tagline: 'Flashcard game to help learn prepositions for verbs in French',
+        description: 'Interactive flashcards designed to help students master the complex prepositions used with French verbs.',
+        live_url: 'https://avsde.com',
+        price: 'Free',
+        status: 'active',
+        published: 1
+    },
+    {
+        name: 'Le vs La?',
+        tagline: 'Flashcard game to help improve understanding of masculine vs feminine nouns in French',
+        description: 'A fun and effective way to practice and memorize the gender of common French nouns.',
+        live_url: 'https://levsla.com',
+        price: 'Free',
+        status: 'active',
+        published: 1
+    },
+    {
+        name: 'No More Chinglish',
+        tagline: 'Several games that target all the most common mistakes Chinese learners make when learning English',
+        description: 'A collection of targeted educational games focused on correcting common errors made by Chinese speakers of English.',
+        live_url: 'https://nomorechinglish.com',
+        price: 'Free / Premium',
+        status: 'active',
+        published: 1
     }
 ];

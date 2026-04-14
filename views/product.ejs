@@ -34,13 +34,13 @@
     </header>
 
     <div class="product-content">
-        <%- marked(product.description) %>
+        <%- marked.parse(product.description) %>
     </div>
 
     <% if (product.features) { %>
         <div class="product-features">
             <h2>Features</h2>
-            <%- marked(product.features) %>
+            <%- marked.parse(product.features) %>
         </div>
     <% } %>
 

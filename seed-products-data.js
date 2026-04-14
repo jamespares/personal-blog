@@ -18,11 +18,11 @@ module.exports = [
         published: 1
     },
     {
-        name: 'Find Your Filmmaker',
-        tagline: 'An online directory for finding AI filmmakers',
-        description: 'An online directory for finding AI filmmakers. Find the best talent for your next AI-driven video production.',
-        live_url: 'https://findyourfilmmaker.com',
-        price: 'Free',
+        name: 'Listening Live',
+        tagline: 'Live large-text, bilingual subtitles for teachers and public speakers',
+        description: 'Real-time bilingual subtitles designed for teachers to enhance accessibility and language comprehension in diverse classrooms.',
+        live_url: 'https://listening-live.com',
+        price: 'Free / Premium',
         status: 'active',
         published: 1
     },

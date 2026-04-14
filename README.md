@@ -1,42 +1,73 @@
-# James Pares — Personal Blog
+# James Pares — Personal Blog & Portfolio
 
-A personal blog built with Express, EJS, and SQLite. Deployed on [Railway](https://railway.app) with a persistent volume for the database.
+A minimalist, high-performance personal website and blog built with a custom **Static Site Generator** using EJS and Markdown.
 
-**Live site:** [www.jamespares.me](https://www.jamespares.me)
+**Live site:** [jamespares.me](https://jamespares.me)
 
-## Adding New Blog Posts
+## Architecture
 
-1. Add your new post object(s) to `seed-posts-data.js`
-2. Commit and push to `main`
-3. Railway redeploys automatically
-4. On startup, `server.js` checks each post in `seed-posts-data.js` against the database **by title** — any post not already present is inserted automatically
+This site is migrated from a dynamic Node.js server to a **fully static architecture**, optimized for speed, security, and simplicity.
 
-> **No manual database work is needed.** New posts are seeded on every deploy. Existing posts are not duplicated or overwritten.
+- **Frontend**: EJS (Embedded JavaScript) templates.
+- **Content**: Markdown files (`.md`) for blog posts.
+- **Generator**: A custom build script (`lib/build.js`) that compiles the site into a `dist/` folder.
+- **Hosting**: Deployed on [Cloudflare Pages](https://pages.cloudflare.com/).
+
+## Adding Content
+
+### 1. Blog Posts
+Blog posts live in `content/posts/` as standard Markdown files. Each file needs a frontmatter block at the top:
+
+```markdown
+---
+title: "My New Post"
+date: 2026-04-14 09:00:00
+topic: education
+slug: my-new-post
+---
+
+Post content goes here...
+```
+
+### 2. Products
+Portfolio products are managed in `seed-products-data.js`.
+
+### 3. Publishing
+When you push any changes to the `main` branch on GitHub:
+1. Cloudflare Pages detects the commit.
+2. It runs `npm run build`.
+3. The site is redeployed automatically.
 
 ## Project Structure
 
-| File | Purpose |
+| File/Folder | Purpose |
 |------|---------|
-| `server.js` | Express server, auto-seed logic, middleware |
-| `seed-posts-data.js` | All blog post content (single source of truth) |
-| `seed-comments-data.js` | Seed comments for posts |
-| `db.js` | SQLite database setup, models, migrations |
-| `views/` | EJS templates |
+| `lib/build.js` | The static site generator script |
+| `content/posts/` | Blog post Markdown files |
+| `seed-products-data.js` | Data for the products portfolio |
+| `views/` | EJS templates for the site layout |
 | `public/` | Static assets (CSS, images) |
-| `routes/` | Public and admin route handlers |
+| `dist/` | The generated static site (auto-created on build) |
 
 ## Running Locally
 
+To build the site locally:
 ```bash
 npm install
-node server.js
-# → http://localhost:3000
+npm run build
 ```
 
-Delete `database.db` to reset and re-seed all posts from scratch.
+To view the site locally, you can serve the `dist` folder using any static server:
+```bash
+npx serve dist
+```
 
-## Deployment (Railway)
+## Deployment (Cloudflare Pages)
 
-- **Service:** `web` (GitHub auto-deploy from `main`)
-- **Volume:** `blog-data` mounted at `/data` (persistent SQLite database)
-- **Environment variable:** `DATA_DIR=/data`
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
+- **Root Directory**: `/`
+
+---
+
+*Built with a focus on simplicity, "realpolitik," and avoiding AI slop.*

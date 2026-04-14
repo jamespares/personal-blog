@@ -42,17 +42,17 @@ Only use personal examples or local context from:
 **Sources/Situate with**:
 - **Serious Analysis**: Financial Times (FT), The Economist, The Times, The Telegraph.
 - **Unconventional/Podcast**: *The Rest is Politics*, *Joe Rogan*, *A Cheeky Pint*, *Dwarkesh Podcast*, *Dragonomics*, *Oxford China Policy Lab*.
-- **Avoid**: Purely partisan/left-wing "slop" or generic AI-generated link farm citations.
+- **Avoid**: Purely partisan/left-wing "slop" (e.g., *The Guardian*), generic AI-generated link farms, or waffly citations.
 
 ---
 
 ## 4. POST STRUCTURE
 All articles must follow this logical flow:
 1. **Introduction**: A personal hook. Hook the reader with a situation from the classroom, a meeting, or a memory.
-2. **The Broad Debate**: Briefly explain the popular concludes or what "current thinkers" are saying in the polite bubble.
+2. **The Broad Debate**: Briefly explain the popular conclusions or what "current thinkers" in the "polite bubble" are saying.
 3. **The Pivot**: Introduce your specific view, grounded in realpolitik or personal experience.
 4. **The Reasons**: 2-3 concise points explaining *why* your view makes sense in the real world.
-5. **The Conclusion**: Summarise the view. Suggest a "what happens next" or how this insight is useful for a reader in a similar position.
+5. **The Conclusion**: Summarise the key points and present final reflections. Suggest a "what happens next" or how this insight is useful for a reader in a similar position.
 
 ---
 

@@ -5,7 +5,7 @@ topic: china
 slug: uk-and-china-the-trade-relationship-britain-can-t-afford-to-ignore
 ---
 
-I’ve been living in Shanghai for a while now, and the view of the UK from here is... interesting. Back in London, the debate about China feels like a clash of abstract principles. Out here, it’s a matter of looking at the scale of the shipping containers and the sheer speed of the technology and realising that "disengaging" isn't a policy—it's a fantasy.
+I’ve been living in Shanghai for a while now, and the view of the UK from here is... interesting. Back in London, the debate about China feels like a clash of abstract principles. Out here, it’s a matter of looking at the scale of the shipping containers and the sheer speed of the technology. It reminds me of the pace in a London M&A room—where the truth of a deal is found in the numbers, not the intentions—and realising that "disengaging" isn't a policy; it's a fantasy.
 
 ## The Broad Debate
 
@@ -15,9 +15,9 @@ It's a difficult balance. How do you engage with the world's second-largest econ
 
 ## What the Thinkers Say
 
-If you listen to people like Rory Stewart or Alastair Campbell on *The Rest is Politics*, you get a very polite, moderate version of this debate. They advocate for "engagement with caveates"—the idea that we can cooperate on climate change and trade while being firm on human rights. 
+If you listen to people like Rory Stewart or Alastair Campbell on *The Rest is Politics*, you get a very polite, moderate version of this debate. They advocate for "engagement with caveats"—the idea that we can cooperate on climate change and trade while being firm on human rights. 
 
-It’s an attractive view because it’s so reasonable, but sitting here in Shanghai, it feels a bit like a privileged bubble. It misses the messy *realpolitik* of it all. China isn't just "engaging" back; they are systematically dominating the supply chains that the UK needs for its own green transition. Rory and Alastair often seem averse to the idea of nationalism or old-school industrial strategy, but that is exactly what is driving the success of the Chinese EV brands that are currently flooding the UK market.
+It’s an attractive view because it’s so reasonable, but sitting here in Shanghai, it feels a bit like a privileged bubble. It misses the messy *realpolitik* of it all. China isn't just "engaging" back; they are systematically dominating the supply chains that the UK needs for its own green transition. Rory and Alastair often seem averse to the idea of nationalism or old-school industrial strategy, but that is exactly what is driving the success of the Chinese EV brands currently flooding the UK market.
 
 ## My View
 

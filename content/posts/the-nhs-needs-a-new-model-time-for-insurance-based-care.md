@@ -1,78 +1,41 @@
 ---
 title: "The NHS Needs a New Model: Time for Insurance-Based Care"
-date: 2026-03-21 05:43:13
+date: 2026-03-26 10:00:00
 topic: politics
 slug: the-nhs-needs-a-new-model-time-for-insurance-based-care
 ---
 
-## Introduction
+Living in Shanghai, I've had to navigate a healthcare system that is very different from the one I grew up with in Somerset. It makes you realise how uniquely sentimental we are about the NHS in Britain. We treat it like a national religion, where questioning the structure is seen as a form of heresy. But from out here, looking at the news of record waiting lists and systemic burnout, it feels like our devotion to the *model* is actually hurting the *people*.
 
-The National Health Service is the closest thing Britain has to a national religion. Founded in 1948 on the principle of healthcare free at the point of use, it represents a social contract between the state and its citizens that few politicians dare to question.
+## The Broad Debate
 
-But the NHS is in crisis. Waiting lists have reached [record levels](https://www.bma.org.uk). A&E departments are overwhelmed. GP appointments are increasingly difficult to secure. Staff burnout is endemic. And the [10 Year Health Plan for England](https://www.parliament.uk), published in July 2025, acknowledged that the system needs fundamental structural reform.
+The NHS debate usually gets stuck in a loop. One side says it’s perfectly fine and just needs more money; the other side says it’s a socialist relic that needs to be sold off to the highest bidder. 
 
-The question is no longer whether the NHS needs to change. It is how. And the answer may lie in a model that is commonplace across Europe but taboo in Britain: **insurance-based healthcare.**
+There is a huge middle ground that we almost never talk about: European-style social insurance. This is what countries like France, Germany, and the Netherlands use. It’s not "privatisation" in the American sense, but it’s not the state-run monopoly we have either.
 
-## The Current Model Is Failing
+## What the Thinkers Say
 
-The NHS is funded almost entirely through general taxation. In theory, this means everyone contributes and everyone receives. In practice, it means the NHS competes for funding with every other government priority — defence, education, pensions, welfare — and consistently loses.
+On *The Rest is Politics*, Rory Stewart and Alastair Campbell often fall into the "more funding and better management" camp. They speak with great competence about the need for long-term investment and civil service reform. 
 
-The [Health Foundation](https://www.health.org.uk) has documented persistent underfunding relative to comparable European countries. The UK spends roughly 10% of GDP on health — below the OECD average and significantly below France, Germany, and the Netherlands, all of which deliver better outcomes.
+But again, there’s a polite bubble at play. They seem to hope that if we just get a few "grown-ups" in the room, the existing model will start working again. What they often miss is the realpolitik of demographics. We have an ageing population that is simply outstripping what a tax-funded monopoly can provide. Rory and Alastair are averse to radical shifts because they value stability, but when the stability leads to a GP waiting list of three weeks, is it actually stable?
 
-The result is rationing by delay. The NHS does not charge you, but it makes you wait. And for many patients, the wait is now dangerous.
+## My View
 
-## A New Model: Employer-Paid Insurance
+I think we need to stop being so precious about the "NHS" brand and start caring about outcomes. I’m starting to think that an insurance-based model—similar to what they have in France—is the only way to ring-fence healthcare funding so it doesn't have to compete with every other government department for a "pot" of general taxation.
 
-Here is a proposal. It is not a dismantling of the NHS. It is an evolution.
+## Why Insurance Could Work
 
-### The Core Idea
+### Ring-fencing the Funding
+Currently, the NHS has to beg the Treasury for money every year. In an insurance-based system, like an employer-paid model, the money is literally tied to healthcare. It can’t be diverted to fill a hole in the pensions budget or to pay for a new rail link. It’s a more honest way of saying "this is what we pay for health."
 
-Replace general taxation funding with an **employer-paid health insurance system.** Every employer would be required to provide health insurance for their employees, funded through a mandatory contribution (similar to the existing National Insurance system, but ring-fenced for healthcare).
+### Outcome-based Incentives
+The biggest issue I saw when I worked in London local government was that the system is built on *activity*, not *outcomes*. Hospitals are funded for how many people they process, not necessarily how well those people recover. In a managed competition model, where hospitals are funded based on actual patient outcomes, you create a natural incentive to get things right the first time.
 
-### How It Would Work
+## What Happens Next?
 
-**1. Universal Basic Coverage**
+Moving to an insurance model would be a generational shift, but we could start small:
+1. **The European Comparison**: We should stop looking at the US as the only alternative. Look at Germany. They spend more, but they get much more.
+2. **Honesty about Co-payments**: In France, you pay a small fee to see a GP (about £20) and you get most of it back through insurance. It stops people from using the GP for trivial things and makes people value the service more.
+3. **Decouple the Politics**: Healthcare is too important to be a political football. An insurance model moves the funding away from the Chancellor’s autumn statement and into a stable, long-term system.
 
-Every citizen receives a basic level of coverage — funded by a combination of employer insurance, self-employed contributions, and a state safety net for those not in work (retirees, disabled, unemployed). No one is left without care.
-
-**2. Employer Contributions**
-
-Employers pay insurance premiums for their staff, replacing the current system where employer National Insurance contributions are absorbed into general taxation. The key difference: the money goes directly to healthcare, not into the Treasury's general pot.
-
-**3. Subsidised Point-of-Care Payments**
-
-Patients pay a small, subsidised fee at the point of care — perhaps £10 for a GP visit, £15 for a prescription. These payments are reimbursed through a health insurance spending card linked to the employer's plan. The fee deters frivolous use without creating a barrier to genuine need.
-
-France and Germany both use variations of social insurance with point-of-care co-payments, and both consistently outperform the NHS on quality metrics.
-
-**4. Competition and Quality Incentives**
-
-Here is where the model gets interesting. Hospitals and clinics would be funded based on **outcomes, not just activity.** Those that deliver better patient outcomes — faster recovery times, higher satisfaction scores, fewer readmissions — receive financial bonuses.
-
-This creates competition. Not the destructive, profit-driven competition of American healthcare, but a **managed competition** where providers are incentivised to improve quality and efficiency because their revenue depends on it.
-
-**5. Patient Choice**
-
-Patients could choose their provider — GP, hospital, specialist — based on published quality data. Money follows the patient. Providers that attract more patients through better care receive more funding. Those that underperform lose patients and revenue.
-
-## Addressing the Concerns
-
-### "This is privatisation by stealth"
-
-No. The system remains publicly regulated, universally accessible, and free at the point of use (with nominal co-payments reimbursed through insurance). What changes is the *funding mechanism* — from general taxation to ring-fenced insurance — and the *incentive structure* — from bureaucratic allocation to outcome-based competition.
-
-### "This will create a two-tier system"
-
-It might — and that is something policy must guard against. The basic coverage tier must be genuinely comprehensive, and the regulator must ensure that providers do not cherry-pick profitable patients while neglecting complex cases. But two-tier healthcare already exists in the UK: those who can afford private care get faster treatment. This model would improve the base tier for everyone.
-
-### "Employers can't afford it"
-
-Employer National Insurance already costs 15% of salary. This would replace, not add to, that contribution. Employers would pay into a health insurance fund instead of into general taxation. For many, the cost would be similar or lower.
-
-## Conclusion
-
-The NHS needs more than incremental reform. It needs a new funding and incentive structure that delivers better outcomes, reduces waste, and gives patients genuine choice — while preserving universal access.
-
-An insurance-based model, funded by employers, with outcome-based incentives and managed competition, offers exactly this. It is not American-style privatisation. It is European-style modernisation. And it is a conversation Britain can no longer afford to avoid.
-
-**What do you think? Would an insurance-based model improve the NHS, or would it undermine its founding principles? Should patients pay a small fee at the point of care? I'd love to hear your views in the comments.**
+For readers: If you find yourself waiting weeks for a basic appointment, ask yourself if you care more about the *concept* of the NHS or the *reality* of getting better. Sometimes the most humble thing a nation can do is admit that someone else might have a better idea.

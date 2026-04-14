@@ -1,68 +1,39 @@
 ---
 title: "From Project Management to Classroom Management: Corporate Wisdom the Classroom Desperately Needs"
-date: 2026-03-21 05:43:13
+date: 2026-04-01 11:00:00
 topic: education
 slug: from-project-management-to-classroom-management-corporate-wisdom-the-classroom-d
 ---
 
-## Introduction
+Before I moved to Shanghai to teach, I worked in London local government. Most of my day was spent in meetings about "programme delivery" and "stakeholder management." When I transitioned into the classroom, I expected to leave all that corporate jargon behind. But a few months into my first term, I realised that a classroom is actually just a very high-pressure, under-resourced project. 
 
-Teaching is one of the most complex management roles in any profession. A teacher juggles curriculum planning, resource creation, differentiation, assessment, safeguarding, pastoral care, parent communication, and departmental collaboration — often simultaneously, often alone, and almost always under time pressure.
+## The Broad Debate
 
-And yet, teachers receive virtually no formal training in the discipline that deals with exactly this kind of complexity: **project management.**
+The debate over "corporate wisdom" in schools is usually quite sharp. On one side, you have the management consultants who think a school should be run exactly like a McKinsey branch—lots of KPIs, data dashboards, and "efficiency savings." On the other side are the traditionalists who think any mention of "management" in a school is a betrayal of the pastoral, human nature of teaching.
 
-Meanwhile, the corporate world has spent decades refining frameworks for planning complex work, executing under constraints, and assuring quality at scale. [Gantt charts](https://teamgantt.com), kanban boards, agile sprints, risk registers — these are not exotic concepts. They are the bread and butter of any well-run programme. And every single one of them has a direct, practical application in the classroom.
+## What the Thinkers Say
 
-## Gantt Charts and Long-Term Planning
+The management gurus tend to live in that polite, privileged bubble Rory Stewart and Alastair Campbell sometimes inhabit. They assume that if you just apply a "framework" like Agile or Kanban, the human messiness of thirty tired teenagers will magically disappear. They speak about "optimising learner outcomes" as if kids were just widgets on an assembly line.
 
-Teachers plan terms and units much like project managers plan delivery phases. There are dependencies (you cannot teach essay writing before paragraph structure), milestones (mock exams, coursework deadlines), and hard deadlines (final examinations).
+The traditionalists are equally stuck, though. They see classroom management purely through the lens of authority and discipline. They often miss the fact that a lot of classroom chaos comes from poor logistics, not poor behaviour.
 
-A Gantt chart for a 12-week teaching unit maps all of this visually. It plots curriculum coverage across weeks, shows where assessments fall, highlights revision windows, and — critically — makes bottlenecks visible before they become crises.
+## My View
 
-If Week 8 has three assessment deadlines landing simultaneously, a Gantt chart shows you in Week 1. You can redistribute. You can plan. You can breathe.
+My view is that most corporate wisdom is indeed fluff, but there are specific "Realpolitik" tools from my time in local government that I now find indispensable. We shouldn't run schools like businesses, but we should definitely use the tools that businesses use to manage complexity. A teacher's day is a juggle of curriculum, safeguarding, and parent emails—you can't "facilitate" your way out of that; you have to *manage* it.
 
-This is not a new idea in education. IB and Cambridge schools already use curriculum mapping — plotting units, objectives, and assessments across a term or year. A Gantt chart is simply a more precise, more visual version of the same principle. Tools like [TeamGantt](https://teamgantt.com) and even free alternatives like Google Sheets can make this accessible to any teacher.
+## The Tools That Actually Work
 
-## Kanban and Workflow Visibility
+### Stakeholder Management (or, 'Parent Realpolitik')
+In local government, we spent a lot of time mapping out who has influence and who has interest in a project. In teaching, your "stakeholders" are the parents and the school admin. Most teacher training focuses on the kids, but a huge part of being a happy teacher is managing the expectations of the adults. I started using a simple "comms plan" for my most difficult classes—deciding *when* and *how* to update parents before they had a chance to become a "blocker."
 
-A kanban board is beautifully simple: three columns — **To Do**, **In Progress**, **Done** — with tasks moving left to right as they are completed.
+### The "Agile" Lesson Plan
+Corporate "Agile" is often a lot of post-it notes and standing meetings, which is useless in a school. But the *spirit* of it—the idea that you plan in small "sprints" and then reflect—is vital. Instead of a massive, rigid term plan, I now think in two-week bursts. I teach, I see what stuck, and then I "retrospect" (usually for five minutes on Friday afternoon) to decide what actually needs to happen on Monday. It’s less about "optimisation" and more about not being a slave to a spreadsheet.
 
-For an individual teacher, this transforms the chaos of weekly preparation into something manageable. Lesson plans, worksheets, marking batches, reports, emails — each becomes a card on the board. You can see at a glance what is done, what is in flight, and what is still waiting.
+## What Happens Next?
 
-But the real power of kanban emerges when teacher teams use it. A shared board — on Trello, Notion, or even a physical whiteboard in the staffroom — makes invisible work visible. When three teachers share a year group, a kanban board shows who has prepared what, where duplication is happening, and where gaps remain.
+If you're feeling overwhelmed by the sheer volume of "stuff" you have to do, lean into the logistics:
+1. **Ditch the "To-Do" List**: Use a Kanban board (To Do, Doing, Done). It makes the "invisible work" of teaching—like marking and emails—visible and manageable.
+2. **Identify the Risks**: Before a big unit, ask "What’s the one thing that will wreck this?" (e.g., the projector won't work, or Topic B is too hard). Have a Plan B ready.
+3. **Be a Project Manager**: Treat your time as a resource. If you spend three hours making a PowerPoint perfect, that’s three hours you didn’t spend on the Realpolitik of your classroom culture.
 
-As [Klaxoon](https://klaxoon.com) has documented, bringing project management visibility tools into education helps teams coordinate without the need for endless meetings. The board speaks for itself.
-
-## Agile Sprints: Plan, Teach, Mark, Repeat
-
-The teaching cycle already resembles an agile sprint. Teachers plan a unit (sprint planning), deliver lessons (execution), assess student work (review), and reflect on what worked (retrospective). Then the cycle begins again.
-
-The problem is that most teachers do this implicitly. By making the sprint cycle explicit, teachers gain a structured framework for reflection and improvement.
-
-A sprint retrospective at the end of each unit — even a brief one — asks three questions: **What went well? What didn't? What will I change next time?** This is how [Agile Classrooms](https://agileclassrooms.com) has adapted the agile framework for education, and the results are powerful. Teachers who run retrospectives consistently report improved lesson quality and reduced stress over time.
-
-Sprint reviews can map directly to department meetings. Instead of vague agendas, the meeting reviews what was delivered in the last sprint, surfaces blockers, and plans the next cycle. It is focused, time-bound, and productive — everything most department meetings are not.
-
-The [CSTA (Computer Science Teachers Association)](https://csteachers.org) has also explored agile methods in the classroom, finding that the iterative, feedback-driven approach improves not just teacher planning but student engagement and self-direction.
-
-## Risk Management and Quality Assurance
-
-Every experienced teacher knows what can go wrong. Students are absent for key lessons. The projector fails. A worksheet has an error that derails the activity. Half the class has a misconception that the planned lesson does not address.
-
-In project management, these are called **risks** — and professionals manage them systematically. A simple risk register identifies potential problems, assesses their likelihood and impact, and documents a contingency plan.
-
-Teachers could do the same. A two-column table — "What could go wrong?" and "What's the backup plan?" — takes five minutes to complete and could save entire lessons from collapsing.
-
-Quality assurance is equally important. In software engineering, no code ships without review. In teaching, resources are routinely deployed without a second pair of eyes. A teacher creates a worksheet at 11pm, prints it at 7am, and discovers the error at 9am — in front of 30 students.
-
-Peer review of resources — treated with the same seriousness as code review — would catch errors, improve quality, and build a culture of professional accountability. [Edutopia](https://www.edutopia.org) has long advocated for collaborative resource development, and the case is only getting stronger as curriculum demands increase.
-
-## Conclusion
-
-Teachers are already project managers. They plan complex work across long timescales. They manage risks. They deliver under pressure. They iterate and improve.
-
-They just do all of this without the language, the frameworks, or the tools that every other complex profession takes for granted.
-
-Adopting project management frameworks would not add bureaucracy to teaching. It would **reduce chaos.** Gantt charts give visibility. Kanban boards give clarity. Sprints give rhythm. Risk management gives confidence. And quality assurance gives students the resources they deserve.
-
-**Have you used any project management techniques in your teaching? Did they help, or did they just add more admin? I'd love to hear your experience in the comments.**
+For teachers: You don't have to be a corporate drone to be organised. Using management tools doesn't make you less of a teacher; it just gives you more room to actually *be* one.

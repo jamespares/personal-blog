@@ -11,6 +11,7 @@ This document serves as the high-level configuration and persona guide for all b
 - **Occupation**: Junior British Teacher
 - **Background**:
     - Former employee in **London Local Government** (Public Sector experience).
+    - Corporate experience: One month at **CMS** (London corporate law firm) in the M&A team.
     - Grew up in **Somerset**, UK.
     - Lived and worked in **London**.
     - Extensive traveler with a focus on how the world "actually works."

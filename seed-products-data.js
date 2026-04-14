@@ -1,47 +1,68 @@
 module.exports = [
     {
         name: 'Teach Anything Now',
-        tagline: 'generate package of lesson materials from a simple text input',
-        description: 'A tool for teachers to instantly generate comprehensive lesson packages, including PowerPoints, worksheets, and model answers from a simple topic or text input.',
+        tagline: 'generate a bespoke podcast audio file, PPT, image and worksheet',
+        description: 'Generate a bespoke podcast audio file, PPT, image and worksheet from a simple text prompt describing your lesson\'s objectives.',
         live_url: 'https://teachanythingnow.com',
         price: 'Subscription',
         status: 'active',
         published: 1
     },
     {
-        name: 'HW Made Simple',
-        tagline: 'create personalised HW tasks which are instantly marked and analysed by AI',
-        description: 'An AI-powered platform for teachers to create, distribute, and automatically mark homework assignments, providing instant feedback and analysis for every student.',
-        live_url: 'https://hw-made-simple.com',
+        name: 'InstaHW',
+        tagline: 'create assignable homework tasks which are instantly marked by AI',
+        description: 'Create assignable homework tasks which are instantly marked by AI. Rebranded from HW Made Simple.',
+        live_url: 'https://instahw.com',
         price: 'Subscription',
         status: 'active',
         published: 1
     },
     {
-        name: 'The DALF C1 Master',
-        tagline: 'AI tool to help you mastering the DALF C1 test',
-        description: 'Part of the Test Master Series. A specialized AI tool designed to help language learners prepare for and master the DALF C1 French examination.',
-        live_url: 'https://thedalfc1master.com',
+        name: 'findyourfilmmaker.com',
+        tagline: 'an online directory for finding AI filmmakers',
+        description: 'An online directory for finding AI filmmakers. Find the best talent for your next AI-driven video production.',
+        live_url: 'https://findyourfilmmaker.com',
+        price: 'Free',
+        status: 'active',
+        published: 1
+    },
+    {
+        name: 'The Language Dojo',
+        tagline: 'the central hub for mastering standardized tests',
+        description: 'The Language Dojo is your central hub for language mastery and test preparation.',
+        live_url: 'https://thelanguagedojo.com',
         price: 'Free / Premium',
         status: 'active',
         published: 1
     },
     {
-        name: 'The IELTS Master',
-        tagline: 'AI tool to help you master the IELTS English test',
-        description: 'Part of the Test Master Series. An AI study companion for students aiming for high scores in the IELTS English proficiency test.',
-        live_url: 'https://theIELTSmaster.com',
+        name: 'The DALF C1 Dojo',
+        tagline: 'Master the DALF C1',
+        description: 'Specialized AI tool designed to help you master the DALF C1 French examination.',
+        live_url: 'https://thedalfc1dojo.com',
         price: 'Free / Premium',
         status: 'active',
-        published: 1
+        published: 1,
+        is_subproduct: true
     },
     {
-        name: 'The TOEFL Master',
-        tagline: 'AI tool to help you master the TOEFL English test',
-        description: 'Part of the Test Master Series. AI-driven preparation and practice for the TOEFL English test, focusing on academic language skills.',
-        live_url: 'https://thetoeflmaster.com',
+        name: 'The IELTS Dojo',
+        tagline: 'Master the IELTS',
+        description: 'AI study companion for students aiming for high scores in the IELTS English proficiency test.',
+        live_url: 'https://theieltsdojo.com',
         price: 'Free / Premium',
         status: 'active',
-        published: 1
+        published: 1,
+        is_subproduct: true
+    },
+    {
+        name: 'The TOEFL Dojo',
+        tagline: 'Master the TOEFL',
+        description: 'AI-driven preparation and practice for the TOEFL English test.',
+        live_url: 'https://thetoefldojo.com',
+        price: 'Free / Premium',
+        status: 'active',
+        published: 1,
+        is_subproduct: true
     }
 ];

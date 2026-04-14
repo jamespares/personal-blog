@@ -1576,3 +1576,22 @@ main.container {
   width: 28px;
   height: 28px;
 }
+
+.product-item.sub-product {
+  padding-left: 2rem;
+  margin-top: -0.5rem;
+  position: relative;
+}
+
+.product-item.sub-product::before {
+  content: '—';
+  position: absolute;
+  left: 0.75rem;
+  color: var(--color-text-secondary);
+  font-family: var(--font-heading);
+}
+
+.product-item.sub-product .product-header h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { marked } = require('marked');
-const { posts, comments, products } = require('../db');
+const { posts, products } = require('../lib/data');
 
 // Landing page (Single page scroll)
 router.get('/', (req, res) => {
@@ -13,21 +13,14 @@ router.get('/', (req, res) => {
 // Blog home page
 router.get('/blog', (req, res) => {
     const recentPosts = posts.getRecent(10);
-    const chinaPostsPreview = posts.getByTopic('china').slice(0, 3);
-    const educationPostsPreview = posts.getByTopic('education');
-    const politicsPostsPreview = posts.getByTopic('politics').slice(0, 3);
-    const aiPostsPreview = posts.getByTopic('ai').slice(0, 3);
-    const booksPostsPreview = posts.getByTopic('books').slice(0, 3);
-    res.render('home', {
-        recentPosts,
-        topicPreviews: {
-            china: chinaPostsPreview,
-            education: educationPostsPreview,
-            politics: politicsPostsPreview,
-            ai: aiPostsPreview,
-            books: booksPostsPreview
-        }
-    });
+    const topicPreviews = {
+        china: posts.getByTopic('china').slice(0, 3),
+        education: posts.getByTopic('education'),
+        politics: posts.getByTopic('politics').slice(0, 3),
+        ai: posts.getByTopic('ai').slice(0, 3),
+        books: posts.getByTopic('books').slice(0, 3)
+    };
+    res.render('home', { recentPosts, topicPreviews });
 });
 
 // Topic page
@@ -44,10 +37,10 @@ router.get('/topic/:topic', (req, res) => {
 router.get('/post/:slug', (req, res) => {
     const post = posts.getBySlug(req.params.slug);
     if (!post) return res.status(404).render('404');
-    // Only show unpublished posts to admin
-    if (!post.published && !req.session.isAdmin) return res.status(404).render('404');
-    const postComments = comments.getByPostId(post.id);
-    res.render('post', { post, comments: postComments, marked });
+    
+    // Convert markdown content to HTML
+    const htmlContent = marked(post.content);
+    res.render('post', { post: { ...post, content: htmlContent }, comments: [] });
 });
 
 // Search
@@ -56,19 +49,6 @@ router.get('/search', (req, res) => {
     const results = query ? posts.search(query) : [];
     res.render('search', { query, results });
 });
-
-// Add comment
-router.post('/post/:slug/comment', (req, res) => {
-    const post = posts.getBySlug(req.params.slug);
-    if (!post) return res.status(404).render('404');
-    const { author, content } = req.body;
-    if (author && content) {
-        comments.create({ post_id: post.id, author: author.trim(), content: content.trim() });
-    }
-    res.redirect(`/post/${post.slug}#comments`);
-});
-
-
 
 // Products listing
 router.get('/products', (req, res) => {
@@ -81,8 +61,6 @@ router.get('/products', (req, res) => {
 router.get('/products/:slug', (req, res) => {
     const product = products.getBySlug(req.params.slug);
     if (!product) return res.status(404).render('404');
-    // Only show unpublished products to admin
-    if (!product.published && !req.session.isAdmin) return res.status(404).render('404');
     res.render('product', { product, marked });
 });
 

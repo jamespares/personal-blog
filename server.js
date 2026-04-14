@@ -2,63 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
 const path = require('path');
-const { posts, comments } = require('./db');
+const { posts } = require('./lib/data');
 
-// Auto-seed: insert any posts from seed data that don't already exist
-try {
-    const seedPosts = require('./seed-posts-data');
-    const { db: rawDb } = require('./db');
-    let seeded = 0;
-    for (const post of seedPosts) {
-        const exists = rawDb.prepare('SELECT id FROM posts WHERE title = ?').get(post.title);
-        if (!exists) {
-            posts.create(post);
-            seeded++;
-            console.log('✓ Seeded: ' + post.title);
-        }
-    }
-    if (seeded > 0) console.log('Seeded ' + seeded + ' new blog posts.');
-} catch (e) {
-    console.log('No post seed data found or seeding failed:', e.message);
-}
-
-// Auto-seed products
-try {
-    const seedProducts = require('./seed-products-data');
-    const { products, db: rawDb } = require('./db');
-    let seededProducts = 0;
-    for (const product of seedProducts) {
-        const exists = rawDb.prepare('SELECT id FROM products WHERE name = ?').get(product.name);
-        if (!exists) {
-            products.create(product);
-            seededProducts++;
-            console.log('✓ Seeded Product: ' + product.name);
-        }
-    }
-    if (seededProducts > 0) console.log('Seeded ' + seededProducts + ' new products.');
-} catch (e) {
-    console.log('No product seed data found or seeding failed:', e.message);
-}
-
-// Always seed comments for any post that currently has none
-try {
-    const { db: rawDb } = require('./db');
-    const seedComments = require('./seed-comments-data');
-    const allPosts = posts.getAllAdmin();
-    let commentCount = 0;
-    for (const post of allPosts) {
-        const existing = rawDb.prepare('SELECT COUNT(*) as n FROM comments WHERE post_id = ?').get(post.id);
-        if (existing.n === 0 && seedComments[post.slug]) {
-            for (const c of seedComments[post.slug]) {
-                comments.create({ post_id: post.id, author: c.author, content: c.content });
-                commentCount++;
-            }
-        }
-    }
-    if (commentCount > 0) console.log('Seeded ' + commentCount + ' missing comments.');
-} catch (ce) {
-    console.log('Comment seeding skipped:', ce.message);
-}
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -69,16 +14,10 @@ app.set('views', path.join(__dirname, 'views'));
 // Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(session({
-    secret: process.env.SESSION_SECRET || 'dev-secret',
-    resave: false,
-    saveUninitialized: false,
-    cookie: { maxAge: 1000 * 60 * 60 * 24 } // 24 hours
-}));
 
-// Make session data available in all templates
+// Make helper data available in all templates
 app.use((req, res, next) => {
-    res.locals.isAdmin = !!req.session.isAdmin;
+    res.locals.isAdmin = false; // Always false now that admin is removed
     res.locals.currentPath = req.path;
     res.locals.baseUrl = process.env.BASE_URL || `http://localhost:${PORT}`;
     res.locals.formatTopic = (topic) => {
@@ -97,7 +36,6 @@ app.use((req, res, next) => {
 
 // Routes
 app.use('/', require('./routes/public'));
-app.use('/admin', require('./routes/admin'));
 
 // 404
 app.use((req, res) => {

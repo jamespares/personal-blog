@@ -28,7 +28,7 @@
             <h2 class="section-title">Products</h2>
             <div class="product-list-minimal">
                 <% activeProducts.forEach(function(product) { %>
-                    <article class="product-item">
+                    <article class="product-item <%= product.is_subproduct ? 'sub-product' : '' %>">
                         <div class="product-header">
                             <h3><a href="<%= product.live_url || '#' %>" target="_blank"><%= product.name %></a></h3>
                             <span class="product-tagline-inline">— <%= product.tagline %></span>

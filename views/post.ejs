@@ -42,43 +42,5 @@
                 </div>
     </article>
 
-    <section class="comments-section" id="comments">
-        <h2>Comments (<%= comments.length %>)</h2>
-
-        <% if (comments.length===0) { %>
-            <p class="comments-empty">No comments yet. Be the first to share your thoughts!</p>
-            <% } %>
-
-                <% comments.forEach(function(comment) { %>
-                    <div class="comment">
-                        <div class="comment-header">
-                            <strong class="comment-author">
-                                <%= comment.author %>
-                            </strong>
-                            <time class="comment-date">
-                                <%= new Date(comment.created_at).toLocaleDateString('en-GB', { day: 'numeric' ,
-                                    month: 'long' , year: 'numeric' }) %>
-                            </time>
-                        </div>
-                        <p class="comment-body">
-                            <%= comment.content %>
-                        </p>
-                    </div>
-                    <% }); %>
-
-                        <form action="/post/<%= post.slug %>/comment" method="POST" class="comment-form">
-                            <h3>Leave a comment</h3>
-                            <div class="form-group">
-                                <label for="author">Name</label>
-                                <input type="text" id="author" name="author" required placeholder="Your name">
-                            </div>
-                            <div class="form-group">
-                                <label for="commentContent">Comment</label>
-                                <textarea id="commentContent" name="content" rows="4" required
-                                    placeholder="Your thoughts…"></textarea>
-                            </div>
-                            <button type="submit" class="btn">Post Comment</button>
-                        </form>
-    </section>
 
     <%- include('partials/footer') %>

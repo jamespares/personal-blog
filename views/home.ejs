@@ -14,7 +14,7 @@
                         <h2>
                             <%= formatTopic(t) %>
                         </h2>
-                        <a href="/topic/<%= t %>" class="view-all">View all →</a>
+                        <a href="/topic/<%= t %>/" class="view-all">View all →</a>
                     </div>
                     <div class="post-grid">
                         <% topicPreviews[t].forEach(function(post) { %>
@@ -22,7 +22,7 @@
                                 <span class="post-topic">
                                     <%= formatTopic(post.topic) %>
                                 </span>
-                                <h3><a href="/post/<%= post.slug %>">
+                                <h3><a href="/post/<%= post.slug %>/">
                                         <%= post.title %>
                                     </a></h3>
                                 <p class="post-excerpt">

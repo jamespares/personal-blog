@@ -47,7 +47,7 @@
                 <% recentPosts.forEach(function(post) { %>
                     <article class="post-item">
                         <time class="post-date-minimal"><%= new Date(post.created_at).toLocaleDateString('en-GB', { month: 'short', year: 'numeric' }) %></time>
-                        <a href="/post/<%= post.slug %>" class="post-link-minimal"><%= post.title %></a>
+                        <a href="/post/<%= post.slug %>/" class="post-link-minimal"><%= post.title %></a>
                         <span class="post-topic-minimal">in <%= formatTopic(post.topic) %></span>
                     </article>
                 <% }); %>

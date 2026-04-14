@@ -19,7 +19,7 @@
                         </div>
                     <% } %>
                     <div class="product-body">
-                        <h3><a href="/products/<%= product.slug %>"><%= product.name %></a></h3>
+                        <h3><a href="/products/<%= product.slug %>/"><%= product.name %></a></h3>
                         <% if (product.tagline) { %>
                             <p class="product-tagline"><%= product.tagline %></p>
                         <% } %>
@@ -28,7 +28,7 @@
                         </p>
                         <div class="product-meta">
                             <span class="product-price"><%= product.price %></span>
-                            <a href="/products/<%= product.slug %>" class="product-link">Learn more →</a>
+                            <a href="/products/<%= product.slug %>/" class="product-link">Learn more →</a>
                         </div>
                     </div>
                 </article>

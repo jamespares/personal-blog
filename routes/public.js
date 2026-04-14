@@ -43,13 +43,6 @@ router.get('/post/:slug', (req, res) => {
     res.render('post', { post: { ...post, content: htmlContent }, comments: [] });
 });
 
-// Search
-router.get('/search', (req, res) => {
-    const query = req.query.q || '';
-    const results = query ? posts.search(query) : [];
-    res.render('search', { query, results });
-});
-
 // Products listing
 router.get('/products', (req, res) => {
     const activeProducts = products.getActive();

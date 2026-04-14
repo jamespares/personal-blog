@@ -84,7 +84,7 @@ module.exports = [
         published: 1
     },
     {
-        name: 'No More Chinglish',
+        name: 'No More Chinglish!',
         tagline: 'Several games that target all the most common mistakes Chinese learners make when learning English',
         description: 'A collection of targeted educational games focused on correcting common errors made by Chinese speakers of English.',
         live_url: 'https://nomorechinglish.com',

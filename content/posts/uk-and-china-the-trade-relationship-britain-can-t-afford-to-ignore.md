@@ -1,6 +1,6 @@
 ---
-title: "UK and China: The Trade Relationship Britain Can't Afford to Ignore"
-date: 2026-03-22 08:00:00
+title: "UK and China: Can We Actually Afford to Ignore Them?"
+date: 2025-01-05 09:00:00
 topic: china
 slug: uk-and-china-the-trade-relationship-britain-can-t-afford-to-ignore
 ---

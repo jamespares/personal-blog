@@ -1,6 +1,6 @@
 ---
-title: "Peer Marking vs Teacher Marking: Is Shared Assessment a Lazy Shortcut?"
-date: 2026-04-12 11:00:00
+title: "Peer Marking vs Teacher Marking: Is it Always a Lazy Shortcut?"
+date: 2026-04-10 09:00:00
 topic: education
 slug: peer-marking-vs-teacher-marking
 ---

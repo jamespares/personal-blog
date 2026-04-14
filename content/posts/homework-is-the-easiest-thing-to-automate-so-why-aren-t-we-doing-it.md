@@ -1,6 +1,6 @@
 ---
-title: "Homework Is the Easiest Thing to Automate — So Why Aren't We Doing It?"
-date: 2026-04-05 09:00:00
+title: "If Homework is Easy to Automate, Why Aren't We Doing It?"
+date: 2025-10-05 09:00:00
 topic: education
 slug: homework-is-the-easiest-thing-to-automate-so-why-aren-t-we-doing-it
 ---

@@ -1,7 +1,7 @@
 ---
-title: "How I Use AI Coding Tools to Build Teaching Resources — And Why Every Teacher Should"
-date: 2026-04-07 09:00:00
-topic: education
+title: "Building Teaching Resources with AI: Why Every Teacher Should Learn (Some) Code"
+date: 2025-12-15 09:00:00
+topic: ai
 slug: how-i-use-ai-coding-tools-to-build-teaching-resources-and-why-every-teacher-shou
 ---
 

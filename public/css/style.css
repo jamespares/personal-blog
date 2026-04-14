@@ -1512,7 +1512,8 @@ main.container {
   font-family: var(--font-mono);
   font-size: 0.85rem;
   color: var(--color-text-secondary);
-  min-width: 80px;
+  min-width: 90px;
+  flex-shrink: 0;
 }
 
 .post-link-minimal {
@@ -1526,9 +1527,13 @@ main.container {
 }
 
 .post-topic-minimal {
+  margin-left: auto;
   font-size: 0.85rem;
   color: var(--color-text-secondary);
   font-style: italic;
+  white-space: nowrap;
+  flex-shrink: 0;
+  opacity: 0.7;
 }
 
 @media (max-width: 600px) {

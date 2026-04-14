@@ -1,6 +1,6 @@
 ---
-title: "Teacher Collaboration: Why It Causes Conflict and How to Fix It"
-date: 2026-03-30 09:00:00
+title: "Why Teacher Collaboration Often Causes Conflict"
+date: 2025-06-20 09:00:00
 topic: education
 slug: teacher-collaboration-why-it-causes-conflict-and-how-to-fix-it
 ---

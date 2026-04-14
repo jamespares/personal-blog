@@ -1,6 +1,6 @@
 ---
-title: "Should Teachers Plan Week by Week or Get It All Done Before Term Starts?"
-date: 2026-03-28 08:30:00
+title: "Should Teachers Plan Week-by-Week or Month-by-Month?"
+date: 2025-02-10 09:00:00
 topic: education
 slug: should-teachers-plan-week-by-week-or-get-it-all-done-before-term-starts
 ---

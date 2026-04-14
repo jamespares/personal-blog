@@ -1,6 +1,6 @@
 ---
-title: "A New Model for Learning: Pen and Paper In Class, AI at Home"
-date: 2026-04-03 09:00:00
+title: "Pen and Paper in Class, AI at Home: A Better Model for Learning?"
+date: 2026-01-20 09:00:00
 topic: education
 slug: a-new-model-for-learning-pen-and-paper-in-class-ai-at-home
 ---

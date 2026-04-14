@@ -1,6 +1,6 @@
 ---
-title: "The NHS Needs a New Model: Time for Insurance-Based Care"
-date: 2026-03-26 10:00:00
+title: "The NHS: Is it Time for an Insurance-Based Model?"
+date: 2025-04-15 09:00:00
 topic: politics
 slug: the-nhs-needs-a-new-model-time-for-insurance-based-care
 ---

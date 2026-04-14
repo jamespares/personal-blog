@@ -1,6 +1,6 @@
 ---
-title: "From Project Management to Classroom Management: Corporate Wisdom the Classroom Desperately Needs"
-date: 2026-04-01 11:00:00
+title: "What Teaching Can Learn from Corporate Management"
+date: 2025-08-10 09:00:00
 topic: education
 slug: from-project-management-to-classroom-management-corporate-wisdom-the-classroom-d
 ---

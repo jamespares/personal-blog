@@ -1,6 +1,6 @@
 ---
 title: "Is Personalised Learning Always a Good Thing?"
-date: 2026-04-09 10:00:00
+date: 2026-02-25 09:00:00
 topic: education
 slug: is-personalised-learning-always-a-good-thing
 ---

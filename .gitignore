@@ -5,3 +5,14 @@ database.db
 *.db-shm
 *.db-wal
 dist/
+node_modules/
+.env
+database.db
+*.db-journal
+*.db-shm
+*.db-wal
+dist/
+
+# Wrangler / Cloudflare
+.wrangler/
+.dev.vars

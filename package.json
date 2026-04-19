@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "build": "node lib/build.js"
+    "build": "node lib/build.js",
+    "email:dev": "npx wrangler dev",
+    "email:deploy": "npx wrangler deploy"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
@@ -15,5 +17,8 @@
     "gray-matter": "^4.0.3",
     "marked": "^15.0.6",
     "nodemailer": "^6.9.16"
+  },
+  "devDependencies": {
+    "wrangler": "^4.83.0"
   }
 }

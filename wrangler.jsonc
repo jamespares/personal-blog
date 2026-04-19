@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "personal-website-email",
+  "main": "src/index.js",
+  "compatibility_date": "2025-02-04",
+  "observability": {
+    "enabled": true
+  },
+
+  // Email send binding - required to send emails FROM your worker
+  "send_email": [
+    {
+      "name": "SEND_EMAIL"
+    }
+  ]
+}

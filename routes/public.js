@@ -5,9 +5,12 @@ const { posts, products } = require('../lib/data');
 
 // Landing page (Single page scroll)
 router.get('/', (req, res) => {
-    const activeProducts = products.getActive();
     const recentPosts = posts.getRecent(15);
-    res.render('landing', { activeProducts, recentPosts });
+    const productCategories = products.getCategories().map(category => ({
+        name: category,
+        products: products.getByCategory(category)
+    })).filter(cat => cat.products.length > 0);
+    res.render('landing', { productCategories, recentPosts });
 });
 
 // Blog home page

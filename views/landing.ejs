@@ -23,19 +23,24 @@
     </section>
 
     <!-- Products Section -->
-    <% if (activeProducts.length > 0) { %>
+    <% if (productCategories.length > 0) { %>
         <section class="simple-section">
             <h2 class="section-title">Products</h2>
-            <div class="product-list-minimal">
-                <% activeProducts.forEach(function(product) { %>
-                    <article class="product-item <%= product.is_subproduct ? 'sub-product' : '' %>">
-                        <div class="product-header">
-                            <h3><a href="<%= product.live_url || '#' %>" target="_blank"><%= product.name %></a></h3>
-                            <div class="product-tagline-under"><%= product.tagline %></div>
-                        </div>
-                    </article>
-                <% }); %>
-            </div>
+            <% productCategories.forEach(function(category) { %>
+                <div class="product-category-group">
+                    <h3 class="product-category-title"><%= category.name %></h3>
+                    <div class="product-list-minimal">
+                        <% category.products.forEach(function(product) { %>
+                            <article class="product-item">
+                                <div class="product-header">
+                                    <h3><a href="<%= product.live_url || '#' %>" target="_blank"><%= product.name %></a></h3>
+                                    <div class="product-tagline-under"><%= product.tagline %></div>
+                                </div>
+                            </article>
+                        <% }); %>
+                    </div>
+                </div>
+            <% }); %>
         </section>
     <% } %>
 

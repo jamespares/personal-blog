@@ -6,7 +6,8 @@ module.exports = [
         live_url: 'https://teachanythingnow.com',
         price: 'Subscription',
         status: 'active',
-        published: 1
+        published: 1,
+        category: 'Teaching Tools'
     },
     {
         name: 'Insta Homework',
@@ -15,7 +16,8 @@ module.exports = [
         live_url: 'https://instahw.com',
         price: 'Subscription',
         status: 'active',
-        published: 1
+        published: 1,
+        category: 'Teaching Tools'
     },
     {
         name: 'Listening Live',
@@ -24,7 +26,8 @@ module.exports = [
         live_url: 'https://listening-live.com',
         price: 'Free / Premium',
         status: 'active',
-        published: 1
+        published: 1,
+        category: 'Teaching Tools'
     },
     {
         name: 'The Language Dojo',
@@ -36,34 +39,34 @@ module.exports = [
         published: 1
     },
     {
-        name: 'The DALF C1 Dojo',
+        name: 'DALF C1',
         tagline: 'AI tool for mastering the DALF C1',
         description: 'Specialized AI tool designed to help you master the DALF C1 French examination.',
         live_url: 'https://thedalfc1dojo.com',
         price: 'Free / Premium',
         status: 'active',
         published: 1,
-        is_subproduct: true
+        category: 'Learn French'
     },
     {
-        name: 'The IELTS Dojo',
+        name: 'IELTS',
         tagline: 'AI tool for mastering the IELTS',
         description: 'AI study companion for students aiming for high scores in the IELTS English proficiency test.',
         live_url: 'https://theieltsdojo.com',
         price: 'Free / Premium',
         status: 'active',
         published: 1,
-        is_subproduct: true
+        category: 'Learn English'
     },
     {
-        name: 'The TOEFL Dojo',
+        name: 'TOEFL',
         tagline: 'AI tool for mastering the TOEFL',
         description: 'AI-driven preparation and practice for the TOEFL English test.',
         live_url: 'https://thetoefldojo.com',
         price: 'Free / Premium',
         status: 'active',
         published: 1,
-        is_subproduct: true
+        category: 'Learn English'
     },
     {
         name: 'A vs De?',
@@ -72,7 +75,8 @@ module.exports = [
         live_url: 'https://avsde.com',
         price: 'Free',
         status: 'active',
-        published: 1
+        published: 1,
+        category: 'Learn French'
     },
     {
         name: 'Le vs La?',
@@ -81,7 +85,8 @@ module.exports = [
         live_url: 'https://levsla.com',
         price: 'Free',
         status: 'active',
-        published: 1
+        published: 1,
+        category: 'Learn French'
     },
     {
         name: 'No More Chinglish!',
@@ -90,6 +95,7 @@ module.exports = [
         live_url: 'https://nomorechinglish.com',
         price: 'Free / Premium',
         status: 'active',
-        published: 1
+        published: 1,
+        category: 'Learn English'
     }
 ];

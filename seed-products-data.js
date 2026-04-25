@@ -43,6 +43,7 @@ module.exports = [
         tagline: 'AI tool for mastering the DALF C1',
         description: 'Specialized AI tool designed to help you master the DALF C1 French examination.',
         live_url: 'https://thedalfc1dojo.com',
+        github_url: 'https://github.com/jamespares/dalf-c1-dojo',
         price: 'Free / Premium',
         status: 'active',
         published: 1,
@@ -73,6 +74,7 @@ module.exports = [
         tagline: 'Flashcard game to help learn prepositions for verbs in French',
         description: 'Interactive flashcards designed to help students master the complex prepositions used with French verbs.',
         live_url: 'https://avsde.com',
+        github_url: 'https://github.com/jamespares/a-vs-de',
         price: 'Free',
         status: 'active',
         published: 1,
@@ -83,6 +85,7 @@ module.exports = [
         tagline: 'Flashcard game to help improve understanding of masculine vs feminine nouns in French',
         description: 'A fun and effective way to practice and memorize the gender of common French nouns.',
         live_url: 'https://levsla.com',
+        github_url: 'https://github.com/jamespares/le-or-la',
         price: 'Free',
         status: 'active',
         published: 1,
@@ -97,5 +100,25 @@ module.exports = [
         status: 'active',
         published: 1,
         category: 'Learn English'
+    },
+    {
+        name: 'Story Maker',
+        tagline: 'Generate short to medium length stories aligned to students\' learning objectives, grade level and target vocabulary',
+        description: 'Generate short to medium length stories aligned to students\' learning objectives, grade level and target vocabulary.',
+        live_url: '',
+        price: 'Coming Soon',
+        status: 'coming_soon',
+        published: 1,
+        category: 'Teaching Tools'
+    },
+    {
+        name: 'Batch Lesson Plans',
+        tagline: 'Generate weeks worth of lesson plans aligned to your curriculum and subject requirements',
+        description: 'Generate weeks worth of lesson plans aligned to your curriculum and subject requirements.',
+        live_url: '',
+        price: 'Coming Soon',
+        status: 'coming_soon',
+        published: 1,
+        category: 'Teaching Tools'
     }
 ];

@@ -41,8 +41,8 @@ module.exports = [
     {
         name: 'DALF C1',
         tagline: 'AI tool for mastering the DALF C1',
-        description: 'Specialized AI tool designed to help you master the DALF C1 French examination.',
-        live_url: 'https://thedalfc1dojo.com',
+        description: 'An AI powered DALF C1 past paper mastery system',
+        live_url: 'https://thedalfdojo.com/',
         github_url: 'https://github.com/jamespares/dalf-c1-dojo',
         price: 'Free / Premium',
         status: 'active',

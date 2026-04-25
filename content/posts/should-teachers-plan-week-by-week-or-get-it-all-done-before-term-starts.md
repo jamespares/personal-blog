@@ -1,5 +1,5 @@
 ---
-title: "Can a Spreadsheet Bring You Inner Peace?"
+title: "Is lesson planning more effective on a week-by-week or all-in-one-go approach?"
 date: 2025-02-10 09:00:00
 topic: education
 slug: should-teachers-plan-week-by-week-or-get-it-all-done-before-term-starts

@@ -1,5 +1,5 @@
 ---
-title: "The Tyranny of the Shared Slide Deck"
+title: "Navigating Teacher Collaboration"
 date: 2025-06-20 09:00:00
 topic: education
 slug: teacher-collaboration-why-it-causes-conflict-and-how-to-fix-it

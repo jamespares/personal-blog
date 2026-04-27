@@ -3,11 +3,14 @@ const router = express.Router();
 const { marked } = require('marked');
 const { posts, products } = require('../lib/data');
 
-// Landing page (Dashboard)
+// Landing page (Single page scroll)
 router.get('/', (req, res) => {
-    const recentPosts = posts.getRecent(5);
-    const allProducts = products.getAll().filter(p => p.published === 1);
-    res.render('landing', { allProducts, recentPosts });
+    const recentPosts = posts.getRecent(15);
+    const productCategories = products.getCategories().map(category => ({
+        name: category,
+        products: products.getByCategory(category)
+    })).filter(cat => cat.products.length > 0);
+    res.render('landing', { productCategories, recentPosts });
 });
 
 // Blog home page

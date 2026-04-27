@@ -51,9 +51,9 @@ module.exports = [
         metric: 'Free / Premium'
     },
     {
-        name: 'DALF C1',
-        tagline: 'AI tool for mastering the DALF C1',
-        description: 'An AI powered DALF C1 past paper mastery system',
+        name: 'The Dalf Dojo',
+        tagline: 'AI-generated and marked past papers to pass the DALF C1 efficiently',
+        description: 'Generate realistic DALF C1 past papers, complete them digitally, and receive instant marking against the official French Ministry of Education mark scheme. Practice with detailed feedback until you are exam-ready — the cheapest and most efficient way to pass.',
         live_url: 'https://thedalfdojo.com/',
         github_url: 'https://github.com/jamespares/dalf-c1-dojo',
         price: 'Free / Premium',

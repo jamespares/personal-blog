@@ -7,7 +7,10 @@ module.exports = [
         price: 'Subscription',
         status: 'active',
         published: 1,
-        category: 'Teaching Tools'
+        category: 'Teaching Tools',
+        icon: '⚡',
+        brand_color: '#D97706',
+        metric: 'Subscription'
     },
     {
         name: 'Insta Homework',
@@ -17,7 +20,10 @@ module.exports = [
         price: 'Subscription',
         status: 'active',
         published: 1,
-        category: 'Teaching Tools'
+        category: 'Teaching Tools',
+        icon: '📚',
+        brand_color: '#0D9488',
+        metric: 'Subscription'
     },
     {
         name: 'Listening Live',
@@ -27,7 +33,10 @@ module.exports = [
         price: 'Free / Premium',
         status: 'active',
         published: 1,
-        category: 'Teaching Tools'
+        category: 'Teaching Tools',
+        icon: '🎤',
+        brand_color: '#7C3AED',
+        metric: 'Free / Premium'
     },
     {
         name: 'The Language Dojo',
@@ -36,7 +45,10 @@ module.exports = [
         live_url: 'https://thelanguagedojo.com',
         price: 'Free / Premium',
         status: 'active',
-        published: 1
+        published: 1,
+        icon: '🥋',
+        brand_color: '#7f1d1d',
+        metric: 'Free / Premium'
     },
     {
         name: 'DALF C1',
@@ -47,7 +59,10 @@ module.exports = [
         price: 'Free / Premium',
         status: 'active',
         published: 1,
-        category: 'Learn French'
+        category: 'Learn French',
+        icon: '🇫🇷',
+        brand_color: '#0055A4',
+        metric: 'Free / Premium'
     },
     {
         name: 'IELTS',
@@ -57,7 +72,10 @@ module.exports = [
         price: 'Free / Premium',
         status: 'active',
         published: 1,
-        category: 'Learn English'
+        category: 'Learn English',
+        icon: '🇬🇧',
+        brand_color: '#2E7D32',
+        metric: 'Free / Premium'
     },
     {
         name: 'TOEFL',
@@ -67,7 +85,10 @@ module.exports = [
         price: 'Free / Premium',
         status: 'active',
         published: 1,
-        category: 'Learn English'
+        category: 'Learn English',
+        icon: '📝',
+        brand_color: '#4ADE80',
+        metric: 'Free / Premium'
     },
     {
         name: 'A vs De?',
@@ -78,7 +99,10 @@ module.exports = [
         price: 'Free',
         status: 'active',
         published: 1,
-        category: 'Learn French'
+        category: 'Learn French',
+        icon: '🎯',
+        brand_color: '#3B82F6',
+        metric: 'Free'
     },
     {
         name: 'Le vs La?',
@@ -89,7 +113,10 @@ module.exports = [
         price: 'Free',
         status: 'active',
         published: 1,
-        category: 'Learn French'
+        category: 'Learn French',
+        icon: '⚖️',
+        brand_color: '#60A5FA',
+        metric: 'Free'
     },
     {
         name: 'No More Chinglish!',
@@ -99,7 +126,10 @@ module.exports = [
         price: 'Free / Premium',
         status: 'active',
         published: 1,
-        category: 'Learn English'
+        category: 'Learn English',
+        icon: '🐉',
+        brand_color: '#C41E3A',
+        metric: 'Free / Premium'
     },
     {
         name: 'Story Maker',
@@ -109,7 +139,10 @@ module.exports = [
         price: 'Coming Soon',
         status: 'coming_soon',
         published: 1,
-        category: 'Teaching Tools'
+        category: 'Teaching Tools',
+        icon: '📖',
+        brand_color: '#64748B',
+        metric: 'Coming Soon'
     },
     {
         name: 'Batch Lesson Plans',
@@ -119,6 +152,9 @@ module.exports = [
         price: 'Coming Soon',
         status: 'coming_soon',
         published: 1,
-        category: 'Teaching Tools'
+        category: 'Teaching Tools',
+        icon: '📅',
+        brand_color: '#475569',
+        metric: 'Coming Soon'
     }
 ];

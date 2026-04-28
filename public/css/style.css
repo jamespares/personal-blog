@@ -751,10 +751,6 @@ main.container {
   border-radius: 999px;
   box-shadow: 0 1px 8px rgba(0,0,0,0.06);
   border: 1px solid var(--color-border);
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1000;
 }
 
 .lang-btn {
@@ -774,7 +770,7 @@ main.container {
 }
 
 .lang-btn.lang-active {
-  background: #065f46;
+  background: var(--color-accent-red);
   color: #fff;
 }
 

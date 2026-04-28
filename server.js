@@ -19,6 +19,8 @@ app.use((req, res, next) => {
     res.locals.isAdmin = false; // Always false now that admin is removed
     res.locals.currentPath = req.path;
     res.locals.baseUrl = process.env.BASE_URL || `http://localhost:${PORT}`;
+    res.locals.currentLang = 'en';
+    res.locals.dict = { footerBuiltBy: 'Built by' };
     res.locals.formatTopic = (topic) => {
         if (!topic) return '';
         const labels = {

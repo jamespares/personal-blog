@@ -19,15 +19,9 @@
             </a>
         </div>
 
-        <% if (typeof showLegal !== 'undefined' && showLegal) { %>
-        <div class="footer-legal">
-            <a href="<%= baseUrl %>/terms/"><%= dict.navTerms %></a>
-            <span class="footer-divider">·</span>
-            <a href="<%= baseUrl %>/privacy/"><%= dict.navPrivacy %></a>
-        </div>
-        <% } %>
+
         <p class="footer-copy">
-            &copy; <%= new Date().getFullYear() %> <%= dict.footerBuiltBy %> <a href="/">James Pares</a><% if (typeof showLegal !== 'undefined' && showLegal) { %> · <%= dict.footerCompany %><% } %>
+            &copy; <%= new Date().getFullYear() %> <%= dict.footerBuiltBy %> <a href="/">James Pares</a>
         </p>
     </div>
 </footer>

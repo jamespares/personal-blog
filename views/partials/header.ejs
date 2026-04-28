@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<%= currentLang %>">
+<html lang="<%= typeof currentLang !== 'undefined' ? currentLang : 'en' %>">
 
 <head>
     <meta charset="UTF-8">
@@ -19,5 +19,14 @@
 </head>
 
 <body>
-    <%- include('lang-toggle', { currentLang: typeof currentLang !== 'undefined' ? currentLang : 'en' }) %>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="site-title">James Pares</a>
+            <div style="display:flex; align-items:center; gap:1.5rem;">
+                <%- include('lang-toggle', { currentLang: typeof currentLang !== 'undefined' ? currentLang : 'en' }) %>
+            </div>
+        </div>
+    </header>
+
     <main class="container<%= typeof wideLayout !== 'undefined' && wideLayout ? ' container-wide' : '' %>">

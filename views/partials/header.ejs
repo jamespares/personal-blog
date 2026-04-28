@@ -20,13 +20,4 @@
 
 <body>
 
-    <header class="site-header">
-        <div class="container">
-            <a href="/" class="site-title">James Pares</a>
-            <div style="display:flex; align-items:center; gap:1.5rem;">
-                <%- include('lang-toggle', { currentLang: typeof currentLang !== 'undefined' ? currentLang : 'en' }) %>
-            </div>
-        </div>
-    </header>
-
     <main class="container<%= typeof wideLayout !== 'undefined' && wideLayout ? ' container-wide' : '' %>">

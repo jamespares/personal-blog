@@ -1,11 +1,5 @@
 <%- include('partials/header', { pageTitle: 'Home' }) %>
 
-    <section class="hero">
-        <h1><%= dict.heroTitle %></h1>
-        <p class="hero-sub"><em><%= dict.heroByline %> <a href="https://www.linkedin.com/in/james-p-ba7653207/" target="_blank"
-                    rel="noopener" class="author-link">James Pares</a></em></p>
-    </section>
-
     <% const topics=['education', 'ai' , 'china' , 'politics', 'books' ]; %>
         <% topics.forEach(function(t) { %>
             <% if (topicPreviews[t].length> 0) { %>

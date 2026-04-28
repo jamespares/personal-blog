@@ -1,8 +1,8 @@
 <%- include('partials/header', { pageTitle: 'Home' }) %>
 
     <section class="hero">
-        <h1>Some thoughts...</h1>
-        <p class="hero-sub"><em>by <a href="https://www.linkedin.com/in/james-p-ba7653207/" target="_blank"
+        <h1><%= dict.heroTitle %></h1>
+        <p class="hero-sub"><em><%= dict.heroByline %> <a href="https://www.linkedin.com/in/james-p-ba7653207/" target="_blank"
                     rel="noopener" class="author-link">James Pares</a></em></p>
     </section>
 
@@ -14,7 +14,7 @@
                         <h2>
                             <%= formatTopic(t) %>
                         </h2>
-                        <a href="/topic/<%= t %>/" class="view-all">View all →</a>
+                        <a href="<%= baseUrl %>/topic/<%= t %>/" class="view-all"><%= dict.viewAll %></a>
                     </div>
                     <div class="post-grid">
                         <% topicPreviews[t].forEach(function(post) { %>
@@ -22,14 +22,14 @@
                                 <span class="post-topic">
                                     <%= formatTopic(post.topic) %>
                                 </span>
-                                <h3><a href="/post/<%= post.slug %>/">
+                                <h3><a href="<%= baseUrl %>/post/<%= post.slug %>/">
                                         <%= post.title %>
                                     </a></h3>
                                 <p class="post-excerpt">
                                     <%= post.excerpt || post.content.substring(0, 150) + '...' %>
                                 </p>
                                 <time class="post-date">
-                                    <%= new Date(post.created_at).toLocaleDateString('en-GB', { day: 'numeric' ,
+                                    <%= new Date(post.created_at).toLocaleDateString(currentLang === 'zh' ? 'zh-CN' : currentLang === 'fr' ? 'fr-FR' : 'en-GB', { day: 'numeric' ,
                                         month: 'long' , year: 'numeric' }) %>
                                 </time>
                             </article>
@@ -41,7 +41,7 @@
 
                         <% if (recentPosts.length===0) { %>
                             <section class="empty-state">
-                                <p>No posts yet. Check back soon!</p>
+                                <p><%= dict.noPostsYet %></p>
                             </section>
                             <% } %>
 

@@ -1,14 +1,14 @@
 <%- include('partials/header', { pageTitle: 'Products' }) %>
 
 <section class="page-header">
-    <h1>Products</h1>
-    <p class="page-sub">Mini-SaaS products and AI tools for teachers and learners.</p>
+    <h1><%= dict.productsTitle %></h1>
+    <p class="page-sub"><%= currentLang === 'fr' ? 'Produits mini-SaaS et outils IA pour enseignants et apprenants.' : currentLang === 'zh' ? '面向教师和学习者的小型SaaS产品和AI工具。' : 'Mini-SaaS products and AI tools for teachers and learners.' %></p>
 </section>
 
 <% if (activeProducts.length > 0) { %>
     <section class="products-section">
         <div class="section-header">
-            <h2>Live Products</h2>
+            <h2><%= dict.productsActive %></h2>
         </div>
         <div class="products-grid">
             <% activeProducts.forEach(function(product) { %>
@@ -19,7 +19,7 @@
                         </div>
                     <% } %>
                     <div class="product-body">
-                        <h3><a href="/products/<%= product.slug %>/"><%= product.name %></a></h3>
+                        <h3><a href="<%= baseUrl %>/products/<%= product.slug %>/"><%= product.name %></a></h3>
                         <% if (product.tagline) { %>
                             <p class="product-tagline"><%= product.tagline %></p>
                         <% } %>
@@ -28,7 +28,7 @@
                         </p>
                         <div class="product-meta">
                             <span class="product-price"><%= product.price %></span>
-                            <a href="/products/<%= product.slug %>/" class="product-link">Learn more →</a>
+                            <a href="<%= baseUrl %>/products/<%= product.slug %>/" class="product-link"><%= currentLang === 'fr' ? 'En savoir plus →' : currentLang === 'zh' ? '了解更多 →' : 'Learn more →' %></a>
                         </div>
                     </div>
                 </article>
@@ -40,7 +40,7 @@
 <% if (comingSoonProducts.length > 0) { %>
     <section class="products-section">
         <div class="section-header">
-            <h2>Coming Soon</h2>
+            <h2><%= dict.productsComingSoon %></h2>
         </div>
         <div class="products-grid">
             <% comingSoonProducts.forEach(function(product) { %>
@@ -59,7 +59,7 @@
                             <%= product.description.substring(0, 120) %>...
                         </p>
                         <div class="product-meta">
-                            <span class="product-badge">Coming Soon</span>
+                            <span class="product-badge"><%= dict.productsComingSoon %></span>
                         </div>
                     </div>
                 </article>
@@ -70,7 +70,7 @@
 
 <% if (activeProducts.length === 0 && comingSoonProducts.length === 0) { %>
     <section class="empty-state">
-        <p>No products yet. Check back soon!</p>
+        <p><%= currentLang === 'fr' ? 'Aucun produit pour l\'instant. Revenez bientôt !' : currentLang === 'zh' ? '暂无产品。请稍后再来查看！' : 'No products yet. Check back soon!' %></p>
     </section>
 <% } %>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= currentLang %>">
 
 <head>
     <meta charset="UTF-8">
@@ -19,4 +19,5 @@
 </head>
 
 <body>
+    <%- include('lang-toggle', { currentLang: typeof currentLang !== 'undefined' ? currentLang : 'en' }) %>
     <main class="container<%= typeof wideLayout !== 'undefined' && wideLayout ? ' container-wide' : '' %>">

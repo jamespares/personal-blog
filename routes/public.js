@@ -57,4 +57,13 @@ router.get('/products/:slug', (req, res) => {
     res.render('product', { product, marked });
 });
 
+// Legal pages
+router.get('/terms', (req, res) => {
+    res.render('terms', { pageTitle: 'Terms of Service', metaDescription: 'Terms of Service for all EduConnect Asia Ltd products and services.' });
+});
+
+router.get('/privacy', (req, res) => {
+    res.render('privacy', { pageTitle: 'Privacy Policy', metaDescription: 'Privacy Policy for all EduConnect Asia Ltd products and services.' });
+});
+
 module.exports = router;

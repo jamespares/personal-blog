@@ -1,9 +1,9 @@
-<%- include('partials/header', { pageTitle: 'Page Not Found' }) %>
+<%- include('partials/header', { pageTitle: dict.pageNotFound }) %>
 
     <section class="message-page">
         <h1>404</h1>
-        <p>The page you're looking for doesn't exist.</p>
-        <a href="/" class="btn">← Back home</a>
+        <p><%= dict.pageNotFoundDesc %></p>
+        <a href="<%= baseUrl %>/" class="btn"><%= dict.backToHome %></a>
     </section>
 
     <%- include('partials/footer') %>

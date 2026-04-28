@@ -745,7 +745,7 @@ main.container {
 .lang-toggle {
   display: flex;
   gap: 0.25rem;
-  background: rgba(255,255,255,0.9);
+  background: var(--color-surface);
   backdrop-filter: blur(8px);
   padding: 0.35rem 0.5rem;
   border-radius: 999px;
@@ -758,10 +758,10 @@ main.container {
 }
 
 .lang-btn {
-  font-family: var(--font-heading);
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.25rem 0.6rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
   border-radius: 999px;
   text-decoration: none;
   transition: all 0.2s;
@@ -769,12 +769,12 @@ main.container {
 }
 
 .lang-btn:hover {
-  background: var(--color-border);
+  background: var(--color-bg);
   color: var(--color-text);
 }
 
 .lang-btn.lang-active {
-  background: var(--color-accent);
+  background: #065f46;
   color: #fff;
 }
 
@@ -826,40 +826,43 @@ main.container {
   user-select: none;
 }
 
-.footer-projects,
 .footer-legal {
-  font-family: var(--font-heading);
-  font-size: 0.8rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
   color: var(--color-text-secondary);
   margin-bottom: 0.5rem;
 }
 
-.footer-projects a,
 .footer-legal a {
   color: var(--color-text-secondary);
   text-decoration: none;
 }
 
-.footer-projects a:hover,
 .footer-legal a:hover {
   color: var(--color-text);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .footer-divider {
-  margin: 0 0.4rem;
-  opacity: 0.5;
+  margin: 0 0.5rem;
+  opacity: 0.6;
 }
 
 .footer-copy {
-  font-family: var(--font-heading);
-  font-size: 0.8rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
   color: var(--color-text-secondary);
   margin-top: 0.75rem;
 }
 
 .footer-copy a {
   color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+.footer-copy a:hover {
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 /* ── Legal Pages ──────────────────────────────── */

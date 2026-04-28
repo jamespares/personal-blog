@@ -18,19 +18,16 @@
                 </svg>
             </a>
         </div>
-        <div class="footer-projects">
-            <span><%= dict.footerProducts %></span>
-            <a href="https://teachanythingnow.com" target="_blank" rel="noopener noreferrer">Teach Anything Now</a>
-            <span class="footer-divider">·</span>
-            <a href="https://thedalfdojo.com" target="_blank" rel="noopener noreferrer">The DALF Dojo</a>
-        </div>
+
+        <% if (typeof showLegal !== 'undefined' && showLegal) { %>
         <div class="footer-legal">
             <a href="<%= baseUrl %>/terms/"><%= dict.navTerms %></a>
             <span class="footer-divider">·</span>
             <a href="<%= baseUrl %>/privacy/"><%= dict.navPrivacy %></a>
         </div>
+        <% } %>
         <p class="footer-copy">
-            &copy; <%= new Date().getFullYear() %> <%= dict.footerBuiltBy %> <a href="/">James Pares</a> · <%= dict.footerCompany %>
+            &copy; <%= new Date().getFullYear() %> <%= dict.footerBuiltBy %> <a href="/">James Pares</a><% if (typeof showLegal !== 'undefined' && showLegal) { %> · <%= dict.footerCompany %><% } %>
         </p>
     </div>
 </footer>

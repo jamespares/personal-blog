@@ -7,7 +7,7 @@ const { posts, products } = require('../lib/data');
 router.get('/', (req, res) => {
     const recentPosts = posts.getRecent(5);
     const allProducts = products.getAll().filter(p => p.published === 1);
-    res.render('landing', { allProducts, recentPosts });
+    res.render('landing', { allProducts, recentPosts, showLegal: true });
 });
 
 // Blog home page
@@ -47,23 +47,23 @@ router.get('/post/:slug', (req, res) => {
 router.get('/products', (req, res) => {
     const activeProducts = products.getActive();
     const comingSoonProducts = products.getComingSoon();
-    res.render('products', { activeProducts, comingSoonProducts });
+    res.render('products', { activeProducts, comingSoonProducts, showLegal: true });
 });
 
 // Single product
 router.get('/products/:slug', (req, res) => {
     const product = products.getBySlug(req.params.slug);
     if (!product) return res.status(404).render('404');
-    res.render('product', { product, marked });
+    res.render('product', { product, marked, showLegal: true });
 });
 
 // Legal pages
 router.get('/terms', (req, res) => {
-    res.render('terms', { pageTitle: 'Terms of Service', metaDescription: 'Terms of Service for all EduConnect Asia Ltd products and services.' });
+    res.render('terms', { pageTitle: 'Terms of Service', metaDescription: 'Terms of Service for all EduConnect Asia Ltd products and services.', showLegal: true });
 });
 
 router.get('/privacy', (req, res) => {
-    res.render('privacy', { pageTitle: 'Privacy Policy', metaDescription: 'Privacy Policy for all EduConnect Asia Ltd products and services.' });
+    res.render('privacy', { pageTitle: 'Privacy Policy', metaDescription: 'Privacy Policy for all EduConnect Asia Ltd products and services.', showLegal: true });
 });
 
 module.exports = router;

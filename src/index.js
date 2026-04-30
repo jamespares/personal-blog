@@ -1,5 +1,5 @@
 /**
- * Cloudflare Email Worker
+ * Cloudflare Email Worker — jamespares.me
  * 
  * Handles incoming emails to your domain and either:
  * 1. Forwards them to a destination address
@@ -25,7 +25,7 @@ export default {
       /*
       if (env.SEND_EMAIL) {
         await env.SEND_EMAIL.send({
-          from: "hi@jamespares.me",   // Your vanity email address
+          from: "hey@jamespares.me",   // Your vanity email address
           to: message.from,           // Reply to the sender
           subject: "Re: " + (message.headers.get("subject") || "Your email"),
           text: "Thanks for reaching out! I've received your email and will get back to you soon.\n\n- James Pares",

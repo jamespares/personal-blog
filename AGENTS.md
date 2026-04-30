@@ -255,6 +255,8 @@ When making changes, verify by:
 - Entry: `src/index.js`
 - Deploy manually: `npx wrangler deploy`
 - Environment variable for forwarding destination: `FORWARD_TO_EMAIL` (set in Cloudflare dashboard or `.dev.vars` for local dev).
+- All emails send from `hey@jamespares.me` (personal/consumer projects).
+- Incoming emails forward to `jamesedpares@gmail.com`.
 
 ### Legacy Notes
 - A `Procfile` (`web: node server.js`) exists for legacy Railway deployment but is **not used** in the current static architecture.

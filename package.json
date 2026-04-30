@@ -4,19 +4,23 @@
   "description": "A simple personal website and blog",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js",
-    "build": "node lib/build.js",
+    "start": "npx tsx server.tsx",
+    "dev": "npx tsx server.tsx",
+    "build": "npx tsx lib/build.tsx",
     "email:dev": "npx wrangler dev",
     "email:deploy": "npx wrangler deploy"
   },
   "dependencies": {
+    "@hono/node-server": "^2.0.0",
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "gray-matter": "^4.0.3",
+    "hono": "^4.12.15",
     "marked": "^15.0.6",
-    "nodemailer": "^6.9.16"
+    "nodemailer": "^6.9.16",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
   },
   "devDependencies": {
     "wrangler": "^4.83.0"

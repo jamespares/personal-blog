@@ -13,7 +13,7 @@ export const Home: FC<{
   const topics = ["education", "ai", "china", "politics", "books"];
 
   return (
-    <Layout pageTitle="Home" currentLang={currentLang} baseUrl={baseUrl} dict={dict}>
+    <Layout pageTitle="Home" currentLang={currentLang} dict={dict}>
       {topics.map((t) => {
         const posts = topicPreviews[t] || [];
         if (posts.length === 0) return null;

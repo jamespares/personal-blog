@@ -40,7 +40,7 @@ export const Landing: FC<{
   const comingSoon = allProducts.filter((p: any) => p.status === "coming_soon");
 
   return (
-    <Layout currentLang={currentLang} baseUrl={baseUrl} dict={dict} wideLayout showLegal>
+    <Layout currentLang={currentLang} dict={dict} wideLayout>
       <div class="dashboard-layout">
         <aside class="dashboard-sidebar">
           <div class="sidebar-sticky">

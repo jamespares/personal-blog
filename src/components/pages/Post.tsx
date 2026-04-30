@@ -14,7 +14,7 @@ export const Post: FC<{
   const sourcesLabel = currentLang === "fr" ? "Sources" : currentLang === "zh" ? "来源" : "Sources";
 
   return (
-    <Layout pageTitle={post.title} metaDescription={post.excerpt || post.content.substring(0, 160)} currentLang={currentLang} baseUrl={baseUrl} dict={dict}>
+    <Layout pageTitle={post.title} metaDescription={post.excerpt || post.content.substring(0, 160)} currentLang={currentLang} dict={dict}>
       <a href={`${baseUrl}/`} class="back-home">{dict.backToHome}</a>
       <article class="single-post">
         <header class="post-header">

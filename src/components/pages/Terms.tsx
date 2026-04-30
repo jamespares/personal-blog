@@ -7,7 +7,7 @@ export const Terms: FC<{
   baseUrl: string;
   dict: Dict;
 }> = ({ currentLang, baseUrl, dict }) => (
-  <Layout pageTitle={dict.termsTitle} metaDescription={`${dict.termsTitle} for all EduConnect Asia Ltd products and services.`} currentLang={currentLang} baseUrl={baseUrl} dict={dict} showLegal>
+  <Layout pageTitle={dict.termsTitle} metaDescription={`${dict.termsTitle} for all EduConnect Asia Ltd products and services.`} currentLang={currentLang} dict={dict}>
     <article class="legal-page">
       <h1>Terms of Service</h1>
       <p class="legal-updated">Last Updated: April 2026</p>

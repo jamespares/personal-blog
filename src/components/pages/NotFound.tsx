@@ -7,7 +7,7 @@ export const NotFound: FC<{
   baseUrl: string;
   dict: Dict;
 }> = ({ currentLang, baseUrl, dict }) => (
-  <Layout pageTitle={dict.pageNotFound} currentLang={currentLang} baseUrl={baseUrl} dict={dict}>
+  <Layout pageTitle={dict.pageNotFound} currentLang={currentLang} dict={dict}>
     <section class="message-page">
       <h1>404</h1>
       <p>{dict.pageNotFoundDesc}</p>

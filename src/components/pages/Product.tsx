@@ -15,7 +15,7 @@ export const Product: FC<{
   product: any;
   marked: any;
 }> = ({ currentLang, baseUrl, dict, product, marked }) => (
-  <Layout pageTitle={product.name} currentLang={currentLang} baseUrl={baseUrl} dict={dict} showLegal>
+  <Layout pageTitle={product.name} currentLang={currentLang} dict={dict}>
     <a href={`${baseUrl}/`} class="back-home">{dict.backToHome}</a>
     <article class="single-product">
       <header class="product-header">

@@ -14,7 +14,7 @@ export const Products: FC<{
   const pageSub = currentLang === "fr" ? "Produits mini-SaaS et outils IA pour enseignants et apprenants." : currentLang === "zh" ? "面向教师和学习者的小型SaaS产品和AI工具。" : "Mini-SaaS products and AI tools for teachers and learners.";
 
   return (
-    <Layout pageTitle={dict.productsTitle} currentLang={currentLang} baseUrl={baseUrl} dict={dict} showLegal>
+    <Layout pageTitle={dict.productsTitle} currentLang={currentLang} dict={dict}>
       <section class="page-header">
         <h1>{dict.productsTitle}</h1>
         <p class="page-sub">{pageSub}</p>

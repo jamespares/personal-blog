@@ -10,7 +10,7 @@ export const Topic: FC<{
   posts: any[];
   formatTopic: (t: string) => string;
 }> = ({ currentLang, baseUrl, dict, topic, posts, formatTopic }) => (
-  <Layout pageTitle={formatTopic(topic)} currentLang={currentLang} baseUrl={baseUrl} dict={dict}>
+  <Layout pageTitle={formatTopic(topic)} currentLang={currentLang} dict={dict}>
     <a href={`${baseUrl}/`} class="back-home">{dict.backToBlog}</a>
     <section class="page-header">
       <h1>{formatTopic(topic)}</h1>

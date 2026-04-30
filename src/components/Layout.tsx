@@ -25,19 +25,15 @@ export const Layout: FC<PropsWithChildren<{
   pageTitle?: string;
   metaDescription?: string;
   currentLang?: string;
-  baseUrl?: string;
   dict: Dict;
   wideLayout?: boolean;
-  showLegal?: boolean;
 }>> = ({
   children,
   pageTitle,
   metaDescription,
   currentLang = "en",
-  baseUrl = "",
   dict,
   wideLayout,
-  showLegal,
 }) => {
   const title = pageTitle ? `${pageTitle} — ${dict.siteName}` : dict.siteName;
   const containerClass = wideLayout ? "container container-wide" : "container";
@@ -56,24 +52,6 @@ export const Layout: FC<PropsWithChildren<{
         <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
       <body>
-        <nav class="site-nav">
-          <div class="nav-brand">
-            <a href={`${baseUrl}/`}>{dict.siteName}</a>
-          </div>
-          <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-          </button>
-          <div class="nav-links" id="navLinks">
-            <a href={`${baseUrl}/blog`}>{dict.navBlog}</a>
-            <a href={`${baseUrl}/products`}>{dict.navProducts}</a>
-            <div class="lang-switcher">
-              <a href={currentLang === "en" ? "#" : "/"} class={currentLang === "en" ? "active" : ""}>EN</a>
-              <a href={currentLang === "fr" ? "#" : "/fr/"} class={currentLang === "fr" ? "active" : ""}>FR</a>
-              <a href={currentLang === "zh" ? "#" : "/zh/"} class={currentLang === "zh" ? "active" : ""}>{dict.langZh}</a>
-            </div>
-          </div>
-        </nav>
-
         <main class={containerClass}>
           {children}
         </main>
@@ -85,22 +63,12 @@ export const Layout: FC<PropsWithChildren<{
               <a href="https://x.com/jamespareslfg" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><XIcon /></a>
               <a href="https://github.com/jamespares" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><GitHubIcon /></a>
             </div>
-            {showLegal && (
-              <div class="footer-legal">
-                <a href={`${baseUrl}/terms`}>{dict.navTerms}</a>
-                <span>·</span>
-                <a href={`${baseUrl}/privacy`}>{dict.navPrivacy}</a>
-              </div>
-            )}
             <p class="footer-copy">
               &copy; {new Date().getFullYear()} {dict.footerBuiltBy} <a href="/">James Pares</a>
             </p>
           </div>
         </footer>
 
-        <script dangerouslySetInnerHTML={{
-          __html: `document.getElementById('menuToggle').addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open')});`
-        }} />
       </body>
     </html>
   );

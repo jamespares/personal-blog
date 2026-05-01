@@ -1,9 +1,9 @@
 module.exports = [
     {
-        name: 'Teach Anything Now',
+        name: 'Last Minute Lessons',
         tagline: 'Generate a package of multi-media lesson resources based on a single prompt',
         description: 'Generate a bespoke podcast audio file, PPT, image and worksheet from a simple text prompt describing your lesson\'s objectives.',
-        live_url: 'https://teachanythingnow.com',
+        live_url: 'https://www.lastminutelessons.com',
         price: 'Subscription',
         status: 'active',
         published: 1,

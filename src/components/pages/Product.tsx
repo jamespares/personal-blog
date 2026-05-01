@@ -1,6 +1,6 @@
 /** @jsxImportSource hono/jsx */
 import type { FC } from "hono/jsx";
-import { Layout, type Dict } from "../Layout";
+import { Layout } from "../Layout";
 
 const GitHubIcon16 = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:6px;vertical-align:-2px;">
@@ -9,14 +9,11 @@ const GitHubIcon16 = () => (
 );
 
 export const Product: FC<{
-  currentLang: string;
-  baseUrl: string;
-  dict: Dict;
   product: any;
   marked: any;
-}> = ({ currentLang, baseUrl, dict, product, marked }) => (
-  <Layout pageTitle={product.name} currentLang={currentLang} dict={dict}>
-    <a href={`${baseUrl}/`} class="back-home">{dict.backToHome}</a>
+}> = ({ product, marked }) => (
+  <Layout pageTitle={product.name}>
+    <a href="/" class="back-home">← Back to home</a>
     <article class="single-product">
       <header class="product-header">
         {product.image_url && (
@@ -26,11 +23,11 @@ export const Product: FC<{
         {product.tagline && <p class="product-tagline-large">{product.tagline}</p>}
         <div class="product-actions">
           {product.live_url && (
-            <a href={product.live_url} target="_blank" rel="noopener noreferrer" class="btn">{dict.productVisitLive}</a>
+            <a href={product.live_url} target="_blank" rel="noopener noreferrer" class="btn">Visit Live Site →</a>
           )}
           {product.github_url && (
             <a href={product.github_url} target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
-              <GitHubIcon16 />{dict.productViewGitHub}
+              <GitHubIcon16 />View on GitHub
             </a>
           )}
         </div>
@@ -39,7 +36,7 @@ export const Product: FC<{
       <div class="product-content" dangerouslySetInnerHTML={{ __html: marked.parse(product.description) }} />
       {product.features && (
         <div class="product-features">
-          <h2>{dict.productFeatures}</h2>
+          <h2>Features</h2>
           <div dangerouslySetInnerHTML={{ __html: marked.parse(product.features) }} />
         </div>
       )}

@@ -1,17 +1,13 @@
 /** @jsxImportSource hono/jsx */
 import type { FC } from "hono/jsx";
-import { Layout, type Dict } from "../Layout";
+import { Layout } from "../Layout";
 
-export const Privacy: FC<{
-  currentLang: string;
-  baseUrl: string;
-  dict: Dict;
-}> = ({ currentLang, baseUrl, dict }) => (
-  <Layout pageTitle={dict.privacyTitle} metaDescription={`${dict.privacyTitle} for all EduConnect Asia Ltd products and services.`} currentLang={currentLang} dict={dict}>
+export const Privacy: FC = () => (
+  <Layout pageTitle="Privacy Policy" metaDescription="Privacy Policy for all EduConnect Asia Ltd products and services.">
     <article class="legal-page">
       <h1>Privacy Policy</h1>
       <p class="legal-updated">Last Updated: April 2026</p>
-      <p>This Privacy Policy describes how <strong>EduConnect Asia Ltd</strong> ("we", "us", or "our") collects, uses, stores, and protects your personal data when you use our websites, applications, and services (collectively, the "Services"), including <a href="https://teachanythingnow.com" target="_blank" rel="noopener noreferrer">Teach Anything Now</a> and <a href="https://thedalfdojo.com" target="_blank" rel="noopener noreferrer">The DALF Dojo</a>.</p>
+      <p>This Privacy Policy describes how <strong>EduConnect Asia Ltd</strong> ("we", "us", or "our") collects, uses, stores, and protects your personal data when you use our websites, applications, and services (collectively, the "Services"), including <a href="https://www.lastminutelessons.com" target="_blank" rel="noopener noreferrer">Last Minute Lessons</a> and <a href="https://thedalfdojo.com" target="_blank" rel="noopener noreferrer">The DALF Dojo</a>.</p>
       <p>We are committed to protecting your privacy and handling your data transparently, in compliance with the <strong>UK General Data Protection Regulation (UK GDPR)</strong> and the <strong>Data Protection Act 2018</strong>.</p>
       <h2>1. Data Controller</h2>
       <p>The data controller responsible for your personal data is:</p>

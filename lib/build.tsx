@@ -6,8 +6,6 @@ import { marked } from "marked";
 
 // @ts-ignore — CJS modules imported via tsx
 import { posts, products } from "./data.js";
-// @ts-ignore
-import { getDict } from "./i18n.js";
 
 import { Landing } from "../src/components/pages/Landing";
 import { Home } from "../src/components/pages/Home";
@@ -43,8 +41,6 @@ function copyDir(src: string, dest: string) {
   }
 }
 
-// Hono JSX nodes stringify when coerced to string via JSXNode.toString()
-// or when used in template literals. We use a small helper.
 function renderJSX(node: any): string {
   return String(node);
 }
@@ -56,85 +52,69 @@ function writeHTML(outputPath: string, node: any) {
   fs.writeFileSync(targetPath, html);
 }
 
-async function buildLang(lang: string) {
-  const dict = getDict(lang);
-  const prefix = lang === "en" ? "" : `${lang}/`;
-  const baseUrl = lang === "en" ? "" : `/${lang}`;
-
-  const formatTopic = (topic: string) => {
-    if (!topic) return "";
-    return (
-      dict.topicLabels[topic.toLowerCase()] ||
-      topic.charAt(0).toUpperCase() + topic.slice(1)
-    );
+function formatTopic(topic: string) {
+  if (!topic) return "";
+  const labels: Record<string, string> = {
+    china: "China",
+    education: "Education",
+    politics: "Politics",
+    ai: "AI",
+    books: "Book Reviews"
   };
+  return labels[topic.toLowerCase()] || topic.charAt(0).toUpperCase() + topic.slice(1);
+}
+
+async function build() {
+  console.log("🚀 Starting static build (Hono JSX)...");
+
+  if (fs.existsSync(DIST_DIR)) {
+    fs.rmSync(DIST_DIR, { recursive: true, force: true });
+  }
+  ensureDir(DIST_DIR);
+
+  console.log("📦 Copying public assets...");
+  copyDir(PUBLIC_DIR, DIST_DIR);
+
+  console.log("📄 Rendering pages...");
 
   // Landing Page
-  const recentPosts = posts.getRecent(5, lang);
+  const recentPosts = posts.getRecent(5);
   const allProducts = products.getAll().filter((p: any) => p.published === 1);
   writeHTML(
-    `${prefix}index.html`,
-    <Landing
-      currentLang={lang}
-      baseUrl={baseUrl}
-      dict={dict}
-      allProducts={allProducts}
-      recentPosts={recentPosts}
-      formatTopic={formatTopic}
-    />
+    "index.html",
+    <Landing allProducts={allProducts} recentPosts={recentPosts} formatTopic={formatTopic} />
   );
 
   // Blog Home
-  const blogRecentPosts = posts.getRecent(10, lang);
+  const blogRecentPosts = posts.getRecent(10);
   const topicPreviews = {
-    china: posts.getByTopic("china", lang).slice(0, 3),
-    education: posts.getByTopic("education", lang),
-    politics: posts.getByTopic("politics", lang).slice(0, 3),
-    ai: posts.getByTopic("ai", lang).slice(0, 3),
-    books: posts.getByTopic("books", lang).slice(0, 3),
+    china: posts.getByTopic("china").slice(0, 3),
+    education: posts.getByTopic("education"),
+    politics: posts.getByTopic("politics").slice(0, 3),
+    ai: posts.getByTopic("ai").slice(0, 3),
+    books: posts.getByTopic("books").slice(0, 3),
   };
   writeHTML(
-    `${prefix}blog/index.html`,
-    <Home
-      currentLang={lang}
-      baseUrl={baseUrl}
-      dict={dict}
-      recentPosts={blogRecentPosts}
-      topicPreviews={topicPreviews}
-      formatTopic={formatTopic}
-    />
+    "blog/index.html",
+    <Home recentPosts={blogRecentPosts} topicPreviews={topicPreviews} formatTopic={formatTopic} />
   );
 
   // Topics
   const topics = ["china", "education", "politics", "ai", "books"];
   for (const topic of topics) {
-    const topicPosts = posts.getByTopic(topic, lang);
+    const topicPosts = posts.getByTopic(topic);
     writeHTML(
-      `${prefix}topic/${topic}/index.html`,
-      <Topic
-        currentLang={lang}
-        baseUrl={baseUrl}
-        dict={dict}
-        topic={topic}
-        posts={topicPosts}
-        formatTopic={formatTopic}
-      />
+      `topic/${topic}/index.html`,
+      <Topic topic={topic} posts={topicPosts} formatTopic={formatTopic} />
     );
   }
 
   // Individual Posts
-  const allPosts = posts.getAll(lang);
+  const allPosts = posts.getAll();
   for (const post of allPosts) {
     writeHTML(
-      `${prefix}post/${post.slug}/index.html`,
-      <Post
-        currentLang={lang}
-        baseUrl={baseUrl}
-        dict={dict}
-        post={post}
-        formatTopic={formatTopic}
-        marked={marked}
-      />
+      `post/${post.slug}/index.html`,
+      <Post post={post} formatTopic={formatTopic} marked={marked} />
     );
   }
 
@@ -142,67 +122,24 @@ async function buildLang(lang: string) {
   const activeProducts = products.getActive();
   const comingSoonProducts = products.getComingSoon();
   writeHTML(
-    `${prefix}products/index.html`,
-    <Products
-      currentLang={lang}
-      baseUrl={baseUrl}
-      dict={dict}
-      activeProducts={activeProducts}
-      comingSoonProducts={comingSoonProducts}
-    />
+    "products/index.html",
+    <Products activeProducts={activeProducts} comingSoonProducts={comingSoonProducts} />
   );
 
   // Individual Products
   for (const product of allProducts) {
     writeHTML(
-      `${prefix}products/${product.slug}/index.html`,
-      <Product
-        currentLang={lang}
-        baseUrl={baseUrl}
-        dict={dict}
-        product={product}
-        marked={marked}
-      />
+      `products/${product.slug}/index.html`,
+      <Product product={product} marked={marked} />
     );
   }
 
   // Legal Pages
-  writeHTML(
-    `${prefix}terms/index.html`,
-    <Terms currentLang={lang} baseUrl={baseUrl} dict={dict} />
-  );
-  writeHTML(
-    `${prefix}privacy/index.html`,
-    <Privacy currentLang={lang} baseUrl={baseUrl} dict={dict} />
-  );
-}
+  writeHTML("terms/index.html", <Terms />);
+  writeHTML("privacy/index.html", <Privacy />);
 
-async function build() {
-  console.log("🚀 Starting static build (Hono JSX)...");
-
-  // Clean and prepare dist directory
-  if (fs.existsSync(DIST_DIR)) {
-    fs.rmSync(DIST_DIR, { recursive: true, force: true });
-  }
-  ensureDir(DIST_DIR);
-
-  // Copy static assets
-  console.log("📦 Copying public assets...");
-  copyDir(PUBLIC_DIR, DIST_DIR);
-
-  // Render Pages for each language
-  console.log("📄 Rendering pages...");
-  for (const lang of ["en", "fr", "zh"]) {
-    console.log(`   Language: ${lang.toUpperCase()}`);
-    await buildLang(lang);
-  }
-
-  // 404 Page (English only)
-  const enDict = getDict("en");
-  writeHTML(
-    "404.html",
-    <NotFound currentLang="en" baseUrl="" dict={enDict} />
-  );
+  // 404 Page
+  writeHTML("404.html", <NotFound />);
 
   console.log("✅ Build complete! Files generated in /dist");
 }

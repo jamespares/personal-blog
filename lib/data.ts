@@ -44,7 +44,7 @@ export const products = {
 const postsDir = path.join(__dirname, '../content/posts');
 
 export const posts = {
-  getAll(lang = 'en') {
+  getAll() {
     if (!fs.existsSync(postsDir)) return [];
     const files = fs.readdirSync(postsDir);
     const enPosts = files
@@ -62,43 +62,15 @@ export const posts = {
         };
       });
 
-    if (lang === 'en') {
-      return enPosts.sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
-    }
-
-    const ext = `.${lang}.md`;
-    const translatedSlugs = new Set();
-    const translatedPosts = files
-      .filter((file: string) => file.endsWith(ext))
-      .map((file: string) => {
-        const slug = file.replace(ext, '');
-        translatedSlugs.add(slug);
-        const filePath = path.join(postsDir, file);
-        const fileContent = fs.readFileSync(filePath, 'utf8');
-        const { data, content } = matter(fileContent);
-        return {
-          ...data,
-          slug,
-          content,
-          created_at: data.date || new Date().toISOString()
-        };
-      });
-
-    const fallbackPosts = enPosts
-      .filter((p: any) => !translatedSlugs.has(p.slug))
-      .map((p: any) => ({ ...p, _fallback: true }));
-
-    const allPosts = [...translatedPosts, ...fallbackPosts];
-    return allPosts.sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
+    return enPosts.sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
   },
 
-  getRecent(limit = 15, lang = 'en') {
-    return this.getAll(lang).slice(0, limit);
+  getRecent(limit = 15) {
+    return this.getAll().slice(0, limit);
   },
 
-  getBySlug(slug: string, lang = 'en') {
-    const ext = lang === 'en' ? '.md' : `.${lang}.md`;
-    const filePath = path.join(postsDir, `${slug}${ext}`);
+  getBySlug(slug: string) {
+    const filePath = path.join(postsDir, `${slug}.md`);
     if (fs.existsSync(filePath)) {
       const fileContent = fs.readFileSync(filePath, 'utf8');
       const { data, content } = matter(fileContent);
@@ -109,24 +81,10 @@ export const posts = {
         created_at: data.date || new Date().toISOString()
       };
     }
-    if (lang !== 'en') {
-      const enPath = path.join(postsDir, `${slug}.md`);
-      if (fs.existsSync(enPath)) {
-        const fileContent = fs.readFileSync(enPath, 'utf8');
-        const { data, content } = matter(fileContent);
-        return {
-          ...data,
-          slug,
-          content,
-          created_at: data.date || new Date().toISOString(),
-          _fallback: true
-        };
-      }
-    }
     return null;
   },
 
-  getByTopic(topic: string, lang = 'en') {
-    return this.getAll(lang).filter((p: any) => p.topic && p.topic.toLowerCase() === topic.toLowerCase());
+  getByTopic(topic: string) {
+    return this.getAll().filter((p: any) => p.topic && p.topic.toLowerCase() === topic.toLowerCase());
   }
 };

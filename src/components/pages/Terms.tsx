@@ -1,18 +1,14 @@
 /** @jsxImportSource hono/jsx */
 import type { FC } from "hono/jsx";
-import { Layout, type Dict } from "../Layout";
+import { Layout } from "../Layout";
 
-export const Terms: FC<{
-  currentLang: string;
-  baseUrl: string;
-  dict: Dict;
-}> = ({ currentLang, baseUrl, dict }) => (
-  <Layout pageTitle={dict.termsTitle} metaDescription={`${dict.termsTitle} for all EduConnect Asia Ltd products and services.`} currentLang={currentLang} dict={dict}>
+export const Terms: FC = () => (
+  <Layout pageTitle="Terms of Service" metaDescription="Terms of Service for all EduConnect Asia Ltd products and services.">
     <article class="legal-page">
       <h1>Terms of Service</h1>
       <p class="legal-updated">Last Updated: April 2026</p>
       <p>These Terms of Service ("Terms") govern your access to and use of all websites, applications, products, and services (collectively, the "Services") operated by <strong>EduConnect Asia Ltd</strong> ("we", "us", or "our"), a company registered in England and Wales (company number pending) with its registered office at 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom.</p>
-      <p>By accessing or using any of our Services — including but not limited to <a href="https://teachanythingnow.com" target="_blank" rel="noopener noreferrer">Teach Anything Now</a> and <a href="https://thedalfdojo.com" target="_blank" rel="noopener noreferrer">The DALF Dojo</a> — you agree to be bound by these Terms. If you do not agree, you must not use our Services.</p>
+      <p>By accessing or using any of our Services — including but not limited to <a href="https://www.lastminutelessons.com" target="_blank" rel="noopener noreferrer">Last Minute Lessons</a> and <a href="https://thedalfdojo.com" target="_blank" rel="noopener noreferrer">The DALF Dojo</a> — you agree to be bound by these Terms. If you do not agree, you must not use our Services.</p>
       <h2>1. Services Overview</h2>
       <p>We provide AI-powered educational tools and SaaS products. Our Services generate educational content (presentations, audio, worksheets, exam materials) using third-party AI providers. All AI-generated outputs are provided on an "as is" basis for educational assistance only.</p>
       <h2>2. Accounts & Eligibility</h2>

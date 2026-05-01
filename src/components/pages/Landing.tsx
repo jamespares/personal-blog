@@ -1,6 +1,6 @@
 /** @jsxImportSource hono/jsx */
 import type { FC } from "hono/jsx";
-import { Layout, type Dict } from "../Layout";
+import { Layout } from "../Layout";
 
 const LinkedInIcon20 = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -29,18 +29,15 @@ const BlogIcon = () => (
 );
 
 export const Landing: FC<{
-  currentLang: string;
-  baseUrl: string;
-  dict: Dict;
   allProducts: any[];
   recentPosts: any[];
   formatTopic: (t: string) => string;
-}> = ({ currentLang, baseUrl, dict, allProducts, recentPosts, formatTopic }) => {
+}> = ({ allProducts, recentPosts, formatTopic }) => {
   const activeProducts = allProducts.filter((p: any) => p.status === "active");
   const comingSoon = allProducts.filter((p: any) => p.status === "coming_soon");
 
   return (
-    <Layout currentLang={currentLang} dict={dict} wideLayout>
+    <Layout wideLayout>
       <div class="dashboard-layout">
         <aside class="dashboard-sidebar">
           <div class="sidebar-sticky">
@@ -52,17 +49,14 @@ export const Landing: FC<{
                 Shanghai
               </p>
               <p class="profile-bio">Building AI-powered tools for language learners and teachers.</p>
-              {currentLang !== "en" && (
-                <p class="profile-bio" style={{ fontSize: "0.8rem", color: "var(--color-text-secondary)", marginTop: "0.5rem", fontStyle: "italic" }}>{dict.langNotice}</p>
-              )}
             </div>
             <div class="sidebar-social">
               <a href="https://www.linkedin.com/in/james-p-ba7653207/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><LinkedInIcon20 /></a>
               <a href="https://x.com/jamespareslfg" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><XIcon20 /></a>
               <a href="https://github.com/jamespares" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><GitHubIcon20 /></a>
             </div>
-            <a href="mailto:jamesedpares@gmail.com" class="sidebar-cta"><MailIcon /> {dict.getInTouch}</a>
-            <a href={`${baseUrl}/blog`} class="sidebar-blog-link"><BlogIcon /> {dict.readTheBlog}</a>
+            <a href="mailto:jamesedpares@gmail.com" class="sidebar-cta"><MailIcon /> Get in touch</a>
+            <a href="/blog" class="sidebar-blog-link"><BlogIcon /> Read the blog →</a>
           </div>
         </aside>
 
@@ -90,7 +84,7 @@ export const Landing: FC<{
 
           {comingSoon.length > 0 && (
             <section class="projects-section coming-soon-section">
-              <h2 class="section-label">{dict.productsComingSoon}</h2>
+              <h2 class="section-label">Coming Soon</h2>
               <div class="project-grid">
                 {comingSoon.map((product: any) => (
                   <article class="project-card project-card-soon" key={product.slug}>
@@ -113,14 +107,14 @@ export const Landing: FC<{
           {recentPosts.length > 0 && (
             <section class="latest-writing">
               <div class="writing-header">
-                <h2 class="section-label">{dict.recentWriting}</h2>
-                <a href={`${baseUrl}/blog`} class="view-all-link">{dict.viewAll}</a>
+                <h2 class="section-label">Recent Writing</h2>
+                <a href="/blog" class="view-all-link">View all →</a>
               </div>
               <div class="writing-list">
                 {recentPosts.slice(0, 5).map((post: any) => (
                   <article class="writing-item" key={post.slug}>
                     <time class="writing-date">{new Date(post.created_at).toLocaleDateString("en-GB", { month: "short", year: "numeric" })}</time>
-                    <a href={`${baseUrl}/post/${post.slug}/`} class="writing-link">{post.title}</a>
+                    <a href={`/post/${post.slug}/`} class="writing-link">{post.title}</a>
                     <span class="writing-topic">{formatTopic(post.topic)}</span>
                   </article>
                 ))}

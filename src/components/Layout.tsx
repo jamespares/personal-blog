@@ -19,34 +19,28 @@ const GitHubIcon = () => (
   </svg>
 );
 
-export type Dict = ReturnType<typeof import("../../lib/i18n").getDict>;
-
 export const Layout: FC<PropsWithChildren<{
   pageTitle?: string;
   metaDescription?: string;
-  currentLang?: string;
-  dict: Dict;
   wideLayout?: boolean;
 }>> = ({
   children,
   pageTitle,
   metaDescription,
-  currentLang = "en",
-  dict,
   wideLayout,
 }) => {
-  const title = pageTitle ? `${pageTitle} — ${dict.siteName}` : dict.siteName;
+  const title = pageTitle ? `${pageTitle} — James Pares` : "James Pares";
   const containerClass = wideLayout ? "container container-wide" : "container";
 
   return (
-    <html lang={currentLang}>
+    <html lang="en">
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={metaDescription || "A personal blog by James Pares"} />
         <title>{title}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend:wght@400;500;600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="icon" type="image/png" href="/favicon.png" />
@@ -64,7 +58,7 @@ export const Layout: FC<PropsWithChildren<{
               <a href="https://github.com/jamespares" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><GitHubIcon /></a>
             </div>
             <p class="footer-copy">
-              &copy; {new Date().getFullYear()} {dict.footerBuiltBy} <a href="/">James Pares</a>
+              &copy; {new Date().getFullYear()} Built by <a href="/">James Pares</a>
             </p>
           </div>
         </footer>

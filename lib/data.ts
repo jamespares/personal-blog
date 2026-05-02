@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import { marked } from 'marked';
 import productsData from '../seed-products-data';
 
-export const DISCORD_URL = 'https://discord.gg/tB7uRTXdUp';
+export const DISCORD_URL = 'https://discord.gg/vZrp4HQdFw';
 
 const PRODUCT_CATEGORIES = ['Learn French', 'Learn Chinese', 'Learn English', 'Teaching Tools'];
 

@@ -1175,6 +1175,10 @@ main.container {
   color: var(--color-text);
 }
 
+.footer-social a.discord-link:hover {
+  color: #5865F2;
+}
+
 /* ── Products Section ────────────────────────── */
 .products-section {
   margin-bottom: 2.5rem;
@@ -1835,6 +1839,23 @@ main.container {
 .sidebar-social a:hover {
   color: var(--color-text);
   transform: translateY(-2px);
+}
+
+.sidebar-discord {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  margin-top: 1rem;
+}
+
+.sidebar-discord a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.sidebar-discord a:hover {
+  color: var(--color-accent-hover);
 }
 
 .sidebar-cta,

@@ -1,6 +1,7 @@
 /** @jsxImportSource hono/jsx */
 import type { FC } from "hono/jsx";
 import { Layout } from "../Layout";
+import { DISCORD_URL } from "../../../lib/data.js";
 
 const LinkedInIcon20 = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -57,6 +58,9 @@ export const Landing: FC<{
             </div>
             <a href="mailto:jamesedpares@gmail.com" class="sidebar-cta"><MailIcon /> Get in touch</a>
             <a href="/blog" class="sidebar-blog-link"><BlogIcon /> Read the blog →</a>
+            <p class="sidebar-discord">
+              Teacher? Software developer? Somewhere in between? <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer">Join this discord channel</a> to chat about AI and tech.
+            </p>
           </div>
         </aside>
 

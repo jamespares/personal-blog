@@ -5,35 +5,38 @@ topic: education
 slug: a-new-model-for-learning-pen-and-paper-in-class-ai-at-home
 ---
 
-Walking around my classroom in Shanghai, it's easy to be dazzled by the tech. Every student has a high-spec laptop, and the school's "Learning Management System" is a masterpiece of engineering. But sometimes I look at a room full of children staring at screens and I wonder if we’ve accidentally digitised the soul out of the lesson. Like the fog in *Macbeth*, the technology can grow so thick that we lose sight of the people in the room.
+Walking around my classroom in Shanghai, it's easy to be dazzled by the tech. Every student has a high-spec laptop, and the school's Learning Management System is genuinely impressive. But sometimes I look at a room full of children staring at screens and I wonder if we've accidentally digitised the soul out of the lesson. The technology can grow so thick that you lose sight of the people in the room.
 
-## The Broad Debate
+## Two extremes, both wrong
 
-The debate about technology in schools usually boils down to two extremes. On one side are the "Tech Evangelists" who think 1:1 iPads are the only way forward. On the other are the "Luddites" who want to return to chalk and slate. Both sides are missing the "realpolitik" of how children actually learn. Technology isn't the problem; it’s the **location** that’s wrong.
+The tech evangelists think 1:1 iPads are the only way forward. The luddites want to go back to chalk and slate. Both are missing the point. The problem isn't the technology itself. It's where we're using it.
 
-## What the Thinkers Say
+## "Integrate everywhere" is a fantasy
 
-The moderate consensus—the kind you’d hear from a polite reformist—is that we should "integrate" technology everywhere. They believe digital literacy is a core skill and that screens should be a seamless part of the experience.
+The moderate view says we should "integrate" technology everywhere. Digital literacy is a core skill, they say. Screens should be seamless.
 
-But this assumes that thirty children on laptops will stay focused on the task rather than Minecraft or group chats. It ignores the truth of classroom management. As a teacher, I know a screen is a distraction machine. Rory Stewart might want institutional reform, but even he would struggle to keep a Year 9 class on-topic when they have a world of digital "slop" at their fingertips.
+But anyone who's actually taught knows: a screen is a distraction machine. Give thirty kids laptops and tell me they all stay focused on the task. They don't. They're on Minecraft or group chats or YouTube. The idea that children will magically self-regulate because the learning is "engaging" is... optimistic.
 
-## My View
+## What I actually do
 
-My view is that we need to be intentional about boundaries. We should keep the classroom as an analogue space—pen, paper, and face-to-face debate. This is where we read *Hamlet* and grapple with ideas that have the permanence of the Somerset hills. But we should give the AI to the kids at home. Use the technology where its power for personalisation actually shines, and keep the classroom for genuine human connection.
+I keep the classroom analogue. Pen, paper, face-to-face debate. This is where we read Hamlet and argue about it. This is where human connection happens.
 
-## Why the Split Works
+But I give the AI to the kids at home. That's where personalisation actually makes sense. A paper worksheet is one-size-fits-all. An adaptive algorithm can give each child exactly the right challenge. It marks their work and gives me a dashboard on Monday morning. The machine handles the mechanical stuff so I can focus on the humans.
 
-### The Depth of Pen and Paper
-When students write by hand, they process information more slowly and deeply. In my classroom, laptops closed means notebooks open. We listen to each other. We look at the whiteboard, not our own private worlds. It's an act of respect for the material and for each other. You can't have a "curious group discussion" if everyone is hiding behind a MacBook Pro.
+## Why the split works
 
-### The Power of AI at Home
-Homework is where the tech optimists are right. A paper worksheet is a one-size-fits-all relic. This is where AI is brilliant. An adaptive algorithm can give each child exactly the right challenge. It mark their work and gives me a dashboard on Monday morning. Like a "Closing Memo" in a law firm, it nails the details so the humans can focus on the big picture.
+When students write by hand, they process information more slowly and deeply. Laptops closed means notebooks open. We listen to each other. We look at the whiteboard, not our own private worlds. You can't have a proper discussion if everyone is hiding behind a MacBook.
 
-## What Happens Next?
+But homework? That's where the tech optimists are right. An adaptive platform can give the struggling student more practice and the advanced student harder problems. Both get what they need. And I get data that actually changes how I teach.
 
-If we want to get the balance right, we should stop trying to "integrate" and start trying to "separate":
-1. **Analogue Classrooms**: Try a laptop-free week. Focus on speaking, handwriting, and the "truth" of the material.
-2. **Digital Homework**: Use platforms that track progress and provide instant feedback. 
-3. **The Data Bridge**: The only tech you need in class is the teacher’s screen, showing the results of last night’s AI work so you can target your teaching.
+## What I'd suggest
 
-For teachers: Don't feel guilty for wanting to ban screens in class. You're not being old-fashioned; you're being realistic. Keep the AI for the mechanical work at home, and keep the classroom for the human work.
+If you're a teacher, try three things:
+
+**Go laptop-free for a week.** Focus on speaking, handwriting, and actually looking at each other. See what happens.
+
+**Use adaptive platforms for homework.** Let the machine handle retrieval practice and instant feedback.
+
+**Use the data in class.** Show the results of last night's AI work on your screen. Target your teaching based on what the dashboard tells you.
+
+Don't feel guilty for banning screens in class. You're not being old-fashioned. You're being realistic. Keep the AI for the mechanical work at home. Keep the classroom for the human work.

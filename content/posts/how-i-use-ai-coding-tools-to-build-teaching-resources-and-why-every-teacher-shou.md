@@ -5,35 +5,36 @@ topic: ai
 slug: how-i-use-ai-coding-tools-to-build-teaching-resources-and-why-every-teacher-shou
 ---
 
-Most teachers I know use AI in a very similar way: they open ChatGPT, type "write me a worksheet about persuasive writing," and then spend twenty minutes fixing the formatting. It's useful, but sitting here in Shanghai—where the tech ecosystem moves at the speed of an M&A deal—I've started to realise that "prompting" is only about 5% of what's actually possible.
+Most teachers I know use AI the same way: they open ChatGPT, type "write me a worksheet about persuasive writing," then spend twenty minutes fixing the formatting. It's useful. But sitting here in Shanghai, where the tech ecosystem moves fast, I've realised that prompting is only about 5% of what's actually possible.
 
-## The Broad Debate
+## The staffroom divide
 
-There's a growing divide in how we talk about tech in the staffroom. On one side are the traditionalists who feel that AI-generated resources are soulless. On the other are the "tech optimists" who think that "prompting" is the new literacy. Both views feel a bit limited to me. One ignores the power of the tool, and the other treats it like a magic genie.
+There's a growing split in how we talk about tech. The traditionalists think AI-generated resources are soulless. The tech optimists think "prompting" is the new literacy. Both views feel limited. One ignores the power of the tool. The other treats it like a magic genie.
 
-## What the Thinkers Say
+## "Prompt engineering" is overrated
 
-The current chatter in the "polite bubble" of education is all about "Prompt Engineering." The idea is that if you just learn the right sequence of words, the AI will give you exactly what you need. People like Rory Stewart or Alastair Campbell might look at this and see a civil service dream—standardisation and better management.
+The current buzz in education is all about prompt engineering. Learn the right sequence of words, they say, and the AI will give you exactly what you need.
 
-But Sitting here in Shanghai, watching how actual coders work, I’ve realised that "prompting" is brittle. As Naval Ravikant says, code is the "ultimate leverage"—but only if you build systems, not just conversations. Prompting is a conversation; coding is a machine. And in the classroom, we need machines.
+But watching how actual coders work here in Shanghai, I've realised that prompting is brittle. Naval Ravikant says code is the ultimate leverage — but only if you build systems, not just conversations. Prompting is a conversation. Coding is a machine. In the classroom, we need machines.
 
-## My View
+## The real superpower: vibe coding
 
-My view is that the real superpower for teachers isn't prompting—it's **vibe coding**. This is a term for describing what you want and letting the AI build the *code* to generate it. You aren't asking for a worksheet; you're building a system that can produce thirty booklets in ten minutes. It’s moving from being a "writer of content" to a "builder of systems." It’s an act of truth: being honest about your own capacity and using leverage to multiply your impact.
+The real superpower isn't prompting. It's vibe coding — describing what you want and letting the AI build the code to generate it. You aren't asking for a worksheet. You're building a system that can produce thirty booklets in ten minutes. You're moving from being a writer of content to a builder of systems.
 
-## Why "Systems" are Better than "Prompts"
+## Why systems beat prompts
 
-### Total Consistency
-When I use an AI coding tool to write a Python script for my resources, every single worksheet follows the exact same style. I don’t have to worry about font sizes. The "coder" handles the formatting, so I just have to focus on the truth of the curriculum.
+**Total consistency.** When I use an AI coding tool to write a Python script, every worksheet follows the same style. I don't worry about font sizes. The code handles formatting. I focus on the curriculum.
 
-### Data-Driven Differentiation
-Because I'm using code, I can feed in a spreadsheet of my students' last test results. The script can then generate different versions of the same booklet—one for the kids who struggled, and one for those who need a challenge. Like a partner at a law firm managing a complex closing, I'm using "Realpolitik" to ensure everyone gets exactly what they need. Doing this manually would take a weekend; with a script, it takes an afternoon.
+**Data-driven differentiation.** Because I'm using code, I can feed in a spreadsheet of my students' last test results. The script generates different versions — one for the kids who struggled, one for those who need a challenge. Doing this manually would take a weekend. With a script, it takes an afternoon.
 
-## What Happens Next?
+## How to start
 
-If you want to move beyond the chat box, you don't actually need to learn how to code. You just need to change how you talk to the AI:
-1. **Don't ask for a worksheet**: Ask the AI to "Write a Python script that turns this list of vocab into a PDF booklet with an answer key."
-2. **Use Markdown**: Keep your ideas in simple text files. It's the language of honesty—no hidden formatting, just clarity.
-3. **Build an Archive**: Once you have a script that works, you have it for life. Next year, you just run it again.
+You don't actually need to learn how to code. You just need to change how you talk to the AI.
 
-For teachers: Don't be intimidated by the word "coding." If you can describe what you want, you can build it. We have the chance to move from being under-resourced managers to being architects of our own curriculum. Why wouldn't we take it?
+**Don't ask for a worksheet.** Ask the AI to "write a Python script that turns this list of vocab into a PDF booklet with an answer key."
+
+**Use Markdown.** Keep your ideas in simple text files. No hidden formatting. Just clarity.
+
+**Build an archive.** Once you have a script that works, you have it for life. Next year, you just run it again.
+
+Don't be intimidated by the word coding. If you can describe what you want, you can build it. We have the chance to move from being under-resourced managers to being architects of our own curriculum. Why wouldn't we take it?

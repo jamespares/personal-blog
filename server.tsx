@@ -111,4 +111,4 @@ app.notFound((c) => {
 // Start server
 import { serve } from "@hono/node-server";
 serve({ fetch: app.fetch, port: PORT });
-console.log(`🚀 Dev server running at http://localhost:${PORT}`);
+console.log(`Dev server running at http://localhost:${PORT}`);

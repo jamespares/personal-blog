@@ -8,7 +8,6 @@ module.exports = [
         status: 'active',
         published: 1,
         category: 'Teaching Tools',
-        icon: '⚡',
         brand_color: '#D97706',
         metric: 'Subscription'
     },
@@ -21,7 +20,6 @@ module.exports = [
         status: 'inactive',
         published: 0,
         category: 'Teaching Tools',
-        icon: '📚',
         brand_color: '#0D9488',
         metric: 'Subscription'
     },
@@ -34,7 +32,6 @@ module.exports = [
         status: 'inactive',
         published: 0,
         category: 'Teaching Tools',
-        icon: '🎤',
         brand_color: '#7C3AED',
         metric: 'Free / Premium'
     },
@@ -46,7 +43,6 @@ module.exports = [
         price: 'Free / Premium',
         status: 'active',
         published: 1,
-        icon: '🥋',
         brand_color: '#7f1d1d',
         metric: 'Free / Premium'
     },
@@ -60,7 +56,6 @@ module.exports = [
         status: 'active',
         published: 1,
         category: 'Learn French',
-        icon: '🇫🇷',
         brand_color: '#0055A4',
         metric: 'Free / Premium'
     },
@@ -73,7 +68,6 @@ module.exports = [
         status: 'inactive',
         published: 0,
         category: 'Learn English',
-        icon: '🇬🇧',
         brand_color: '#2E7D32',
         metric: 'Free / Premium'
     },
@@ -86,7 +80,6 @@ module.exports = [
         status: 'inactive',
         published: 0,
         category: 'Learn English',
-        icon: '📝',
         brand_color: '#4ADE80',
         metric: 'Free / Premium'
     },
@@ -100,7 +93,6 @@ module.exports = [
         status: 'inactive',
         published: 0,
         category: 'Learn French',
-        icon: '🎯',
         brand_color: '#3B82F6',
         metric: 'Free'
     },
@@ -114,7 +106,6 @@ module.exports = [
         status: 'inactive',
         published: 0,
         category: 'Learn French',
-        icon: '⚖️',
         brand_color: '#60A5FA',
         metric: 'Free'
     },
@@ -127,7 +118,6 @@ module.exports = [
         status: 'inactive',
         published: 0,
         category: 'Learn English',
-        icon: '🐉',
         brand_color: '#C41E3A',
         metric: 'Free / Premium'
     },
@@ -140,7 +130,6 @@ module.exports = [
         status: 'coming_soon',
         published: 1,
         category: 'Teaching Tools',
-        icon: '📖',
         brand_color: '#64748B',
         metric: 'Coming Soon'
     },
@@ -153,7 +142,6 @@ module.exports = [
         status: 'coming_soon',
         published: 1,
         category: 'Teaching Tools',
-        icon: '📅',
         brand_color: '#475569',
         metric: 'Coming Soon'
     }

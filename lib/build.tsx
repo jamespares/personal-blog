@@ -65,17 +65,17 @@ function formatTopic(topic: string) {
 }
 
 async function build() {
-  console.log("🚀 Starting static build (Hono JSX)...");
+  console.log("Starting static build (Hono JSX)...");
 
   if (fs.existsSync(DIST_DIR)) {
     fs.rmSync(DIST_DIR, { recursive: true, force: true });
   }
   ensureDir(DIST_DIR);
 
-  console.log("📦 Copying public assets...");
+  console.log("Copying public assets...");
   copyDir(PUBLIC_DIR, DIST_DIR);
 
-  console.log("📄 Rendering pages...");
+  console.log("Rendering pages...");
 
   // Landing Page
   const recentPosts = posts.getRecent(5);
@@ -141,10 +141,10 @@ async function build() {
   // 404 Page
   writeHTML("404.html", <NotFound />);
 
-  console.log("✅ Build complete! Files generated in /dist");
+  console.log("Build complete! Files generated in /dist");
 }
 
 build().catch((err) => {
-  console.error("❌ Build failed:", err);
+  console.error("Build failed:", err);
   process.exit(1);
 });

@@ -71,14 +71,9 @@ export const Landing: FC<{
                 <article class="project-card" key={product.slug}>
                   <a href={product.live_url || "#"} target="_blank" rel="noopener" class="project-card-link">
                     <div class="project-card-header">
-                      <div class="project-icon" style={`background-color:${product.brand_color}20;color:${product.brand_color};`}>
-                        <span>{product.icon}</span>
-                      </div>
-                      <div class="project-card-meta">
-                        <span class="project-metric">{product.metric}</span>
-                      </div>
+                      <h3 class="project-card-title">{product.name}</h3>
+                      <span class="project-metric">{product.metric}</span>
                     </div>
-                    <h3 class="project-card-title">{product.name}</h3>
                     <p class="project-card-tagline">{product.tagline}</p>
                   </a>
                 </article>
@@ -93,14 +88,9 @@ export const Landing: FC<{
                 {comingSoon.map((product: any) => (
                   <article class="project-card project-card-soon" key={product.slug}>
                     <div class="project-card-header">
-                      <div class="project-icon" style={`background-color:${product.brand_color}20;color:${product.brand_color};`}>
-                        <span>{product.icon}</span>
-                      </div>
-                      <div class="project-card-meta">
-                        <span class="project-metric project-metric-soon">{product.metric}</span>
-                      </div>
+                      <h3 class="project-card-title">{product.name}</h3>
+                      <span class="project-metric project-metric-soon">{product.metric}</span>
                     </div>
-                    <h3 class="project-card-title">{product.name}</h3>
                     <p class="project-card-tagline">{product.tagline}</p>
                   </article>
                 ))}

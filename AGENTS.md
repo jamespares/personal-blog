@@ -10,7 +10,7 @@ This is a minimalist, high-performance personal website and blog for **James Par
 
 The site has two main sections:
 - **Landing page** (`/`): A portfolio dashboard showing active products/projects and latest blog posts.
-- **Blog** (`/blog`): A topic-based blog covering China, Education, Politics, AI, and Book Reviews.
+- **Blog** (`/blog`): A topic-based blog with two sections: Teaching and Book Reviews.
 
 **Live site:** [jamespares.me](https://jamespares.me)
 
@@ -138,7 +138,7 @@ Blog posts live in `content/posts/` as Markdown files with YAML frontmatter.
 ---
 title: "Post Title"
 date: 2026-04-14 09:00:00
-topic: education   # Must be one of: china, education, politics, ai, books
+topic: teaching    # Must be one of: teaching, books
 slug: post-slug    # Used for URL: /post/post-slug/
 ---
 ```
@@ -277,6 +277,6 @@ When making changes, verify by:
 
 1. **Mirror changes in both Express and static build.** If you modify `routes/public.js`, check whether `lib/build.js` needs the same change.
 2. **Slug consistency.** The Markdown filename, the `slug` frontmatter field, and any internal links must match exactly.
-3. **Topic whitelist.** Only these topics are supported: `china`, `education`, `politics`, `ai`, `books`. Adding a new topic requires updating the array in both `routes/public.js` and `lib/build.js`.
+3. **Topic whitelist.** Only these topics are supported: `teaching`, `books`. Adding a new topic requires updating the array in `server.tsx`, `lib/build.tsx`, and `src/components/pages/Home.tsx`.
 4. **No database.** Do not write code that assumes SQLite, PostgreSQL, or any other DB. All data is in-memory from `lib/data.js`.
 5. **British English.** All user-facing copy and blog content must use British spelling (`organise`, `realise`, `labour`, `centre`).

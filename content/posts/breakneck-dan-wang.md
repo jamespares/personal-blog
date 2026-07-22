@@ -1,20 +1,19 @@
 ---
 title: "Breakneck by Dan Wang"
-date: 2025-03-15 09:00:00
+date: 2026-05-08 09:00:00
 topic: books
 slug: breakneck-dan-wang
+sources: |
+  - Wang, D. (2025), *Breakneck: China's Quest to Engineer the Future*, W.W. Norton.
+  - Swanson, A. (2015), 'How China used more cement in 3 years than the U.S. did in the entire 20th Century', *The Washington Post*.
 ---
 
-I recently read *Breakneck* on a flight from Shanghai to London, and it was a strange experience to be suspended somewhere between the two worlds Dan Wang describes. On one side, the relentless energy of Shenzhen and the entrepreneurial spirit that built the world's factory. On the other, the cautious, regulated environment of Western tech. By the time we landed at Heathrow, I wasn't sure whether I was more impressed or anxious.
+A few weeks ago I took the high-speed train from Shanghai to Beijing. We covered roughly 1,300 kilometres in under five hours, gliding past cities I had never heard of, each with a skyline of cranes. I was reading *Breakneck* at the time, which felt appropriate. Dan Wang's central argument is that China is an engineering state, while America — and by extension much of the West — has become a lawyerly society. One side builds; the other files objections. Sitting on that train, the thesis did not feel abstract.
 
-Wang documents China's technological rise over the past two decades, but he's not writing a policy paper. He's chasing the human stories behind the headlines. The late-night factory floors. The local officials gambling their careers on new industrial zones. The sheer human ambition that drives people to work six-day weeks for years on end. It's a portrait of a country moving faster than almost anywhere else on earth.
+Wang, who spent six years in China as a technology analyst, is at his best when he gets specific. His observations on railway construction and cement production are the sort of detail that recalibrates your sense of scale. China used more cement between 2011 and 2013 than the United States poured in the entire twentieth century — the century of the Hoover Dam and the Interstate Highway System. That statistic has done the rounds since Vaclav Smil first compiled it, but Wang earns it afresh by showing what sits behind the numbers: a governing class trained in engineering, for whom concrete is not a metaphor.
 
-The standout for me was Wang's insistence that China's tech boom wasn't some masterplan executed by Beijing. It was messy, competitive, and often wasteful. For every Huawei, there were a hundred failed ventures. The state set the direction, but the speed came from millions of ordinary people trying to improve their lot. And that distinction matters enormously. If you think China's success is purely top-down, you miss the lesson. If you think it's purely market-driven, you miss the danger.
+His contrast with the lawyer-led West struck me as broadly accurate, and I say that having worked in London local government, where I watched modest projects drown in process. Lawyers are excellent at distributing risk and terrible at pouring foundations. There is a reason Britain argues about HS2 the way China argues about nothing.
 
-Living in Shanghai, I see the scaffolding everywhere. New metro lines, new AI labs, new electric vehicle showrooms. But I also see the cost. The air quality. The stressed parents. The young professionals who haven't had a weekend off in months. Wang doesn't glorify the boom; he documents it. That honesty is refreshing in a field crowded with polemic.
+But Wang is no cheerleader, and this is the book's real strength. The engineering mindset, applied to people rather than bridges, gave China the one-child policy and the rigidities of zero-Covid. Society is not concrete. It does not set. The lawyerly state, for all its sclerosis, exists to protect the individual against exactly this kind of miscalculation. Wang holds both truths at once, which is rarer than it should be in books about China.
 
-Some people say books about Chinese technology inevitably age badly because the landscape shifts so quickly. That's fair — parts of *Breakneck* already feel like history rather than reportage. But Wang is less interested in predicting the future than in capturing the texture of a specific moment. The chapter on how Chinese companies iterate faster than their Western counterparts because they are less afraid of failure? That's not going out of date any time soon. Sitting in my classroom, I wonder if we have the same problem in education. Are we so afraid of getting things wrong that we never get things done? In London local government, I saw projects delayed for years by risk-averse committees. Here, they build a subway line in eighteen months.
-
-I'd recommend this book because it makes it impossible to keep thinking simplistically about China. Too many opinions are formed from headlines or podcast summaries. Wang gives you the depth to argue either side with precision. He also forces you to ask what you're willing to sacrifice for speed. The Chinese model delivers, but it extracts a price. Are Western voters willing to accept that trade-off? I doubt it.
-
-If you're trying to understand China, start with the ground level. Read this before you form a view. Watch the next generation of engineers in Shenzhen — they're not ideologues, they're pragmatists. Whether they stay or leave will determine where the next wave of innovation happens.
+If you want to understand the next thirty years, read this. Then take a Chinese train. The argument makes itself.

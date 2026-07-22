@@ -1,0 +1,8 @@
+/topic/education/*  /topic/teaching/:splat  301
+/topic/education    /topic/teaching/        301
+/topic/china/*      /blog/                  301
+/topic/china        /blog/                  301
+/topic/ai/*         /blog/                  301
+/topic/ai           /blog/                  301
+/topic/politics/*   /blog/                  301
+/topic/politics     /blog/                  301

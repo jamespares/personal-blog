@@ -7,7 +7,7 @@ export const Home: FC<{
   topicPreviews: Record<string, any[]>;
   formatTopic: (t: string) => string;
 }> = ({ recentPosts, topicPreviews, formatTopic }) => {
-  const topics = ["education", "ai", "china", "politics", "books"];
+  const topics = ["teaching", "books"];
 
   return (
     <Layout pageTitle="Home">

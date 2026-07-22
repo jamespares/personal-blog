@@ -55,10 +55,7 @@ function writeHTML(outputPath: string, node: any) {
 function formatTopic(topic: string) {
   if (!topic) return "";
   const labels: Record<string, string> = {
-    china: "China",
-    education: "Education",
-    politics: "Politics",
-    ai: "AI",
+    teaching: "Teaching",
     books: "Book Reviews"
   };
   return labels[topic.toLowerCase()] || topic.charAt(0).toUpperCase() + topic.slice(1);
@@ -88,10 +85,7 @@ async function build() {
   // Blog Home
   const blogRecentPosts = posts.getRecent(10);
   const topicPreviews = {
-    china: posts.getByTopic("china").slice(0, 3),
-    education: posts.getByTopic("education"),
-    politics: posts.getByTopic("politics").slice(0, 3),
-    ai: posts.getByTopic("ai").slice(0, 3),
+    teaching: posts.getByTopic("teaching"),
     books: posts.getByTopic("books").slice(0, 3),
   };
   writeHTML(
@@ -100,7 +94,7 @@ async function build() {
   );
 
   // Topics
-  const topics = ["china", "education", "politics", "ai", "books"];
+  const topics = ["teaching", "books"];
   for (const topic of topics) {
     const topicPosts = posts.getByTopic(topic);
     writeHTML(

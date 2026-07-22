@@ -1,30 +1,16 @@
 ---
 title: "Empire of the Sun by J.G. Ballard"
-date: 2025-08-15 09:00:00
+date: 2026-05-18 09:00:00
 topic: books
 slug: empire-of-the-sun-jg-ballard
 ---
 
-I first read *Empire of the Sun* shortly after moving to Shanghai, walking home one evening through the former International Settlement where the street lamps still curve in that particular 1920s way. I had known the city was built by foreigners, but I had not understood how recently it had been torn apart by them. Ballard's novel sits on the boundary between memoir and fiction, and reading it while living in the same city where it takes place is a strange experience—like finding an old photograph of your own house during a flood.
+I read *Empire of the Sun* while living in the city where it is set, which is a stranger experience than I expected. Ballard was born in Shanghai in 1930 and interned as a boy at Lunghua, a few miles from where I now get my coffee. Walking through the former French Concession after finishing the book, I kept catching myself looking for Jim Graham — the eleven-year-old protagonist — in the plane trees and the old villas. The Shanghai of the novel is gone, but its geography is not, and that dissonance is half the book's power.
 
-## What Ballard Actually Captures
+The other half is Ballard's unnerving calm. Jim does not experience the war as horror so much as as spectacle: he admires the Japanese pilots, adapts to camp life with an entrepreneur's instincts, and treats catastrophe as a kind of weather. Some readers find this cold. I found it honest. Children do not process history; they process circumstances. Ballard, who later insisted the atomic bombs probably saved his life, refused throughout his career to write the war as a morality play, and the novel is better for it.
 
-The novel follows Jim Graham, a young British boy separated from his parents in Shanghai during the Japanese occupation in 1941. He spends the war in an internment camp at Lunghua, surviving on a combination of charm, adaptability, and a child's inability to fully comprehend the horror around him. Ballard draws heavily from his own childhood, and the result is not a conventional war story. It is a study in how quickly the structures of civilised life dissolve, and how readily a child adjusts to the new rules.
+Reading it here also stirred a thought I have had in Chinese classrooms and dinner conversations. The war with Japan looms very large in Chinese memory — understandably, since China's suffering began in 1937, or 1931 if you count Manchuria, and dwarfed almost anything Europe saw. What surprises me is how the American role in ending that war — the Flying Tigers, the Pacific campaign — sits so lightly in the popular memory compared with present-day rivalry. Some young Chinese I meet are strikingly competitive, even bitter, about a country that fought on China's side within living memory.
 
-## What I Could Not Shake
+I do not say this to score points. Memory serves the present, not the past, and Britain is hardly innocent of the same trick — we remember 1940 rather better than we remember the bits of empire that preceded it. Grievance and gratitude both pass down the generations, and both can be curated. The teacher's job, it seems to me, is not to settle these accounts but to complicate them, gently, in both directions.
 
-The detachment of the prose. Ballard writes about starvation and death with the same clinical curiosity that Jim himself brings to the camp. At one point, Jim watches a dogfight between American and Japanese planes with pure excitement, barely registering that the burning parachute falling past him contains a dying man. That is not a flaw in the novel. It is the point. Children do not process catastrophe the way adults do, and Ballard refuses to impose adult sentimentality on his younger self.
-
-The Shanghai setting is also rendered with extraordinary precision. I have walked past the buildings Ballard describes, now converted into boutiques and coffee shops, and the contrast is unsettling. The novel captures a city that was always theatrical—an artificial world of colonial privilege built on unequal foundations—and shows how rapidly the set was struck. Jim's bewilderment at the collapse of his parents' world mirrors, in some ways, the bewilderment I sometimes feel watching Shanghai reinvent itself every few years. The pace of change is different now, but the sensation of ground shifting beneath your feet is recognisable.
-
-## The Fair Criticisms... And Where I Think They Miss
-
-Some critics argue that the novel is too cold, too interested in the physics of survival and not interested enough in the moral dimensions of the war. Others point out that Jim's suffering, however real, pales beside the suffering of the Chinese civilians around him, who appear mostly as background figures. Both criticisms have merit. However, I think they misunderstand what Ballard is doing. He is not writing a moral ledger. He is writing about the specific psychology of a colonial child who suddenly discovers that his passport no longer protects him. Jim's privilege is the subject of the book, not its blind spot. Ballard is unsparing about how entitled and ignorant the boy is, even as he makes you care about his survival.
-
-## Why I Think You Should Read It
-
-It is the best novel I know about how ordinary people adapt to collapse. Jim does not become a hero. He becomes a scavenger, a trader, a boy who learns which adults to flatter and which to avoid. That is what most people actually do in extremis, and Ballard has the honesty to show it without shame or sentiment.
-
-If you live in Shanghai, read it for the topography of a city that has buried its recent history under so many new floors of glass and steel. If you do not live here, read it as a reminder that the structures we assume are permanent—nations, passports, the rule of law—are thinner than we like to think. Ballard never became a British writer in the conventional sense because he had seen too early that the centre does not always hold.
-
-One caveat: the novel is not interested in the Chinese experience of the war, and readers should supplement it with voices from that side. But as a portrait of how quickly a comfortable world can invert, and how readily a child accepts the inversion, it is unmatched.
+Ballard does exactly that. He loved a city that imprisoned him, and wrote about it without bitterness or sentimentality. Eighty years on, that feels like a model worth keeping.

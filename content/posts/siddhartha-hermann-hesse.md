@@ -1,22 +1,16 @@
 ---
 title: "Siddhartha by Hermann Hesse"
-date: 2025-06-05 09:00:00
+date: 2026-06-04 09:00:00
 topic: books
 slug: siddhartha-hermann-hesse
 ---
 
-I recently re-read *Siddhartha* on a long train journey through southern China, heading to a ten-day Vipassana retreat I'd signed up for on something between a whim and a desperate need for silence. I was twenty-four the first time I read it, anxious, and carrying a backpack full of books I thought would prepare me for enlightenment. Hesse's slender novel was the only one that felt honest about how little preparation was possible.
+I am a Buddhist, which in practice means I read about Buddhism more often than I meditate, and meditate more often than I succeed at it. A friend lent me *Siddhartha* before I moved to China, and I finally read it here in Shanghai, in short sittings on the metro. It is a short book, published in 1922, and it has quietly rearranged how I think about my own faith.
 
-The novel follows a young Indian man, Siddhartha, as he leaves his Brahmin family to seek spiritual fulfilment. He tries asceticism, wealth, love, and finally, quiet observation by a river. It isn't a biography of the Buddha — Siddhartha meets the Buddha and decides not to follow him. It's something stranger: a novel about why teaching cannot be transmitted, only discovered.
+The novel follows Siddhartha, the son of a Brahmin in ancient India, who leaves home with his friend Govinda to seek enlightenment. They live as ascetics, then encounter Gotama, the Buddha himself. Here Hesse makes his boldest move. Govinda joins the Buddha's followers; Siddhartha does not. He admires the Buddha enormously — but he reasons that enlightenment, by definition, cannot be handed over as doctrine. The Buddha found his own way through experience, not through teachings, so no teaching, however perfect, can transmit what he found.
 
-The central insight that wisdom cannot be communicated, only experienced, is both terrifying and liberating. Siddhartha rejects the Buddha's teaching not because it's wrong, but because he knows he must discover the truth for himself. As someone who has tried to balance a teaching career with a meditation practice, I find this deeply humbling. I can explain grammar or essay structure. I cannot give a student enlightenment. The best I can do is create the conditions and get out of the way.
+The rest of the novel tests that conviction. Siddhartha throws himself into the world: he loves the courtesan Kamala, grows rich as a merchant, becomes disgusted with himself, and finally finds peace as a ferryman alongside the humble Vasudeva, listening to a river. The river teaches him what no sermon could — that time is an illusion, that everything is connected, that wisdom is lived rather than stated. Hesse's point is not that teachers are useless. It is that wisdom and knowledge are different things. Knowledge can be communicated; wisdom, he suggests, cannot — and the attempt often makes it sound foolish.
 
-The final section, where Siddhartha becomes a ferryman and learns from the river, is often mocked as too poetic. I think it's the heart of the book. The river is always the same and always different. It's a perfect image for impermanence — and for the kind of patience that actual spiritual practice requires. You don't cross a river by analysing it. You get in the boat.
+As a teacher, I find this both uncomfortable and liberating. Uncomfortable, because my profession rests on the hope that understanding can be passed from one person to another. Liberating, because it reframes the job. I cannot hand my students enlightenment, or even fluency. I can only arrange the conditions in which they might discover things for themselves — the classroom as ferry, perhaps, rather than freight service.
 
-Some serious Buddhists dismiss *Siddhartha* as a Western romanticisation — a German novelist's fantasy of Eastern wisdom, stripped of doctrine and discipline. The spiritual generalists, meanwhile, treat it as a universal manual for self-discovery. Both readings seem to miss what the book actually does. I think the novel is valuable precisely because it isn't a Buddhist text. It's a novel about the limits of teaching itself. Hesse wasn't a Buddhist. He was a troubled European writer searching for something he couldn't find in the churches or universities of his youth. *Siddhartha* is the record of that search, not a claim to authority.
-
-This book gives you permission to find your own way. In an age of online courses and self-help gurus promising transformation in twelve weeks, that message feels almost radical. Siddhartha tries every path and is ultimately failed by each. The novel isn't saying these paths are worthless. It's saying that no path, however noble, can substitute for direct experience.
-
-If you're curious about Buddhism, or about any form of inner work, read it as a novel, not a manual. The book makes more sense after you've tried meditation. The descriptions of stillness and insight aren't metaphors. They're attempts to describe something that language struggles to hold. Sit before you judge.
-
-One valid criticism is that Siddhartha's spiritual journey is only possible because he can walk away from his material life. Most people can't. Don't let the beauty of the book obscure that reality. But do let it make you brave enough to start looking.
+I would not claim *Siddhartha* is a reliable guide to Buddhist philosophy; Hesse was a German romantic, not a monk. But as an account of why the spiritual life must be lived to be understood, I have read nothing better. A great book about Buddhism, and about the limits of being taught anything that matters.

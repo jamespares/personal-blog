@@ -60,7 +60,7 @@ module.exports = [
         metric: 'Free / Premium'
     },
     {
-        name: 'The Dalf Dojo',
+        name: 'The DALF Dojo',
         tagline: 'AI-generated and marked past papers to pass the DALF C1 efficiently',
         description: 'Generate realistic DALF C1 past papers, complete them digitally, and receive instant marking against the official French Ministry of Education mark scheme. Practice with detailed feedback until you are exam-ready — the cheapest and most efficient way to pass.',
         live_url: 'https://thedalfdojo.com/',

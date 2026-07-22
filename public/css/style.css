@@ -1858,6 +1858,48 @@ main.container {
   color: var(--color-accent-hover);
 }
 
+.sidebar-tools {
+  margin-top: 1.5rem;
+}
+
+.sidebar-tools-heading {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-tools-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sidebar-tools-list a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.sidebar-tools-list a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.sidebar-tools-list p {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--color-text-secondary);
+  margin: 0.15rem 0 0;
+}
+
 .sidebar-cta,
 .sidebar-blog-link {
   display: inline-flex;
@@ -2030,7 +2072,7 @@ main.container {
 .writing-list {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1.25rem;
 }
 
 .writing-item {
@@ -2060,6 +2102,19 @@ main.container {
 .writing-link:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.writing-main {
+  min-width: 0;
+}
+
+.writing-excerpt {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin: 0.15rem 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .writing-topic {

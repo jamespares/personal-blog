@@ -9,7 +9,7 @@ export const Post: FC<{
 }> = ({ post, formatTopic, marked }) => {
   return (
     <Layout pageTitle={post.title} metaDescription={post.excerpt || post.content.substring(0, 160)}>
-      <a href="/" class="back-home">← Back to home</a>
+      <a href="/blog/" class="back-home">← Back to blog</a>
       <article class="single-post">
         <header class="post-header">
           <span class="post-topic">{formatTopic(post.topic)}</span>

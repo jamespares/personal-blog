@@ -54,8 +54,8 @@ module.exports = [
         description: 'Master French grammar through interactive quizzes: noun gender, à vs de verbs, subjunctive tense, reflexive verbs and more.',
         live_url: 'https://thelanguagedojo.com',
         price: 'Free / Premium',
-        status: 'active',
-        published: 1,
+        status: 'inactive',
+        published: 0,
         brand_color: '#7f1d1d',
         metric: 'Free / Premium'
     },

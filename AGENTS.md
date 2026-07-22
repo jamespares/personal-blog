@@ -6,10 +6,10 @@ This file contains everything an AI coding agent needs to know about this projec
 
 ## 1. Project Overview
 
-This is a minimalist, high-performance personal website and blog for **James Pares**, a British teacher living in Shanghai who builds AI-powered tools for language learners and educators.
+This is a minimalist, high-performance personal website and blog for **James Pares**, a British teacher living in Shenzhen (previously Shanghai) who builds AI-powered tools for language learners and educators.
 
 The site has two main sections:
-- **Landing page** (`/`): A portfolio dashboard showing active products/projects and latest blog posts.
+- **Landing page** (`/`): A writing-first homepage. The main column is a feed of the latest blog posts; the sidebar holds the profile, contact links, and a small "Some tools I vibe coded" list of active products. The full tools listing lives at `/products/` for sharing directly.
 - **Blog** (`/blog`): A topic-based blog with two sections: Teaching and Book Reviews.
 
 **Live site:** [jamespares.me](https://jamespares.me)
@@ -174,7 +174,7 @@ Slugs are auto-generated from `name` via `generateSlug()` in `lib/data.js`.
 
 When writing or editing blog content, consult `content/blog-config.md`. It contains strict persona guidelines:
 - Voice: Clear, Curious, Concise. British English.
-- Identity: James Pares, 28, teacher in Shanghai, former London local government.
+- Identity: James Pares, 29, teacher in Shenzhen (moved from Shanghai in July 2026), former London local government.
 - Structure: Personal hook → Broad debate → Pivot → Reasons → Conclusion.
 - Sources: FT, The Economist, The Times, The Telegraph. Avoid The Guardian.
 - Titles: Concise and witty. Prefer questions or "How-to" frames.

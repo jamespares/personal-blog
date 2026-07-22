@@ -4,8 +4,7 @@ import { Layout } from "../Layout";
 
 export const Products: FC<{
   activeProducts: any[];
-  comingSoonProducts: any[];
-}> = ({ activeProducts, comingSoonProducts }) => {
+}> = ({ activeProducts }) => {
   return (
     <Layout pageTitle="Products">
       <section class="page-header">
@@ -37,30 +36,7 @@ export const Products: FC<{
         </section>
       )}
 
-      {comingSoonProducts.length > 0 && (
-        <section class="products-section">
-          <div class="section-header"><h2>Coming Soon</h2></div>
-          <div class="products-grid">
-            {comingSoonProducts.map((product: any) => (
-              <article class="product-card coming-soon" key={product.slug}>
-                {product.image_url && (
-                  <div class="product-image"><img src={product.image_url} alt={product.name} /></div>
-                )}
-                <div class="product-body">
-                  <h3>{product.name}</h3>
-                  {product.tagline && <p class="product-tagline">{product.tagline}</p>}
-                  <p class="product-excerpt">{product.description.substring(0, 120)}...</p>
-                  <div class="product-meta">
-                    <span class="product-badge">Coming Soon</span>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {activeProducts.length === 0 && comingSoonProducts.length === 0 && (
+      {activeProducts.length === 0 && (
         <section class="empty-state"><p>No products yet. Check back soon!</p></section>
       )}
     </Layout>

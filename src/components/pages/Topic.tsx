@@ -8,7 +8,7 @@ export const Topic: FC<{
   formatTopic: (t: string) => string;
 }> = ({ topic, posts, formatTopic }) => (
   <Layout pageTitle={formatTopic(topic)}>
-    <a href="/" class="back-home">← Back to blog</a>
+    <a href="/blog/" class="back-home">← Back to blog</a>
     <section class="page-header">
       <h1>{formatTopic(topic)}</h1>
       <p class="page-sub">All posts about {formatTopic(topic)}</p>

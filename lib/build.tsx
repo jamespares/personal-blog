@@ -75,7 +75,7 @@ async function build() {
   console.log("Rendering pages...");
 
   // Landing Page
-  const recentPosts = posts.getRecent(5);
+  const recentPosts = posts.getRecent(10);
   const allProducts = products.getAll().filter((p: any) => p.published === 1);
   writeHTML(
     "index.html",
@@ -114,14 +114,13 @@ async function build() {
 
   // Products Listing
   const activeProducts = products.getActive();
-  const comingSoonProducts = products.getComingSoon();
   writeHTML(
     "products/index.html",
-    <Products activeProducts={activeProducts} comingSoonProducts={comingSoonProducts} />
+    <Products activeProducts={activeProducts} />
   );
 
   // Individual Products
-  for (const product of allProducts) {
+  for (const product of allProducts.filter((p: any) => p.status === "active")) {
     writeHTML(
       `products/${product.slug}/index.html`,
       <Product product={product} marked={marked} />

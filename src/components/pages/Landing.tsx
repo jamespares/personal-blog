@@ -25,17 +25,12 @@ const MailIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
 );
 
-const BlogIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-);
-
 export const Landing: FC<{
   allProducts: any[];
   recentPosts: any[];
   formatTopic: (t: string) => string;
 }> = ({ allProducts, recentPosts, formatTopic }) => {
   const activeProducts = allProducts.filter((p: any) => p.status === "active");
-  const comingSoon = allProducts.filter((p: any) => p.status === "coming_soon");
 
   return (
     <Layout wideLayout>
@@ -47,9 +42,9 @@ export const Landing: FC<{
               <h1 class="profile-name">James Pares</h1>
               <p class="profile-location">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                Shanghai
+                Shenzhen
               </p>
-              <p class="profile-bio">Building AI-powered tools for language learners and teachers.</p>
+              <p class="profile-bio">British Teacher and Technophile</p>
             </div>
             <div class="sidebar-social">
               <a href="https://www.linkedin.com/in/james-p-ba7653207/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><LinkedInIcon20 /></a>
@@ -57,47 +52,24 @@ export const Landing: FC<{
               <a href="https://github.com/jamespares" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><GitHubIcon20 /></a>
             </div>
             <a href="mailto:jamesedpares@gmail.com" class="sidebar-cta"><MailIcon /> Get in touch</a>
-            <a href="/blog" class="sidebar-blog-link"><BlogIcon /> Read the blog →</a>
             <p class="sidebar-discord">
-              Teacher? Software developer? Somewhere in between? <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer">Join this discord channel</a> to chat about AI and tech.
+              Teacher or developer? <a href={DISCORD_URL} target="_blank" rel="noopener noreferrer">Join the Technical Teachers Discord</a>.
             </p>
+            <div class="sidebar-tools">
+              <h2 class="sidebar-tools-heading">Some tools I vibe coded</h2>
+              <ul class="sidebar-tools-list">
+                {activeProducts.map((product: any) => (
+                  <li key={product.slug}>
+                    <a href={product.live_url} target="_blank" rel="noopener noreferrer">{product.name}</a>
+                    <p>{product.tagline}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </aside>
 
         <div class="dashboard-main">
-          <section class="projects-section">
-            <div class="project-grid">
-              {activeProducts.map((product: any) => (
-                <article class="project-card" key={product.slug}>
-                  <a href={product.live_url || "#"} target="_blank" rel="noopener" class="project-card-link">
-                    <div class="project-card-header">
-                      <h3 class="project-card-title">{product.name}</h3>
-                      <span class="project-metric">{product.metric}</span>
-                    </div>
-                    <p class="project-card-tagline">{product.tagline}</p>
-                  </a>
-                </article>
-              ))}
-            </div>
-          </section>
-
-          {comingSoon.length > 0 && (
-            <section class="projects-section coming-soon-section">
-              <h2 class="section-label">Coming Soon</h2>
-              <div class="project-grid">
-                {comingSoon.map((product: any) => (
-                  <article class="project-card project-card-soon" key={product.slug}>
-                    <div class="project-card-header">
-                      <h3 class="project-card-title">{product.name}</h3>
-                      <span class="project-metric project-metric-soon">{product.metric}</span>
-                    </div>
-                    <p class="project-card-tagline">{product.tagline}</p>
-                  </article>
-                ))}
-              </div>
-            </section>
-          )}
-
           {recentPosts.length > 0 && (
             <section class="latest-writing">
               <div class="writing-header">
@@ -105,10 +77,13 @@ export const Landing: FC<{
                 <a href="/blog" class="view-all-link">View all →</a>
               </div>
               <div class="writing-list">
-                {recentPosts.slice(0, 5).map((post: any) => (
+                {recentPosts.map((post: any) => (
                   <article class="writing-item" key={post.slug}>
                     <time class="writing-date">{new Date(post.created_at).toLocaleDateString("en-GB", { month: "short", year: "numeric" })}</time>
-                    <a href={`/post/${post.slug}/`} class="writing-link">{post.title}</a>
+                    <div class="writing-main">
+                      <a href={`/post/${post.slug}/`} class="writing-link">{post.title}</a>
+                      <p class="writing-excerpt">{post.excerpt || post.content.substring(0, 150) + "..."}</p>
+                    </div>
                     <span class="writing-topic">{formatTopic(post.topic)}</span>
                   </article>
                 ))}

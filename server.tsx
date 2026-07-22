@@ -38,7 +38,7 @@ function render(c: any, node: any) {
 
 // --- Landing ---
 app.get("/", (c) => {
-  const recentPosts = posts.getRecent(5);
+  const recentPosts = posts.getRecent(10);
   const allProducts = products.getAll().filter((p: any) => p.published === 1);
   return render(c, <Landing allProducts={allProducts} recentPosts={recentPosts} formatTopic={formatTopic} />);
 });
@@ -75,14 +75,14 @@ app.get("/post/:slug/", (c) => {
 // --- Products ---
 app.get("/products", (c) => c.redirect("/products/"));
 app.get("/products/", (c) => {
-  return render(c, <Products activeProducts={products.getActive()} comingSoonProducts={products.getComingSoon()} />);
+  return render(c, <Products activeProducts={products.getActive()} />);
 });
 
 // --- Individual Product ---
 app.get("/products/:slug/", (c) => {
   const slug = c.req.param("slug");
   const product = products.getBySlug(slug);
-  if (!product) return c.notFound();
+  if (!product || product.status !== "active") return c.notFound();
   return render(c, <Product product={product} marked={marked} />);
 });
 

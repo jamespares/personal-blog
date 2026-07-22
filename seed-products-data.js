@@ -12,6 +12,19 @@ module.exports = [
         metric: 'Subscription'
     },
     {
+        name: 'Trading Game',
+        tagline: 'Classroom market-fair checkout system that teaches students how business and finance work',
+        description: 'Turns a school market day into a live business lesson. Students run their own stalls and use iPads as cash registers to record sales, while a staff Investment Manager runs a Stock Exchange where customers can invest in their favourite teams. A projector shows a live leaderboard throughout, and when trading closes the app deducts material costs, salaries and rent, applies tax, and crowns the team with the highest final profit.',
+        live_url: 'https://qwfls-trading-game.com',
+        github_url: 'https://github.com/jamespares/trading-game',
+        price: 'Free',
+        status: 'active',
+        published: 1,
+        category: 'Teaching Tools',
+        brand_color: '#0891b2',
+        metric: 'Free'
+    },
+    {
         name: 'Insta Homework',
         tagline: 'Generate assignable homework tasks which are marked by AI',
         description: 'Generate assignable homework tasks which are marked by AI. Rebranded from HW Made Simple.',

@@ -1,6 +1,6 @@
 ---
 title: "How AI Coding Tools Can Help Teachers"
-date: 2026-05-29 09:00:00
+date: 2026-02-02 09:00:00
 topic: teaching
 slug: how-ai-coding-tools-can-help-teachers
 ---

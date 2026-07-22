@@ -1,6 +1,6 @@
 ---
 title: "Is It Unethical to Automate Marking with AI?"
-date: 2026-06-28 09:00:00
+date: 2025-11-03 09:00:00
 topic: teaching
 slug: is-it-unethical-to-automate-marking-with-ai
 sources: |

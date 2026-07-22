@@ -1,6 +1,6 @@
 ---
 title: "Plan Lessons in Advance, or Week by Week?"
-date: 2026-06-07 09:00:00
+date: 2025-02-17 09:00:00
 topic: teaching
 slug: plan-lessons-in-advance-or-week-by-week
 sources: |

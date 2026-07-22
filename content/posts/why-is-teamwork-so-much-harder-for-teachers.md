@@ -1,6 +1,6 @@
 ---
 title: "Why Is Teamwork So Much Harder for Teachers?"
-date: 2026-06-14 09:00:00
+date: 2025-06-30 09:00:00
 topic: teaching
 slug: why-is-teamwork-so-much-harder-for-teachers
 sources: |

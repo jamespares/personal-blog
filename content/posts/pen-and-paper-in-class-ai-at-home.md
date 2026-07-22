@@ -1,6 +1,6 @@
 ---
 title: "Pen and Paper in Class, AI at Home"
-date: 2026-07-06 09:00:00
+date: 2026-03-16 09:00:00
 topic: teaching
 slug: pen-and-paper-in-class-ai-at-home
 sources: |

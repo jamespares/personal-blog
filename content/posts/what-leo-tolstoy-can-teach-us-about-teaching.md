@@ -1,6 +1,6 @@
 ---
 title: "What Leo Tolstoy Can Teach Us About Teaching"
-date: 2026-05-20 09:00:00
+date: 2025-01-20 09:00:00
 topic: teaching
 slug: what-leo-tolstoy-can-teach-us-about-teaching
 sources: |

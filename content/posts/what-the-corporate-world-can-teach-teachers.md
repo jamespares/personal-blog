@@ -1,6 +1,6 @@
 ---
 title: "What the Corporate World Can Teach Teachers"
-date: 2026-06-21 09:00:00
+date: 2025-09-22 09:00:00
 topic: teaching
 slug: what-the-corporate-world-can-teach-teachers
 sources: |

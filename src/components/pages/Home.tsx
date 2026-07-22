@@ -1,6 +1,7 @@
 /** @jsxImportSource hono/jsx */
 import type { FC } from "hono/jsx";
 import { Layout } from "../Layout";
+import { BreadcrumbNav } from "../BreadcrumbNav";
 
 export const Home: FC<{
   recentPosts: any[];
@@ -10,7 +11,11 @@ export const Home: FC<{
   const topics = ["teaching", "books"];
 
   return (
-    <Layout pageTitle="Home">
+    <Layout pageTitle="Blog">
+      <BreadcrumbNav items={[
+        { label: "Home", href: "/" },
+        { label: "Blog" },
+      ]} />
       {topics.map((t) => {
         const posts = topicPreviews[t] || [];
         if (posts.length === 0) return null;

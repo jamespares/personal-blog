@@ -1,6 +1,7 @@
 /** @jsxImportSource hono/jsx */
 import type { FC } from "hono/jsx";
 import { Layout } from "../Layout";
+import { BreadcrumbNav } from "../BreadcrumbNav";
 
 const GitHubIcon16 = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:6px;vertical-align:-2px;">
@@ -13,7 +14,11 @@ export const Product: FC<{
   marked: any;
 }> = ({ product, marked }) => (
   <Layout pageTitle={product.name}>
-    <a href="/" class="back-home">← Back to home</a>
+    <BreadcrumbNav items={[
+      { label: "Home", href: "/" },
+      { label: "Tools", href: "/products/" },
+      { label: product.name },
+    ]} />
     <article class="single-product">
       <header class="product-header">
         {product.image_url && (

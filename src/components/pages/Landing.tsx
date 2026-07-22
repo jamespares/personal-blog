@@ -73,7 +73,7 @@ export const Landing: FC<{
             <section class="latest-writing">
               <div class="writing-header">
                 <h2 class="section-label">Recent Writing</h2>
-                <a href="/blog" class="view-all-link">View all →</a>
+                <a href="/blog/" class="view-all-link">View all →</a>
               </div>
               <div class="writing-list">
                 {recentPosts.map((post: any) => (

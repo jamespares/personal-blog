@@ -10,7 +10,7 @@ This is a minimalist, high-performance personal website and blog for **James Par
 
 The site has two main sections:
 - **Landing page** (`/`): A writing-first homepage. The main column is a feed of the latest blog posts; the sidebar holds the profile, contact links, and a small "Some tools I vibe coded" list of active products. The full tools listing lives at `/products/` for sharing directly.
-- **Blog** (`/blog`): A topic-based blog with two sections: Teaching and Book Reviews.
+- **Blog** (`/blog/`): Full writing archive (Teaching and Book Reviews). Breadcrumb trails on inner pages follow **Home → Blog → topic → post** for writing and **Home → Tools → product** for `/products/`.
 
 **Live site:** [jamespares.me](https://jamespares.me)
 

@@ -358,6 +358,15 @@ main.container {
   color: var(--color-accent);
 }
 
+.post-topic a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-topic a:hover {
+  text-decoration: underline;
+}
+
 .post-excerpt {
   font-size: 0.9rem;
   color: var(--color-text-secondary);
@@ -1693,6 +1702,48 @@ main.container {
 .back-home:hover {
   color: var(--color-text);
   text-decoration: underline;
+}
+
+.breadcrumb-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0;
+  margin-bottom: 2rem;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.breadcrumb-nav__link {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+.breadcrumb-nav__link:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+.breadcrumb-nav__sep {
+  color: var(--color-text-secondary);
+  opacity: 0.65;
+  user-select: none;
+}
+
+.breadcrumb-nav__current {
+  color: var(--color-text-secondary);
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .breadcrumb-nav__current {
+    white-space: normal;
+  }
 }
 
 /* Dark red heading titles */

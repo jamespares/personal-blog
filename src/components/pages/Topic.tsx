@@ -1,6 +1,7 @@
 /** @jsxImportSource hono/jsx */
 import type { FC } from "hono/jsx";
 import { Layout } from "../Layout";
+import { BreadcrumbNav } from "../BreadcrumbNav";
 
 export const Topic: FC<{
   topic: string;
@@ -8,7 +9,11 @@ export const Topic: FC<{
   formatTopic: (t: string) => string;
 }> = ({ topic, posts, formatTopic }) => (
   <Layout pageTitle={formatTopic(topic)}>
-    <a href="/blog/" class="back-home">← Back to blog</a>
+    <BreadcrumbNav items={[
+      { label: "Home", href: "/" },
+      { label: "Blog", href: "/blog/" },
+      { label: formatTopic(topic) },
+    ]} />
     <section class="page-header">
       <h1>{formatTopic(topic)}</h1>
       <p class="page-sub">All posts about {formatTopic(topic)}</p>

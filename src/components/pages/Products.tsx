@@ -1,12 +1,17 @@
 /** @jsxImportSource hono/jsx */
 import type { FC } from "hono/jsx";
 import { Layout } from "../Layout";
+import { BreadcrumbNav } from "../BreadcrumbNav";
 
 export const Products: FC<{
   activeProducts: any[];
 }> = ({ activeProducts }) => {
   return (
     <Layout pageTitle="Products">
+      <BreadcrumbNav items={[
+        { label: "Home", href: "/" },
+        { label: "Tools" },
+      ]} />
       <section class="page-header">
         <h1>Products</h1>
         <p class="page-sub">Mini-SaaS products and AI tools for teachers and learners.</p>

@@ -1,18 +1,26 @@
 /** @jsxImportSource hono/jsx */
 import type { FC } from "hono/jsx";
 import { Layout } from "../Layout";
+import { BreadcrumbNav } from "../BreadcrumbNav";
 
 export const Post: FC<{
   post: any;
   formatTopic: (t: string) => string;
   marked: any;
 }> = ({ post, formatTopic, marked }) => {
+  const topicLabel = formatTopic(post.topic);
+
   return (
     <Layout pageTitle={post.title} metaDescription={post.excerpt || post.content.substring(0, 160)}>
-      <a href="/blog/" class="back-home">← Back to blog</a>
+      <BreadcrumbNav items={[
+        { label: "Home", href: "/" },
+        { label: "Blog", href: "/blog/" },
+        { label: topicLabel, href: `/topic/${post.topic}/` },
+        { label: post.title },
+      ]} />
       <article class="single-post">
         <header class="post-header">
-          <span class="post-topic">{formatTopic(post.topic)}</span>
+          <span class="post-topic"><a href={`/topic/${post.topic}/`}>{topicLabel}</a></span>
           <h1>{post.title}</h1>
           <time class="post-date">{new Date(post.created_at).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}</time>
           <p class="post-author"><em>by <a href="https://www.linkedin.com/in/james-p-ba7653207/" target="_blank" rel="noopener" class="author-link">James Pares</a></em></p>

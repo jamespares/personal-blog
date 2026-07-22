@@ -5,8 +5,8 @@ topic: books
 slug: down-and-out-in-paris-and-london-george-orwell
 ---
 
-I read this on holiday expecting to admire it, and I did. The Paris kitchen chapters are hot and grimly funny; the hunger bit where he finally eats properly made me get up and make toast.
+I enjoyed this — the Paris kitchen chapters are hot, exact, grimly funny; the hunger bit where he finally eats properly made me get up and make toast.
 
-Something nagged at me though. Orwell could leave. The tramps couldn't. The book never quite stares at that gap, and there's a faint romance about poverty-as-purification that I don't buy from what little I've seen of real destitution.
+Something troubled me underneath, though. There's a romantic glow around poverty and destitution that I don't trust. Orwell could leave; the tramps couldn't. I'm not sure the book really helps the British intellectual tradition on that score — it can read as poverty-as-purification for a sensitive observer who always had a door out.
 
-I'm still of two minds. Beautiful writing, uncomfortable subject, and I keep noticing the door he always knew he could walk out of. Liked it anyway.
+Interesting nonetheless. I'm still of two minds, and probably will be if I reread it.

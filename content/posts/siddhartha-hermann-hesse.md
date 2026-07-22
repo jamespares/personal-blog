@@ -5,8 +5,8 @@ topic: books
 slug: siddhartha-hermann-hesse
 ---
 
-I'm a Buddhist in the loose sense — read about it more than I meditate, meditate more than I succeed. A friend lent me *Siddhartha* before I moved to China; I finally read it on the Shanghai metro in short bursts.
+A great book about Buddhism, or at least about the search — Hesse was a German novelist, not a monk, and I don't treat it as doctrine. A friend lent it before I moved to China; I read it in short bursts on the Shanghai metro.
 
-Siddhartha meets the Buddha, admires him, and still walks away because enlightenment can't be handed over like lecture notes. Then merchants, Kamala, disgust, a ferryman, a river. The river bit is the part that lingered.
+Siddhartha meets the Buddha, admires him, walks away because enlightenment can't be handed over like lecture notes. Merchants, Kamala, disgust, the river. The river section is the part that lingered — wisdom as something you live, not download.
 
-Hesse isn't a monk and this isn't a textbook. It's a short, slightly romantic novel that made me think about my own stop-start practice without preaching at me. Still in my bag for now.
+It nudged my own stop-start practice without preaching. Still in my bag for now.

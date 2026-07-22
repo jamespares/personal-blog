@@ -5,8 +5,8 @@ topic: books
 slug: a-concise-chinese-english-dictionary-for-lovers-xiaolu-guo
 ---
 
-I read this in Shanghai, which felt appropriate. Zhuang — she calls herself Z for English speakers — arrives in London from rural China and the novel is her diary in English that slowly gets less broken. I spend a lot of time being the confused foreigner here; this was the same feeling flipped.
+Interesting to see Britain from an immigrant perspective — Z's diary in English that slowly improves, full of logical inconsistencies in the language and the culture that natives stop noticing.
 
-The shoe scene stuck with me. Z tells her English teacher her parents might have made the teacher's shoes back in China. She says it proudly. The room goes awkward. I winced.
+The shoe scene stuck with me. She tells her language teacher her parents might have made the teacher's shoes back in China — said innocently, met with embarrassment and something like disgust. There's a lot of snobbery in Britain, sadly. I think much of it is socially constructed; you can't blame individuals too much, especially older generations who grew up inside it. Still, I winced.
 
-I liked Z. The deliberately clumsy English is a neat trick and it mostly works for me. Some of the London boyfriend stuff dragged a bit. Still, I finished it feeling a little sheepish about how English works and how easily we forget where things come from.
+I liked Z. Some of the romance dragged. Finished feeling fond of her and slightly sheepish about home.

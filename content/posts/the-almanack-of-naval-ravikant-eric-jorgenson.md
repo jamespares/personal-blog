@@ -5,8 +5,8 @@ topic: books
 slug: the-almanack-of-naval-ravikant-eric-jorgenson
 ---
 
-Jorgenson stitched this together from Naval's tweets and podcasts — wealth in the first half, happiness in the second. I read the free PDF on a lazy Sunday.
+A great merging of Buddhist calm and capitalist drive, at least on the page — wealth in one half, happiness treated as a skill in the other. I'm a Buddhist in the loose sense, so the second half felt familiar; the first half reminded me of ambitious people in London who burned out chasing outcomes they didn't even want.
 
-Some lines landed (specific knowledge, not renting out your hours forever). Some felt like fortune cookies that only work if you're already comfortable. The Buddhist-flavoured calm plus capitalist hustle is a strange mix but it mostly fits Naval's voice.
+What I took from it is the vibe more than any single line: how to succeed without going crazy, keep the ego from running the show, stay calm enough to think. Some aphorisms age badly if you're broke; others I still flip back to when work is noisy.
 
-I dip back into a few pages every so often when I'm brooding about work. Not a bible for me — more like notes left on the fridge by someone sharper than I am.
+Not gospel for me — more like a useful counterweight on the shelf.

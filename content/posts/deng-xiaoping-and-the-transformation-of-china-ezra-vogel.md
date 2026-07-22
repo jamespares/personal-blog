@@ -5,8 +5,8 @@ topic: books
 slug: deng-xiaoping-and-the-transformation-of-china-ezra-vogel
 ---
 
-I studied in France years ago, so I loved the opening: teenage Deng in Marseilles in 1920, factory work, cramped lodgings with Zhou Enlai and other radicals. That friendship lasts decades in the book and I ate it up.
+Deng is by far my favourite Chinese leader in the books I've read — pragmatic where Mao was ideologically lethal. Mao had obvious achievements; he also left awful scars on the health of Chinese society. Deng reads like a welcome antidote to that kind of radical certainty.
 
-The rest is a brick. I won't pretend I sprinted through the middle. Vogel is fair where a lesser writer would either saint Deng or put him on trial — 1989 included. The cat proverb story (black cat, white cat, catch mice) turns out to be a Sichuan saying Deng quoted, not something he invented, which I liked learning.
+I loved the France chapters. Teenage Deng in Marseilles, factory work, Zhou Enlai in the same cramped world — I studied in France myself, so that thread pulled me in. His borrowed line about the cat — black or white, what matters is whether it catches mice — still feels like a perfect rebuke to a lot of the rigid, symbolic politics that has consumed parts of the West lately. Pragmatism over performance.
 
-I live in the country Deng helped reshape. Closing the cover I felt I understood a bit more of what I'm looking at every day. Worth the slog, just not a beach read.
+Vogel's brick of a book is exhausting in the middle but fair on the hard bits, including 1989. I closed it feeling I understood the country I live in a little better.

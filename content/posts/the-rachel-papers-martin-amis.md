@@ -5,8 +5,8 @@ topic: books
 slug: the-rachel-papers-martin-amis
 ---
 
-Reading a novel about a nineteen-year-old and recognising your own teenage brain every few pages is a special kind of cringe. Charles Highway is awful — selfish, calculating, convinced he's the cleverest person in the room — and Amis's sentences are unfairly funny.
+So well written — Charles Highway is not likeable, and Amis's sentences are unfairly funny about that.
 
-I hope I wasn't that bad at nineteen. I was probably closer than I'd like. The files Highway keeps on seducing Rachel, the way he sizes people up like homework — uncomfortably familiar mental furniture, even if not the behaviour.
+I felt more parallels with my own thoughts as a teenager than I'm comfortable admitting. Selfish, quite judgemental, obviously extremely naive — sizing people up like homework, convinced you're the cleverest person in the room. I hope I wasn't that bad; I was probably closer than I'd like.
 
 I laughed, winced, finished in a weekend. Not sure I'd rush back, but I'm glad I read it once.

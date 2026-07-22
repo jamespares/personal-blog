@@ -5,8 +5,8 @@ topic: books
 slug: breakneck-dan-wang
 ---
 
-I was on the high-speed train from Shanghai to Beijing when I read most of this — about 1,300 kilometres in under five hours, cranes out the window the whole way. Dan Wang's line about China as an engineering state and the West as a lawyerly one felt less abstract with the track humming underneath.
+I read much of this on the high-speed train to Beijing — cranes out the window the whole way. Dan Wang's contrast between an engineering-led China and a lawyer- or professional-politician-led West felt plausible sitting on that track; whether it's the whole story, I don't know, but it matched what I've seen of process versus building.
 
-The cement statistic everyone quotes still stopped me anyway: more poured in a few recent years than the US used in the whole twentieth century. Wang makes the scale feel human, not just a meme.
+Some observations stuck hard, especially railways and cement — the scale of pouring and laying reset how I think about "infrastructure". Wang is not a cheerleader either; when he writes about applying engineering logic to people, I believed him more because he'd already convinced me on the bridges side.
 
-He's not cheerleading. The bits on zero-Covid and treating people like concrete landed harder because he'd already convinced me on the bridges-and-trains side. I finished before Beijing. The cranes didn't stop.
+Very interesting book for anyone trying to understand why things here look the way they do.

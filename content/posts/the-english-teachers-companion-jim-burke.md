@@ -5,8 +5,8 @@ topic: books
 slug: the-english-teachers-companion-jim-burke
 ---
 
-First year of teaching I bought a pile of professional books and mostly let them collect dust. Burke's *English Teacher's Companion* is the one that actually stayed open.
+Great book — I learnt a lot, especially in my first year when everything felt improvised and slightly terrifying. (My notes called it a handbook; the copy on my shelf is Burke's *Companion*.)
 
-It's American, classroom-grounded, no fancy acronym framework — how to get kids to read something hard, how to survive a marking pile, what to do when the kid who talks brilliantly writes nothing.
+No grand theory, just answers to questions that actually kept me awake: getting kids to read something hard, surviving marking, the kid who talks brilliantly but writes nothing. Rubrics, discussion moves, annotation — classroom stuff from someone who'd done the job for years.
 
-I still pull it out on Sunday nights when a lesson won't gel. Not thrilling prose, just useful in the way a colleague who's been there longer can be useful.
+I still pull it out on Sunday nights when a lesson won't come together. Useful in the way a calm senior colleague is useful.

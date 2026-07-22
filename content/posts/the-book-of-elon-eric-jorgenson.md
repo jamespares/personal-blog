@@ -5,8 +5,10 @@ topic: books
 slug: the-book-of-elon-eric-jorgenson
 ---
 
-I expected to eye-roll through a billionaire greatest-hits album. Jorgenson mostly lets Musk speak in his own words, organised by theme, and the rocket-and-battery passages are genuinely fun to watch him think out loud.
+I thought I'd skim this and argue with it. I ended up reading most of it properly. Jorgenson lets Musk speak in his own words, and on rockets, batteries, and first-principles engineering he often sounds like a genius — whether you like the man or not.
 
-The brain-computer later chapters left me cold — merging with machines isn't a itch I share. The self-driving-car-as-side-hustle idea is what randomly pops into my head months later: your car earning while you sleep. No idea if it'll happen.
+I don't like a lot of his transhumanist brain–tech stuff. That left me cold.
 
-Mixed feelings overall. More curious than converted.
+What stuck is the EV future he describes: once cars drive themselves and answer to a phone, ownership changes shape. Everyone becomes a kind of taxi "driver" — your car earns while you sleep, rented out through an app. I have no idea if it'll happen, but it's the idea that still pops into my head months later.
+
+Mixed bag for me, heavier on curiosity than worship.

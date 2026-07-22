@@ -5,8 +5,8 @@ topic: books
 slug: liberalism-and-its-discontents-francis-fukuyama
 ---
 
-Short book — under two hundred pages — so I got through it in a couple of evenings. Fukuyama still gets tagged as the "end of history" guy; this felt more like a calm tour of how classical liberalism got stretched by both left and right until bits snapped.
+Such a clear diagnosis of where America is intellectually and how it got there — short enough to read in a couple of evenings without feeling shouted at.
 
-I agreed with some paragraphs, argued with others in my head, and never felt shouted at. The neat symmetry between extremes probably tidies real life more than it should.
+I was refreshed by his analysis of hyper-liberal progressivism: good intentions sliding into unpleasant dogma and bigotry in recent years. The road to hell is paved with good intentions, as they say, and Fukuyama writes with a calm that makes the argument feel discussable rather than tribal.
 
-Didn't flip any big switches for me. Just a clearer map of arguments I was already half-following. Fine company for a quiet week.
+I agreed with some of it, argued with other bits in my head. Didn't flip my whole worldview — gave me a clearer map of the fights people are having. Fine company for a quiet week.

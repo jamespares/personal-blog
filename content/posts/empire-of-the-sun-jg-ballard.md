@@ -5,8 +5,8 @@ topic: books
 slug: empire-of-the-sun-jg-ballard
 ---
 
-I read this while living in Shanghai, which was stranger than I expected. Ballard grew up here and was interned as a boy near Lunghua — not far from where I grab coffee now. After the last page I walked through the French Concession half-looking for Jim Graham in the plane trees.
+Interesting to read this while I was still in Shanghai, where the book is set. Ballard grew up here and was interned as a boy not far from neighbourhoods I walked through after work. That overlap was stranger than I expected — fiction and streets at the same time.
 
-Jim treats the war like weather and spectacle as much as horror. Admires the pilots. Haggles in camp. Some people find that cold; it felt honest to me — kids live in the present tense.
+Jim's war is partly spectacle and weather, which some people find cold; it felt honest to me. Separate from the novel, living in China you sometimes hear how competitive or bitter people can be about America, in ways that sit oddly next to the history of the Pacific war and what the US did in that conflict. The book didn't lecture me on that, but it sat in my head alongside those conversations.
 
-Weird overlap of fiction and streets I actually walk. Glad I read it here, not from a sofa in London.
+Glad I read it here rather than from a distance.

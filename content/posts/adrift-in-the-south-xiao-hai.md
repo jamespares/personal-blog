@@ -5,8 +5,8 @@ topic: books
 slug: adrift-in-the-south-xiao-hai
 ---
 
-I read Xiao Hai's memoir on the metro over a few days. He left vocational school at fifteen for factory work in Shenzhen and spent about fifteen years moving between garment mills and electronics plants — iPhones, baby clothes, football shirts. He quit ten factories. Twice he tried to live on poetry alone.
+A stark reminder of how low the class ladder goes in China, and how privileged my daily life is by comparison.
 
-What hit me wasn't shock for shock's sake. It was how far my daily life here sits from his. My Chinese friends complain about rent and coffee prices; next to Xiao Hai they look almost absurdly comfortable. Next to friends in the UK they look normal. Holding both pictures in my head at once is odd, and this book made that feeling sharper.
+Xiao Hai spent years in southern factories — garments, electronics, the work most of my Shanghai friends never touch. Next to him, those friends look almost absurdly elite; next to friends back in the UK they look completely normal — same flats, same anxieties. Holding both pictures in my head is uncomfortable, and this memoir made that feeling sharper.
 
-He writes plainly, without begging for pity. The poetry thread is what I keep remembering — stitching shirts all day and still wanting to write. Short, unsettling, glad I read it.
+He writes without begging for sympathy. The poetry thread — stitching shirts by day, still wanting to write — is what I keep remembering.

@@ -5,8 +5,8 @@ topic: books
 slug: hard-times-charles-dickens
 ---
 
-I read this during a stretch when gaokao stress was everywhere at school — families planning years around one exam. Dickens opens with Gradgrind wanting nothing but Facts in the classroom, and I winced at a few habits of my own in that scene.
+Gradgrind and "nothing but Facts" — the Industrial Revolution crushing imagination in Coketown's smoke and identical streets. Reading it in China, the parallels nagged at me: gaokao pressure, hardcore standardisation in public education, ugly buildings, a sense that aesthetic taste gets squeezed out when everything is measured.
 
-It's not subtle. Gradgrind is a walking poster. Still fun when Dickens is angry — Coketown smoke, identical streets, kids raised on numbers.
+It's not subtle; Gradgrind is a poster. Dickens at full anger is still fun. I winced at my own worst classroom habits in the opening schoolroom scene.
 
-The gaokao comparison hovered in the back of my mind and then wandered off again. My students' exam world is brutal but not quite Coketown. I enjoyed the book more than I expected and it's on the shelf behind my desk now, mostly as a reminder not to go full Gradgrind on a Tuesday.
+I'm not saying Shanghai is Coketown — my students mostly land somewhere after the exam. But the creativity question feels live here too. The book sits on the shelf behind my desk as a reminder not to go full Gradgrind on a Tuesday.

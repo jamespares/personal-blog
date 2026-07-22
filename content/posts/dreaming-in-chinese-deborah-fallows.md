@@ -5,8 +5,8 @@ topic: books
 slug: dreaming-in-chinese-deborah-fallows
 ---
 
-My Mandarin is slowly improving; taxi drivers wince a little less. Progress in a tonal language is hard to feel day to day, so I picked this up for company — someone else's mistakes — and because Fallows is a linguist who lived in Shanghai and Beijing.
+An interesting book — not a textbook, a memoir with a linguist's eye. I picked it up while my own Mandarin was in that slow middle phase where progress is hard to feel.
 
-The bit about tones carrying weight because Chinese has fewer syllables than English named something I'd only felt as vague frustration. Her examples of compound words built from opposites (open-close for a light switch) made me start noticing patterns on signs and in chat.
+It helped me understand the process of learning Chinese in more colour and detail than anything else I'd read. Tones carrying meaning because the syllable pool is smaller; compound words built from opposites; why blunt speech can mean closeness rather than rudeness. Naming those patterns made the daily grind feel less random.
 
-It's a memoir, not a textbook. Won't teach you characters. I finished it on the metro and the station announcements sounded slightly less like noise than the week before. Small win, but I'll take it.
+I finished it on the metro and the announcements made slightly more sense than the week before. Small thing, but it mattered to me then.

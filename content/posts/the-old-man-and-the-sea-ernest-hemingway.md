@@ -5,8 +5,8 @@ topic: books
 slug: the-old-man-and-the-sea-ernest-hemingway
 ---
 
-One sitting on a train — barely a hundred pages, meant to be swallowed whole. Santiago, eighty-four dry days, hooks the big marlin, fights for days, loses most of it to sharks on the way in.
+I read this in one sitting on a train — Santiago, the marlin, the sharks, the skeleton mistaken for a shark at the end.
 
-The repetition got to me in the middle — yes, your hand hurts, we know — but the stripped prose mostly works. The tourists mistaking the skeleton for a shark and the lions dream at the end hit without being explained to death.
+I enjoyed it, but the prose is so simplistic and repetitive that at points it feels like a drawn-out fable — yes, your hand hurts, we know, you said that two pages ago. At its best the stripped language has a chant-like rhythm; at its worst it outstays the fable.
 
-Liked it a lot, didn't quite love it. The ending is what I remember.
+The lions dream still landed. Liked it a lot, didn't quite love it — the ending is what I remember.

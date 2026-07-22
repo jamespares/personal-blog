@@ -5,8 +5,8 @@ topic: books
 slug: the-house-that-jack-ma-built-duncan-clark
 ---
 
-Jack Ma started as an English teacher on almost nothing a month, failed exams, got rejected by KFC — the usual legend bits. Clark knew him early and the Hangzhou flat origin story feels grounded, not hagiography.
+Jack Ma is very impressive on the page — English teacher beginnings, failed exams, the Hangzhou flat where Alibaba started. Clark knew him early so it feels grounded rather than myth-making.
 
-What I enjoyed was Ma as talker rather than coder: persuading engineers and investors with English he learnt guiding tourists. The later Ant float drama hangs over the book now but the scrappy opening chapters were the fun part for me.
+What I still don't fully understand is how he built the relationships and raised the capital he did with so little technical knowledge and no obvious insider status. Timing, trust, language, persuasion — the book points at all of it, and I buy parts of the story, but the leap still feels almost absurd from the outside.
 
-English teacher builds a giant company by talking. I smiled at that more than I probably should have.
+I enjoyed it anyway, especially as another English teacher who will never build anything that size. The later Ant drama hangs over the early chapters now, but the scrappy opening stayed fun to read.

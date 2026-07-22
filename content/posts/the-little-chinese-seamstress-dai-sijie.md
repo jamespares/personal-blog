@@ -5,8 +5,8 @@ topic: books
 slug: the-little-chinese-seamstress-dai-sijie
 ---
 
-Dai Sijie was sent down to Sichuan for re-education; he wrote this novel in French years later. Two city boys on a remote mountain, a hidden suitcase of banned Western novels, a local seamstress — Balzac smuggled into absurdity.
+A nice book, honestly — short, gentle, easy to read in a couple of sittings. Two city boys sent down during the Cultural Revolution, a hidden suitcase of banned Western novels, a local seamstress. The period was clearly awful; Dai Sijie doesn't pretend otherwise.
 
-It's gentle, maybe too gentle for the horrors underneath. I read it in two sittings on a rainy weekend. The ending stayed with me (no spoilers here) — hopeful in a quiet way that might be sentimental, but I didn't mind.
+What stayed with me is the small hope in it — literature slipping through the net and changing at least one life. It's nice to think there might have been positive outcomes like that, here and there, amid so much waste. I found myself hoping the seamstress's life goes well after the last page, even though the book leaves that open.
 
-Short, a bit pretty, still pops back into my head sometimes.
+Maybe it's a bit sentimental for the horrors underneath. I didn't mind. It left me quietly moved rather than lectured.

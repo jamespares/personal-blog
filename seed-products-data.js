@@ -73,6 +73,54 @@ module.exports = [
         metric: 'Free / Premium'
     },
     {
+        name: 'HSK Dojo',
+        tagline: 'Data-driven HSK1 3.0 mock exams with scoring and pass probability',
+        description: 'Practice HSK1 3.0 past-paper style mocks with scoring and pass probability so you can see how ready you are for the real exam.',
+        live_url: 'https://hsk-dojo.my-account-337.workers.dev/',
+        price: 'Free',
+        status: 'active',
+        published: 1,
+        category: 'Learn Chinese',
+        brand_color: '#C41E3A',
+        metric: 'Free'
+    },
+    {
+        name: 'Guidelight',
+        tagline: 'All-in-one homework, assessments and insights platform for teachers and tutors',
+        description: 'All-in-one homework, assessments and insights platform for teachers and tutors — set work, mark it, and see how learners are progressing in one place.',
+        live_url: 'https://getguidelight.com/',
+        price: 'Free',
+        status: 'active',
+        published: 1,
+        category: 'Teaching Tools',
+        brand_color: '#0D9488',
+        metric: 'Free'
+    },
+    {
+        name: 'The River of English',
+        tagline: 'Interactive scroll through 2,800 years of English language and literature',
+        description: 'A scrollable timeline from Homer to the internet — poems, wars, presses and empires — watching English being made across twenty-eight centuries.',
+        live_url: 'https://river-of-english.ok.kimi.link/',
+        price: 'Free',
+        status: 'active',
+        published: 1,
+        category: 'Learn English',
+        brand_color: '#4F46E5',
+        metric: 'Free'
+    },
+    {
+        name: "Xiaoming's Day",
+        tagline: "Bloom's-taxonomy HSK1 mastery quiz built around a reading text",
+        description: "A Bloom's-taxonomy mastery quiz for HSK1: remember, understand, apply, analyse, evaluate and create — all built around Xiaoming's Day, with instant feedback and character drill.",
+        live_url: 'https://hsk1.ok.kimi.link/',
+        price: 'Free',
+        status: 'active',
+        published: 1,
+        category: 'Learn Chinese',
+        brand_color: '#EA580C',
+        metric: 'Free'
+    },
+    {
         name: 'IELTS',
         tagline: 'AI tool for mastering the IELTS',
         description: 'AI study companion for students aiming for high scores in the IELTS English proficiency test.',
